@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 120650303}
   - component: {fileID: 120650305}
   - component: {fileID: 120650304}
+  - component: {fileID: 120650306}
   m_Layer: 0
   m_Name: Sam_placeholder
   m_TagString: Untagged
@@ -373,6 +374,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.58, y: 5.99}
   m_EdgeRadius: 0
+--- !u!114 &120650306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120650300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349d30e4e43855745ad40f809cd84975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpPower: 10
 --- !u!1 &348090582
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,9 +399,10 @@ GameObject:
   - component: {fileID: 348090583}
   - component: {fileID: 348090585}
   - component: {fileID: 348090584}
+  - component: {fileID: 348090586}
   m_Layer: 0
   m_Name: Ball_Placeholder
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -474,6 +490,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &348090586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348090582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81540c29a8dd74dafbb3f70913df15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &460808728
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,6 +550,7 @@ GameObject:
   - component: {fileID: 478280471}
   - component: {fileID: 478280473}
   - component: {fileID: 478280472}
+  - component: {fileID: 478280474}
   m_Layer: 0
   m_Name: SammyBox_Placeholder
   m_TagString: Untagged
@@ -622,6 +651,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &478280474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478280470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81540c29a8dd74dafbb3f70913df15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &484447148
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,9 +674,10 @@ GameObject:
   - component: {fileID: 484447149}
   - component: {fileID: 484447151}
   - component: {fileID: 484447150}
+  - component: {fileID: 484447152}
   m_Layer: 0
   m_Name: Stool_Placeholder
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -733,6 +775,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &484447152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484447148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81540c29a8dd74dafbb3f70913df15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &534774465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,9 +1118,10 @@ GameObject:
   - component: {fileID: 1011236157}
   - component: {fileID: 1011236159}
   - component: {fileID: 1011236158}
+  - component: {fileID: 1011236160}
   m_Layer: 0
   m_Name: HelicopterRemote_Placeholder
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1164,6 +1219,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1011236160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011236156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81540c29a8dd74dafbb3f70913df15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1094492578
 GameObject:
   m_ObjectHideFlags: 0
