@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 77620417fb6676f45b82cb77b45f15e7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Delight Snowy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ea4d17e4ce992ae4b8ccaba8c9c11a49, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
