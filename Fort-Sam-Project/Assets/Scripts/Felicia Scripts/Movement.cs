@@ -8,10 +8,18 @@ using UnityEngine.UIElements;
 public class Movement : MonoBehaviour
 {
     public Animator anim;
+    
     //Player Movement Speed
     public float speed;
     //how high we can jump
-    public float jumpPower = 10;
+    //private Inventory inventory;
+    //[SerializeField] private UI_Inventory uiInventory;
+
+    //private void Awake()
+    //{
+    //    inventory = new Inventory();
+    //    uiInventory.SetInventory(inventory);
+    //}
 
 
     //Our Rigidbody2D reference
@@ -28,7 +36,9 @@ public class Movement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         spriteRend = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+       
     }
+   
 
 
     // Update is called once per frame
@@ -66,16 +76,16 @@ public class Movement : MonoBehaviour
         movement.x = x * speed;
 
 
-        //If we press jump while grounded, then Jump
-        if (Input.GetButtonDown("Jump") && grounded)
-        {
-            //velocity jump
-            //rb2d.velocity = new Vector2(rb2d.velocity.x, jumpPower);
+        ////If we press jump while grounded, then Jump
+        //if (Input.GetButtonDown("Jump") && grounded)
+        //{
+        //    //velocity jump
+        //    //rb2d.velocity = new Vector2(rb2d.velocity.x, jumpPower);
 
-            //impulse jump (same result)
-            rb2d.velocity = new Vector2(rb2d.velocity.x, 0); //Reset our y speed before the jump
-            rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
-        }
+        //    //impulse jump (same result)
+        //    rb2d.velocity = new Vector2(rb2d.velocity.x, 0); //Reset our y speed before the jump
+        //    rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+        //}
 
         //Use our old y velocity, if movement.y = 0, then we mess with gravity
         movement.y = rb2d.velocity.y;
