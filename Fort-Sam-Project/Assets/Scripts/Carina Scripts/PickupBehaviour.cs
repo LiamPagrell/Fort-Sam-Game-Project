@@ -5,33 +5,30 @@ using UnityEngine;
 public class PickupBehaviour : MonoBehaviour
 {
 
+    Movement player;
+
+    float checkDistance;
+    float pickUpDistance = 3.4f;
+
     void Start()
     {
-        
+        player = FindObjectOfType<Movement>();
     }
 
 
     void Update()
     {
-        /*if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
-
-            if (hit.collider != null && hit.collider.name == name)
-            {
-                Debug.Log("Item picked up");
-            }*/
-            
-        
-
+        // check distance between player and interactable object
+        checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
     }
+
 
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && checkDistance < pickUpDistance)
         {
             Debug.Log("Mouse click!");
+            Destroy(gameObject);
         }
     }
 }

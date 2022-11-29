@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class Movement : MonoBehaviour
 {
-    //public Animator anim;
+    public Animator anim;
     //Player Movement Speed
     public float speed;
     //how high we can jump
@@ -27,7 +27,7 @@ public class Movement : MonoBehaviour
         //Find our Rigidbody2D
         rb2d = GetComponent<Rigidbody2D>();
         spriteRend = GetComponent<SpriteRenderer>();
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
 
@@ -40,16 +40,16 @@ public class Movement : MonoBehaviour
 
 
 
-        //// gå från walking till idle
-        //if (x == 0)
-        //{
-        //    anim.SetBool("moving", false);
+        // gå från walking till idle
+        if (x == 0)
+        {
+            anim.SetBool("moving", false);
 
-        //}
-        //else
-        //{
-        //    anim.SetBool("moving", true);
-        //}
+        }
+        else
+        {
+            anim.SetBool("moving", true);
+        }
 
 
         if (x < 0)
