@@ -11,15 +11,10 @@ public class Movement : MonoBehaviour
     
     //Player Movement Speed
     public float speed;
-    //how high we can jump
-    //private Inventory inventory;
-    //[SerializeField] private UI_Inventory uiInventory;
 
-    //private void Awake()
-    //{
-    //    inventory = new Inventory();
-    //    uiInventory.SetInventory(inventory);
-    //}
+    
+   
+    
 
 
     //Our Rigidbody2D reference
@@ -27,7 +22,7 @@ public class Movement : MonoBehaviour
     //Current movement
     Vector2 movement = new Vector2();
     //If we are on the ground
-    bool grounded;
+    //bool grounded;
     SpriteRenderer spriteRend;
     // Start is called before the first frame update
     void Start()
@@ -96,13 +91,13 @@ public class Movement : MonoBehaviour
 
     //This is not the best way of controlling if we are grounded.
     //We will look at better solutions at a later date.
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        grounded = true;
-    }
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    grounded = true;
+    //}
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        grounded = false;
-    }
+    //void OnTriggerExit2D(Collider2D other)
+    //{
+    //    grounded = false;
+    //}
 }

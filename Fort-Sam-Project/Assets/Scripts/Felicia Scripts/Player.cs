@@ -5,15 +5,15 @@ using static Unity.VisualScripting.FlowStateWidget;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] AnimationClip clip;
-    [SerializeField] float eventTime;
-    void Start()
+    private Inventory inventory;
+    [SerializeField] private UI_Inventory uiInventory;
+         private void Awake()
     {
-        clip.AddAnimationEvent(eventTime, "OnplayerOnTop");
-    }
+        inventory = new Inventory();
+        uiInventory.SetInventory(inventory);
+        ItemWorld.SpawnItemWorld(new Vector3(20,20),new Item{itemType = Item.ItemType.Remote, amount = 1});
+        ItemWorld.SpawnItemWorld(new Vector3(-20,20),new Item{itemType = Item.ItemType.Ball, amount = 1 });
+        ItemWorld.SpawnItemWorld(new Vector3(0,-20),new Item{itemType = Item.ItemType.Skruvmejsel, amount = 1 });
 
-    void OnplayerOnTop()
-    {
-        Debug.Log("player On Top");
     }
 }

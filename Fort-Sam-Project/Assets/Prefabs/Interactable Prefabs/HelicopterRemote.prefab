@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2934859173539712093}
   - component: {fileID: 2934859173539712082}
+  - component: {fileID: 2598564108440839629}
   m_Layer: 0
   m_Name: HelicopterRemote
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2934859173539712082
 SpriteRenderer:
@@ -84,3 +85,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2598564108440839629
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2934859173539712092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.8, y: 1.66, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
