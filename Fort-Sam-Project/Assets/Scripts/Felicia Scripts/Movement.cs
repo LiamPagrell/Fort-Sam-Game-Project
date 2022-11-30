@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 public class Movement : MonoBehaviour
 {
     public Animator anim;
+    public Transform childMon;
     
     //Player Movement Speed
     public float speed;
@@ -43,7 +44,7 @@ public class Movement : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
 
-
+        childMon.transform.rotation = Quaternion.Euler(0.0f, 0.0f, gameObject.transform.rotation.z * -1.0f);
 
         // gå från walking till idle
         if (x == 0)
