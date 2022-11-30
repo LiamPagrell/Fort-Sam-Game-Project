@@ -23,7 +23,6 @@ public class PickupBehaviour : MonoBehaviour
         checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
     }
 
-
     private void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0) && checkDistance < pickUpDistance && CompareTag("Interactable"))
