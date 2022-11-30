@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PickupBehaviour : MonoBehaviour
 {
-
+    //[SerializeField] List<GameObject> pickItems = new List<GameObject>();
     Movement player;
 
     float checkDistance;
     float pickUpDistance = 3.4f;
+    bool isInteractable;
 
     void Start()
     {
@@ -25,8 +26,15 @@ public class PickupBehaviour : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) && checkDistance < pickUpDistance)
+        if (Input.GetMouseButtonDown(0) && checkDistance < pickUpDistance && CompareTag("Interactable"))
         {
+            Debug.Log("Mouse click!");
+            Destroy(gameObject);
+        }
+
+        else if (Input.GetMouseButtonDown(0) && checkDistance < pickUpDistance && CompareTag("Pillow") && !isInteractable)
+        {
+            isInteractable = true;
             Debug.Log("Mouse click!");
             Destroy(gameObject);
         }
