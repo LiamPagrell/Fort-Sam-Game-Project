@@ -16,15 +16,20 @@ public class Player : MonoBehaviour
         //ItemWorld.SpawnItemWorld(new Vector3(0,-20),new Item{itemType = Item.ItemType.Skruvmejsel, amount = 1 });
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerStay2D(Collider2D collider)
     {
         ItemWorld itemWorld = collider.GetComponent<ItemWorld>();       
-        if ( itemWorld!= null)
+        if (Input.GetMouseButtonDown(0))
         {
-            //touching item
-            inventory.AddItem(itemWorld.GetItem());
-            uiInventory.RefreshInventoryItems();
-            itemWorld.DestroySelf();
+            Debug.Log(this.gameObject.name + "clicked");
+            if (itemWorld != null)
+            {
+                //touching item
+                inventory.AddItem(itemWorld.GetItem());
+                uiInventory.RefreshInventoryItems();
+                itemWorld.DestroySelf();
+            }
         }
+        
     }
 }

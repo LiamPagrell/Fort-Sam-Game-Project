@@ -19,4 +19,5 @@ public class ItemAssets : MonoBehaviour
     public Sprite skruvmejsel;
     public Sprite remote;
     public Sprite ball;
+    public Sprite bedcovernpillow;
 }
