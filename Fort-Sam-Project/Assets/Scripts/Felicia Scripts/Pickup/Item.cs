@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public enum ItemType
 {
-    public enum ItemType
-    {
-        Skruvmejsel,
-        Remote,
-        Ball,
-    }
+    Skruvmejsel,
+    Remote,
+    Ball,
+}
+
+public class Item
+{
     public ItemType itemType;
     public int amount;
 
