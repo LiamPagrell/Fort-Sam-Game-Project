@@ -8,6 +8,7 @@ public enum ItemType
     Remote,
     Ball,
     BedcovernPillow,
+    Book,
 }
 
 public class Item
@@ -24,6 +25,7 @@ public class Item
             case ItemType.Remote:           return ItemAssets.Instance.remote;
             case ItemType.Ball:             return ItemAssets.Instance.ball;
             case ItemType.BedcovernPillow:  return ItemAssets.Instance.bedcovernpillow;
+            case ItemType.Book:             return ItemAssets.Instance.book;
         }
     }
    
