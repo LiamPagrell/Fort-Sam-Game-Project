@@ -11,8 +11,8 @@ public class Inventory
     {
         itemList = new List<Item>();
 
-        AddItem(new Item { itemType = ItemType.Skruvmejsel, amount = 1 });
-        AddItem(new Item { itemType = ItemType.Remote, amount = 1 });
+        //AddItem(new Item { itemType = ItemType.Skruvmejsel, amount = 1 });
+        //AddItem(new Item { itemType = ItemType.Remote, amount = 1 });
         //AddItem(new Item { itemType = Item.ItemType.Ball, amount = 1 });
     }
 
