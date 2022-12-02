@@ -340,7 +340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120650300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.52, y: -0.69, z: -0.1079}
+  m_LocalPosition: {x: -8.86, y: -0.82, z: -0.1079}
   m_LocalScale: {x: 0.7737, y: 0.7737, z: 0.7737}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -682,6 +682,8 @@ GameObject:
   - component: {fileID: 348090585}
   - component: {fileID: 348090584}
   - component: {fileID: 348090586}
+  - component: {fileID: 348090587}
+  - component: {fileID: 348090588}
   m_Layer: 0
   m_Name: Ball_Placeholder
   m_TagString: Untagged
@@ -696,14 +698,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348090582}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.8524, y: -3.0568, z: -0.1079}
+  m_LocalRotation: {x: -0, y: -0.0065510175, z: -0, w: 0.99997854}
+  m_LocalPosition: {x: -7.93, y: -3.41, z: -0.1079}
   m_LocalScale: {x: 0.5133843, y: 0.5133843, z: 0.5133843}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 460808729}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.751, z: 0}
 --- !u!58 &348090584
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -785,6 +787,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 2
+--- !u!95 &348090587
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348090582}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ddca036bf3ec694a9129731cefb8f09, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &348090588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348090582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 348090587}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Throw
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &460808728
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +973,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 7579bd5c68e5eca43a8db2225e128783, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.509434, g: 0.22299749, b: 0.22299749, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1402,6 +1453,8 @@ MonoBehaviour:
   skruvmejsel: {fileID: 21300000, guid: c1aedd18126afb348a7117f21ced7e6b, type: 3}
   remote: {fileID: 21300000, guid: d7ae6923605d7cf40b818b3cc4fafc9d, type: 3}
   ball: {fileID: 21300000, guid: 0cd7c0e2e36735044ab6454bdf35f933, type: 3}
+  bedcoverandpillow: {fileID: 0}
+  book: {fileID: 0}
 --- !u!4 &965161072
 Transform:
   m_ObjectHideFlags: 0
