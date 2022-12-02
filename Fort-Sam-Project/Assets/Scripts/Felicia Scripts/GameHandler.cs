@@ -26,5 +26,6 @@ public class GameHandler : MonoBehaviour
     {
         SceneManager.LoadScene("Quit");
         Application.Quit();
+        Debug.Log("You quit");
     }
 }
