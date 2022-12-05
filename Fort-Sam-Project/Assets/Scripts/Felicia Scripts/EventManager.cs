@@ -11,9 +11,7 @@ public class EventManager : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            //if(ExampleEvent!=null)
-            //    ExampleEvent();
-            ExampleEvent?.Invoke();
+            GameObject.Find("Ball_Placeholder").GetComponent<Animator>().SetTrigger("PickingUp");
         }
     }
 }
