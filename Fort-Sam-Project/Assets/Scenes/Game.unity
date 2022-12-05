@@ -1743,6 +1743,7 @@ GameObject:
   - component: {fileID: 1011236158}
   - component: {fileID: 1011236160}
   - component: {fileID: 1011236161}
+  - component: {fileID: 1011236162}
   m_Layer: 0
   m_Name: HelicopterRemote_Placeholder
   m_TagString: Untagged
@@ -1885,6 +1886,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 1
+--- !u!114 &1011236162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011236156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6531dce541696494c9812646e093b37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1094492578
 GameObject:
   m_ObjectHideFlags: 0
