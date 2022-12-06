@@ -31,7 +31,7 @@ public class TestPickup : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Mouse click!");
+            Debug.Log(this.gameObject.name + "clicked");
         }
     }
 }

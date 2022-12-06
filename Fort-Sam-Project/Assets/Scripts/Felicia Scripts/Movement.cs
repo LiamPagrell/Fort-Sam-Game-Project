@@ -8,10 +8,14 @@ using UnityEngine.UIElements;
 public class Movement : MonoBehaviour
 {
     public Animator anim;
+    public Transform childMon;
+    
     //Player Movement Speed
     public float speed;
-    //how high we can jump
-    public float jumpPower = 10;
+
+    
+   
+    
 
 
     //Our Rigidbody2D reference
@@ -19,7 +23,7 @@ public class Movement : MonoBehaviour
     //Current movement
     Vector2 movement = new Vector2();
     //If we are on the ground
-    bool grounded;
+    //bool grounded;
     SpriteRenderer spriteRend;
     // Start is called before the first frame update
     void Start()
@@ -28,7 +32,9 @@ public class Movement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         spriteRend = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+       
     }
+   
 
 
     // Update is called once per frame
@@ -38,7 +44,7 @@ public class Movement : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
 
-
+        childMon.transform.rotation = Quaternion.Euler(0.0f, 0.0f, gameObject.transform.rotation.z * -1.0f);
 
         // gå från walking till idle
         if (x == 0)
@@ -66,16 +72,16 @@ public class Movement : MonoBehaviour
         movement.x = x * speed;
 
 
-        //If we press jump while grounded, then Jump
-        if (Input.GetButtonDown("Jump") && grounded)
-        {
-            //velocity jump
-            //rb2d.velocity = new Vector2(rb2d.velocity.x, jumpPower);
+        ////If we press jump while grounded, then Jump
+        //if (Input.GetButtonDown("Jump") && grounded)
+        //{
+        //    //velocity jump
+        //    //rb2d.velocity = new Vector2(rb2d.velocity.x, jumpPower);
 
-            //impulse jump (same result)
-            rb2d.velocity = new Vector2(rb2d.velocity.x, 0); //Reset our y speed before the jump
-            rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
-        }
+        //    //impulse jump (same result)
+        //    rb2d.velocity = new Vector2(rb2d.velocity.x, 0); //Reset our y speed before the jump
+        //    rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+        //}
 
         //Use our old y velocity, if movement.y = 0, then we mess with gravity
         movement.y = rb2d.velocity.y;
@@ -86,13 +92,13 @@ public class Movement : MonoBehaviour
 
     //This is not the best way of controlling if we are grounded.
     //We will look at better solutions at a later date.
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        grounded = true;
-    }
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    grounded = true;
+    //}
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        grounded = false;
-    }
+    //void OnTriggerExit2D(Collider2D other)
+    //{
+    //    grounded = false;
+    //}
 }

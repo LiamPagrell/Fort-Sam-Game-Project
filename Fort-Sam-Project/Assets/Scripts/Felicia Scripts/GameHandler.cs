@@ -14,18 +14,18 @@ public class GameHandler : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-    public void ChangetoGameOver()
-    {
-        SceneManager.LoadScene("GameOver");
-    }
-
     public void ChangetoCredits()
     {
         SceneManager.LoadScene("Credits");
+    }
+    public void ChangetoControlls()
+    {
+        SceneManager.LoadScene("Controlls");
     }
     public void ChangetoQuit()
     {
         SceneManager.LoadScene("Quit");
         Application.Quit();
+        Debug.Log("You quit");
     }
 }
