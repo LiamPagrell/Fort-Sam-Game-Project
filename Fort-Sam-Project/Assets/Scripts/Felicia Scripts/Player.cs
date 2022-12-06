@@ -16,9 +16,9 @@ public class Player : MonoBehaviour
         //ItemWorld.SpawnItemWorld(new Vector3(0,-20),new Item{itemType = Item.ItemType.Skruvmejsel, amount = 1 });
     }
 
-    private void OnTriggerStay2D(Collider2D collider)
+    private void OnMouseOver()
     {
-        ItemWorld itemWorld = collider.GetComponent<ItemWorld>();       
+        ItemWorld itemWorld = GetComponent<ItemWorld>();       
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log(this.gameObject.name + "clicked");

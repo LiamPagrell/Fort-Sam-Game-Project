@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum ItemType
 {
@@ -26,11 +29,6 @@ public class Item
             case ItemType.Ball:              return ItemAssets.Instance.ball;
             case ItemType.BedCoverAndPillow: return ItemAssets.Instance.bedcoverandpillow;
             case ItemType.Book:              return ItemAssets.Instance.book;
-
-
-
-
         }
     }
-   
 }
