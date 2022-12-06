@@ -27,7 +27,13 @@ public class ItemWorld : MonoBehaviour
 
     public void DestroySelf() 
     {
-        Destroy(gameObject);
+        StartCoroutine(Die());
+
+        IEnumerator Die()
+        {
+            yield return new WaitForSeconds(0.3f);
+            Destroy(gameObject);
+        }
     }
 
 }
