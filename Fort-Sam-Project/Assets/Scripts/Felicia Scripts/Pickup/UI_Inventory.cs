@@ -29,6 +29,8 @@ public class UI_Inventory : MonoBehaviour
         foreach (Transform child in itemSlotContainer.transform)
         {
             GameObject.Destroy(child.gameObject);
+            Debug.Log("förstört barn");
+
         }
 
         foreach (Item item in inventory.GetItemList())

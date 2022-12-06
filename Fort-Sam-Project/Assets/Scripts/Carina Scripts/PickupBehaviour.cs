@@ -65,6 +65,7 @@ public class PickupBehaviour : MonoBehaviour
         switch (itemType)
         {
             case ItemType.Ball: Ball(); break;
+            case ItemType.Remote:Remote(); break;
             default:
                 break;
 
@@ -77,7 +78,13 @@ public class PickupBehaviour : MonoBehaviour
 
     private void Ball()
     {
-        Debug.Log("hejsan");
-        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUp");
+       
+        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
+    }
+
+    private void Remote()
+    {
+       
+        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpHigh");
     }
 }
