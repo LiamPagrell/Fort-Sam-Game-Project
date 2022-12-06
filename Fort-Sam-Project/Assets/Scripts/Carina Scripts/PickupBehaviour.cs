@@ -38,6 +38,7 @@ public class PickupBehaviour : MonoBehaviour
             ItemWorld itemWorld = GetComponent<ItemWorld>();
             if (Input.GetMouseButtonDown(0))
             {
+                ClickOnThings(itemWorld.itemType);
                 Debug.Log(this.gameObject.name + "clicked");
                 if (itemWorld != null)
                 {
@@ -55,5 +56,28 @@ public class PickupBehaviour : MonoBehaviour
         //    Debug.Log("Mouse click!");
         //    Destroy(gameObject);
         //}
+    }
+
+    private void ClickOnThings(ItemType itemType)
+    {
+        Debug.Log(itemType);
+
+        switch (itemType)
+        {
+            case ItemType.Ball: Ball(); break;
+            default:
+                break;
+
+                //case ItemType.Remote: return ItemAssets.Instance.remote;
+                //case ItemType.Ball: return ItemAssets.Instance.ball;
+                //case ItemType.BedCoverAndPillow: return ItemAssets.Instance.bedcoverandpillow;
+                //case ItemType.Book: return ItemAssets.Instance.book;
+        }
+    }
+
+    private void Ball()
+    {
+        Debug.Log("hejsan");
+        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUp");
     }
 }
