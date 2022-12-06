@@ -39,7 +39,7 @@ public class PickupBehaviour : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 ClickOnThings(itemWorld.itemType);
-                Debug.Log(this.gameObject.name + "clicked");
+                Debug.Log(this.gameObject.name + " clicked");
                 if (itemWorld != null)
                 {
                     //touching item
