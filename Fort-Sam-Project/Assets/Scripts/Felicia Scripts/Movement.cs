@@ -11,10 +11,9 @@ public class Movement : MonoBehaviour
     
     //Player Movement Speed
     public float speed;
-
+    [SerializeField] float ySpeed = 1.5f;
     
-   
-    
+    private float playerHeight;
 
 
     //Our Rigidbody2D reference
@@ -31,7 +30,9 @@ public class Movement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         spriteRend = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-       
+
+        playerHeight = GetComponent<SpriteRenderer>().bounds.size.y / 2;
+
     }
    
 
@@ -42,6 +43,7 @@ public class Movement : MonoBehaviour
     {  //get input from player
 
         float x = Input.GetAxis("Horizontal");
+        float y = Input.GetAxis("Vertical");
 
 
         // gå från walking till idle
@@ -51,6 +53,11 @@ public class Movement : MonoBehaviour
 
         }
         else
+        {
+            anim.SetBool("moving", true);
+        }
+
+        if (y > 0 || y < 0) // walking animation when y walking
         {
             anim.SetBool("moving", true);
         }
@@ -68,6 +75,7 @@ public class Movement : MonoBehaviour
 
         //Only update x direction
         movement.x = x * speed;
+        movement.y = y * ySpeed;
 
 
         ////If we press jump while grounded, then Jump
@@ -82,10 +90,24 @@ public class Movement : MonoBehaviour
         //}
 
         //Use our old y velocity, if movement.y = 0, then we mess with gravity
-        movement.y = rb2d.velocity.y;
+        //movement.y = rb2d.velocity.y;
 
         //Update our movement
         rb2d.velocity = movement;
+
+        ClampPlayerMovement();
+    }
+
+    private void ClampPlayerMovement()
+    {
+        Vector3 position = transform.position;
+        float distance = transform.position.z - Camera.main.transform.position.z;
+
+        float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).y + playerHeight;
+        float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distance)).y - playerHeight;
+
+        position.y = Mathf.Clamp(position.y, leftBorder, rightBorder);
+        transform.position = position;
     }
 
     //This is not the best way of controlling if we are grounded.
