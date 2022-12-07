@@ -38,7 +38,8 @@ public class PickupBehaviour : MonoBehaviour
             ItemWorld itemWorld = GetComponent<ItemWorld>();
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log(this.gameObject.name + "clicked");
+                ClickOnThings(itemWorld.itemType);
+                Debug.Log(this.gameObject.name + " clicked");
                 if (itemWorld != null)
                 {
                     //touching item
@@ -55,5 +56,41 @@ public class PickupBehaviour : MonoBehaviour
         //    Debug.Log("Mouse click!");
         //    Destroy(gameObject);
         //}
+    }
+
+    private void ClickOnThings(ItemType itemType)
+    {
+        Debug.Log(itemType);
+
+        switch (itemType)
+        {
+            case ItemType.Ball: Ball(); break;
+            case ItemType.Remote:Remote(); break;
+            case ItemType.Skruvmejsel: Skruvmejsel(); break;
+            default:
+                break;
+
+                //case ItemType.Remote: return ItemAssets.Instance.remote;
+                //case ItemType.Ball: return ItemAssets.Instance.ball;
+                //case ItemType.BedCoverAndPillow: return ItemAssets.Instance.bedcoverandpillow;
+                //case ItemType.Book: return ItemAssets.Instance.book;
+        }
+    }
+
+    private void Ball()
+    {
+       
+        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
+    }
+
+    private void Remote()
+    {
+       
+        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpHigh");
+    }
+    private void Skruvmejsel()
+    {
+
+        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
     }
 }

@@ -18,7 +18,7 @@ public class ItemWorld : MonoBehaviour
     public void SetItem(Item item)
     {
         this.item = item;
-        spriteRenderer.sprite = item.GetSprite();
+        spriteRenderer.sprite = item.GetSprite(); ///Prata med robert om detta då jag antar att det kan vara anledningen till att världs-sprites byts ut mot list sprites i manager
     }
     public Item GetItem()
     {
@@ -27,7 +27,13 @@ public class ItemWorld : MonoBehaviour
 
     public void DestroySelf() 
     {
-        Destroy(gameObject);
+        StartCoroutine(Die());
+
+        IEnumerator Die()
+        {
+            yield return new WaitForSeconds(0.3f);
+            Destroy(gameObject);
+        }
     }
 
 }
