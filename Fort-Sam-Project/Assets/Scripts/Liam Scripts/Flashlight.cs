@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public class Flashlight : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +14,5 @@ public class Interactable : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public virtual void Interact()
-    {
-        Debug.Log("Interacting with " + name);
     }
 }
