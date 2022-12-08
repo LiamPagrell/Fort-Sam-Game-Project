@@ -70,7 +70,7 @@ public class PickupBehaviour : MonoBehaviour
 
         switch (itemType)
         {
-            case ItemType.Ball: Ball(); break;
+            //case ItemType.Ball: Ball(); break;
             case ItemType.Remote:Remote(); break;
             //case ItemType.Skruvmejsel: Skruvmejsel(); break;
             case ItemType.BedCoverAndPillow: BedCoverAndPillow(); break;
