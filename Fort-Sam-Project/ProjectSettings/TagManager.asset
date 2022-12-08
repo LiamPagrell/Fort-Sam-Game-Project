@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interactable
+  - Object
   layers:
   - Default
   - TransparentFX
@@ -47,6 +48,9 @@ TagManager:
     locked: 0
   - name: ShiningObject
     uniqueID: 3612137643
+    locked: 0
+  - name: ShiningObjectOverlap
+    uniqueID: 1272463545
     locked: 0
   - name: Sam
     uniqueID: 1677588025
