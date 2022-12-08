@@ -16,7 +16,7 @@ public class ItemAssets : MonoBehaviour
 
     public Transform pfItemWorld;
 
-    public Sprite skruvmejsel;
+    //public Sprite skruvmejsel;
     public Sprite remote;
     public Sprite ball;
     public Sprite bedcoverandpillow;

@@ -27,7 +27,7 @@ public class CodeLock : MonoBehaviour
     public int GetRealNumber(int counter)
     {
         return (counter % 9) + 1;
-        textOnject1.text = counter.ToString();
+        //textOnject1.text = counter.ToString();
 
     }
 
