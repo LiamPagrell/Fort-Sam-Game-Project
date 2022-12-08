@@ -67,6 +67,7 @@ public class PickupBehaviour : MonoBehaviour
             case ItemType.Ball: Ball(); break;
             case ItemType.Remote:Remote(); break;
             case ItemType.Skruvmejsel: Skruvmejsel(); break;
+            case ItemType.BedCoverAndPillow: BedCoverAndPillow(); break;
             default:
                 break;
 
@@ -89,6 +90,11 @@ public class PickupBehaviour : MonoBehaviour
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpHigh");
     }
     private void Skruvmejsel()
+    {
+
+        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
+    }
+    private void BedCoverAndPillow()
     {
 
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
