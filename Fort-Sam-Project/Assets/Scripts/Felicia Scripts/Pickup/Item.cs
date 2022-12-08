@@ -24,7 +24,7 @@ public class Item
         switch (itemType)
         {
             default:
-            case ItemType.Skruvmejsel:       return ItemAssets.Instance.skruvmejsel;
+            //case ItemType.Skruvmejsel:       return ItemAssets.Instance.skruvmejsel;
             case ItemType.Remote:            return ItemAssets.Instance.remote;
             case ItemType.Ball:              return ItemAssets.Instance.ball;
             case ItemType.BedCoverAndPillow: return ItemAssets.Instance.bedcoverandpillow;
