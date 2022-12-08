@@ -28,6 +28,12 @@ public class PickupBehaviour : MonoBehaviour
         }
     }
 
+    public void ResetInventory()
+    {
+        inventory = null;
+        uiInventory = null;
+    }
+
     private void OnMouseDown()
     {
         checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
