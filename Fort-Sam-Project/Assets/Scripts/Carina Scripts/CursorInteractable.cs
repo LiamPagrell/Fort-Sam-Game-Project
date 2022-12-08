@@ -20,6 +20,11 @@ public class CursorInteractable : MonoBehaviour
         {
             Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         }
+
+        if (CompareTag("Object"))
+        {
+            Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+        }
     }
 
     public void OnMouseExit()
