@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UI_Inventory : MonoBehaviour
 {
-    public GameObject cat;
+    //public GameObject cat;
     public GameObject rat;
     private Inventory inventory;
     private RectTransform itemSlotContainer;
@@ -83,7 +83,7 @@ public class UI_Inventory : MonoBehaviour
         GameObject.Find("Helicopter_placeholder").GetComponent<Animator>().SetTrigger("Fly");
         GameObject.Find("Robot_Eyes").GetComponent<Animator>().SetTrigger("Robo");
         GameObject.Find("Robot").GetComponent<Animator>().SetTrigger("TheWobble");
-        cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
+        //cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
         Debug.Log("Poopyman");
     }
