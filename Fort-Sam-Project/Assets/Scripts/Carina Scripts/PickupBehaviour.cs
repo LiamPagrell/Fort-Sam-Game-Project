@@ -5,6 +5,8 @@ using UnityEngine;
 public class PickupBehaviour : MonoBehaviour
 {
     //[SerializeField] List<GameObject> pickItems = new List<GameObject>();
+    public GameObject roboteyes;
+    //public GameObject cat;
     Movement player;
     private static Inventory inventory;
     private static UI_Inventory uiInventory;
@@ -85,15 +87,15 @@ public class PickupBehaviour : MonoBehaviour
         }
     }
 
-    private void Ball()
-    {
+    //private void Ball()
+    //{
        
-        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
-    }
+    //    player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
+    //}
     private void Remote()
-    {
-       
+    {    
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpHigh");
+        //cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
     }
     //private void Skruvmejsel()
     //{
@@ -102,12 +104,11 @@ public class PickupBehaviour : MonoBehaviour
     //}
     private void BedCoverAndPillow()
     {
-
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
+        roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
     }
     private void Book()
     {
-
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
     }
 }
