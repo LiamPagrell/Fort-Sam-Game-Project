@@ -526,6 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c81540c29a8dd74dafbb3f70913df15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roboteyes: {fileID: 0}
 --- !u!1 &120650300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,6 +1251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c81540c29a8dd74dafbb3f70913df15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roboteyes: {fileID: 0}
 --- !u!1 &460808728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2216,9 +2218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pfItemWorld: {fileID: 1331576124}
-  skruvmejsel: {fileID: 21300000, guid: c1aedd18126afb348a7117f21ced7e6b, type: 3}
   remote: {fileID: 21300000, guid: d7ae6923605d7cf40b818b3cc4fafc9d, type: 3}
-  ball: {fileID: 21300000, guid: 0cd7c0e2e36735044ab6454bdf35f933, type: 3}
   bedcoverandpillow: {fileID: 0}
   book: {fileID: 0}
 --- !u!4 &965161072
@@ -2567,6 +2567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c81540c29a8dd74dafbb3f70913df15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roboteyes: {fileID: 0}
 --- !u!114 &1011236164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9120,3 +9121,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f284bcc6b596b4caa9660de987086c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cat: {fileID: 0}
