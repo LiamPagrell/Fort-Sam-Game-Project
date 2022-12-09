@@ -8,7 +8,7 @@ using Unity.VisualScripting;
 public class EventManager : MonoBehaviour, IPointerClickHandler
 {
     
-    public static event Action Event;
+    //public static event Action Event;
 
     private void Update()
     {

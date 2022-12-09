@@ -89,7 +89,7 @@ public class UI_Inventory : MonoBehaviour
         GameObject.Find("Cat").GetComponent<Animator>().SetTrigger("CatConActive");
         GameObject.Find("BigWhiskers").GetComponent<Animator>().SetTrigger("NeedConRat");
         GameObject.Find("Robot").GetComponent<Animator>().SetTrigger("TheWobble");
-        Debug.Log("Poopyman");
+        //Debug.Log("Poopyman");
     }
 
     //private void RefreshInventoryItemsSAMUEL()

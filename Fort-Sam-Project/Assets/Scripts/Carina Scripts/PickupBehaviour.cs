@@ -111,15 +111,19 @@ public class PickupBehaviour : MonoBehaviour
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
 
         StartCoroutine(wait());
-        IEnumerator wait()
-        {
-            yield return new WaitForSeconds(1f);
-            roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
-        }
+        
 
     }
     private void Book()
     {
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
+    }
+    IEnumerator wait()
+    {
+        Debug.Log("Poopy1");
+        yield return new WaitForSeconds(1f);
+        Debug.Log("Poopy2");
+        roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
+        Debug.Log("Poopy3");
     }
 }
