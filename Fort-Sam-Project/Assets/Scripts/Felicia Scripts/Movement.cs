@@ -23,6 +23,10 @@ public class Movement : MonoBehaviour
     //If we are on the ground
     //bool grounded;
     SpriteRenderer spriteRend;
+
+    float scale = 1;
+    Vector3 startScale;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +36,8 @@ public class Movement : MonoBehaviour
         anim = GetComponent<Animator>();
 
         playerHeight = GetComponent<SpriteRenderer>().bounds.size.y / 2;
+
+        startScale = transform.localScale;
 
     }
    
@@ -77,6 +83,13 @@ public class Movement : MonoBehaviour
         movement.x = x * speed;
         movement.y = y * ySpeed;
 
+        
+        scale -= y * Time.deltaTime * 0.25f;
+
+        scale = Mathf.Clamp(scale, 0.85f, 1.1f);
+
+        transform.localScale = startScale * scale;
+
 
         ////If we press jump while grounded, then Jump
         //if (Input.GetButtonDown("Jump") && grounded)
@@ -105,8 +118,11 @@ public class Movement : MonoBehaviour
 
         float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).y + playerHeight;
         float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distance)).y - playerHeight;
+        float lBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).x + playerHeight/2;
+        float rBorder = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distance)).x - playerHeight/2;
 
         position.y = Mathf.Clamp(position.y, leftBorder, rightBorder);
+        position.x = Mathf.Clamp(position.x, lBorder, rBorder);
         transform.position = position;
     }
 
