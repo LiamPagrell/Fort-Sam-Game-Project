@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class UI_Inventory : MonoBehaviour
 {
+    public GameObject cat;
     private Inventory inventory;
     private RectTransform itemSlotContainer;
     private Transform itemSloTemplate;
@@ -80,6 +81,8 @@ public class UI_Inventory : MonoBehaviour
         Destroy(itemSlotRectTransform.gameObject);
         GameObject.Find("Helicopter_placeholder").GetComponent<Animator>().SetTrigger("Fly");
         GameObject.Find("Robot_Eyes").GetComponent<Animator>().SetTrigger("Robo");
+        GameObject.Find("Robot").GetComponent<Animator>().SetTrigger("TheWobble");
+        cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
         Debug.Log("Poopyman");
     }
 

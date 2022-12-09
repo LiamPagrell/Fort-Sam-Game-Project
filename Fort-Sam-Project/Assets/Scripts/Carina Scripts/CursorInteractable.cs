@@ -7,11 +7,11 @@ public class CursorInteractable : MonoBehaviour
 
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
-    public Vector2 hotSpot;
+    public Vector2 hotSpot = new Vector2(0, -1);
 
     private void Start()
     {
-        hotSpot = new Vector2(cursorTexture.width / 2, cursorTexture.height / 2);
+        //hotSpot = new Vector2(cursorTexture.width / 2, cursorTexture.height / 2);
     }
 
     public void OnMouseOver()
