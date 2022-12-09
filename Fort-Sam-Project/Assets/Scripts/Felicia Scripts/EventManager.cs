@@ -29,7 +29,7 @@ public class EventManager : MonoBehaviour, IPointerClickHandler
 
         switch (itemType)
         {
-            case ItemType.Ball: Ball(clickedObject); break;
+            //case ItemType.Ball: Ball(clickedObject); break;
             default:
                 break;
 

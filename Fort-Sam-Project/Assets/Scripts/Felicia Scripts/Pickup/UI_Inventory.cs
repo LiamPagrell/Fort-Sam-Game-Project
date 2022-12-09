@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class UI_Inventory : MonoBehaviour
 {
+    public GameObject cat;
     private Inventory inventory;
     private RectTransform itemSlotContainer;
     private Transform itemSloTemplate;
@@ -30,7 +31,6 @@ public class UI_Inventory : MonoBehaviour
         {
             GameObject.Destroy(child.gameObject);
             Debug.Log("förstört barn");
-
         }
 
         foreach (Item item in inventory.GetItemList())
@@ -50,8 +50,8 @@ public class UI_Inventory : MonoBehaviour
     {
         switch (item.itemType)
         {
-            case ItemType.Skruvmejsel: Screwdriver(itemSlotRectTransform); break;
-            case ItemType.Ball: Ball(itemSlotRectTransform); break;
+            //case ItemType.Skruvmejsel: Screwdriver(itemSlotRectTransform); break;
+            //case ItemType.Ball: Ball(itemSlotRectTransform); break;
             case ItemType.Remote: Remote(itemSlotRectTransform); break;
             default:
                 break;
@@ -63,23 +63,27 @@ public class UI_Inventory : MonoBehaviour
         }
     }
 
-    private void Screwdriver(RectTransform itemSlotRectTransform)
-    {
-        Debug.Log("klickat på mejsel UI");
-        Destroy(itemSlotRectTransform.gameObject);
-    }
+    //private void Screwdriver(RectTransform itemSlotRectTransform)
+    //{
+    //    Debug.Log("klickat på mejsel UI");
+    //    Destroy(itemSlotRectTransform.gameObject);
+    //}
 
-    private void Ball(RectTransform itemSlotRectTransform)
-    {
-        Debug.Log("klickat på boll UI");
-        Destroy(itemSlotRectTransform.gameObject);
-    }
+    //private void Ball(RectTransform itemSlotRectTransform)
+    //{
+    //    Debug.Log("klickat på boll UI");
+    //    Destroy(itemSlotRectTransform.gameObject);
+    //}
 
     private void Remote(RectTransform itemSlotRectTransform)
     {
         Debug.Log("funkar detta?");
         Destroy(itemSlotRectTransform.gameObject);
         GameObject.Find("Helicopter_placeholder").GetComponent<Animator>().SetTrigger("Fly");
+        GameObject.Find("Robot_Eyes").GetComponent<Animator>().SetTrigger("Robo");
+        GameObject.Find("Robot").GetComponent<Animator>().SetTrigger("TheWobble");
+        cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
+        Debug.Log("Poopyman");
     }
 
     //private void RefreshInventoryItemsSAMUEL()
