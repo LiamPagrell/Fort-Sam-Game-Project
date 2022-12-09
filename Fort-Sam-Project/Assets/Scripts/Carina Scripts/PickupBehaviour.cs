@@ -107,9 +107,16 @@ public class PickupBehaviour : MonoBehaviour
     private void BedCoverAndPillow()
     {
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
-        roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
         cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
+
+        StartCoroutine(wait());
+        IEnumerator wait()
+        {
+            yield return new WaitForSeconds(1f);
+            roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
+        }
+
     }
     private void Book()
     {

@@ -76,10 +76,18 @@ public class UI_Inventory : MonoBehaviour
 
     private void Remote(RectTransform itemSlotRectTransform)
     {
+        StartCoroutine(wait());
+
         Debug.Log("funkar detta?");
         Destroy(itemSlotRectTransform.gameObject);
         GameObject.Find("Helicopter_placeholder").GetComponent<Animator>().SetTrigger("Fly");
-        GameObject.Find("Robot_Eyes").GetComponent<Animator>().SetTrigger("Robo");
+        IEnumerator wait()
+        {
+            yield return new WaitForSeconds(3f);
+            GameObject.Find("Robot_Eyes").GetComponent<Animator>().SetTrigger("Robo");
+        }
+        GameObject.Find("Cat").GetComponent<Animator>().SetTrigger("CatConActive");
+        GameObject.Find("BigWhiskers").GetComponent<Animator>().SetTrigger("NeedConRat");
         GameObject.Find("Robot").GetComponent<Animator>().SetTrigger("TheWobble");
         Debug.Log("Poopyman");
     }
