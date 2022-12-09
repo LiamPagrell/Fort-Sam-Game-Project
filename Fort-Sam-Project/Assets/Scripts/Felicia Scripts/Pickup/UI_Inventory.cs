@@ -83,6 +83,7 @@ public class UI_Inventory : MonoBehaviour
         GameObject.Find("Robot_Eyes").GetComponent<Animator>().SetTrigger("Robo");
         GameObject.Find("Robot").GetComponent<Animator>().SetTrigger("TheWobble");
         cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
+        //rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
         Debug.Log("Poopyman");
     }
 
