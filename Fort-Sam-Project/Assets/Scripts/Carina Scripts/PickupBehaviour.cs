@@ -8,6 +8,7 @@ public class PickupBehaviour : MonoBehaviour
     public GameObject roboteyes;
     public GameObject cat;
     public GameObject rat;
+    //[SerializeField] AudioSource clickSound;
     //public GameObject cat;
     Movement player;
     private static Inventory inventory;
@@ -70,6 +71,7 @@ public class PickupBehaviour : MonoBehaviour
 
     private void ClickOnThings(ItemType itemType)
     {
+        //SoundManager.Instance.PlayRatAudio(clickSound);
         Debug.Log(itemType);
 
         switch (itemType)
