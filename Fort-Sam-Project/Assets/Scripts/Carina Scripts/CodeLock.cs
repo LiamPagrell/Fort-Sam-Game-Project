@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class CodeLock : MonoBehaviour
 {
 
-    int code = 3118;
+    int code = 1518;
     string nr = null;
     int nrIndex = 0;
     string alpha;
@@ -73,7 +73,14 @@ public class CodeLock : MonoBehaviour
         if(number == code)
         {
             Debug.Log("Hackermans, im in!");
+            StartCoroutine(WinCLosePanel());
         }
+    }
+
+    IEnumerator WinCLosePanel()
+    {
+        yield return new WaitForSeconds(0.5f);
+        ChestActivate.FindObjectOfType<ChestActivate>().CloseLockWindow();
     }
 
     public void CodeFunction(string numbers)

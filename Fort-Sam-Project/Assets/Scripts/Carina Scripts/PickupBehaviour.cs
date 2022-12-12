@@ -6,6 +6,8 @@ public class PickupBehaviour : MonoBehaviour
 {
     //[SerializeField] List<GameObject> pickItems = new List<GameObject>();
     public GameObject roboteyes;
+    public GameObject cat;
+    public GameObject rat;
     //public GameObject cat;
     Movement player;
     private static Inventory inventory;
@@ -105,10 +107,23 @@ public class PickupBehaviour : MonoBehaviour
     private void BedCoverAndPillow()
     {
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
-        roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
+        cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
+        rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
+
+        StartCoroutine(wait());
+        
+
     }
     private void Book()
     {
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
+    }
+    IEnumerator wait()
+    {
+        Debug.Log("Poopy1");
+        yield return new WaitForSeconds(1f);
+        Debug.Log("Poopy2");
+        roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
+        Debug.Log("Poopy3");
     }
 }

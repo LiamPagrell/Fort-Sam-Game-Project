@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -105,7 +105,511 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: globe-final_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 443
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8742997d5a61f5649bb1aa346ebbbd12
+      internalID: -1978942010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 444
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a6054aca6f0e54e8343478533af7d1
+      internalID: 2099292619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_2
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 443
+        width: 109
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e38e67466c4ea43897b71bc4a6ca5a
+      internalID: 1947578133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_3
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 444
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f78282f329a04429d1eab11e538494
+      internalID: -1988218539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_4
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 444
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27010a64568d4fa4bbbdd3989f097667
+      internalID: -2072679935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_5
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 444
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5124acf53d61e48868dca4650c98fc
+      internalID: 46314343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 308
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e757021073a457d43addd6b8dda1975c
+      internalID: -412967685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 309
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cf5830d7f34ab46a1944fa460dfa08
+      internalID: 1381681859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_8
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 308
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6722f2e5b75ba3e4eb9c1dee1abfc962
+      internalID: 2113315538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_9
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 309
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986f62c355d656a4bab56a5b2164c9b2
+      internalID: -977010147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_10
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 309
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbbc8728c6118e4d910f0b24902c548
+      internalID: -1978271975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_11
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 309
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2175c672d383e5042be9619a12c5a51f
+      internalID: 1909884324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 176
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b486d443cdeda48b482b889920a28c
+      internalID: -508610421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_13
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 176
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892be53f99b13bd4295690d581e5d7c4
+      internalID: -1749730773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 176
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5354169daf0627c40b7fead4514aeeb3
+      internalID: -113207578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_15
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 176
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7d4f4eb21cece47858de2384a691dc
+      internalID: 1034596548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_16
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 176
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bc559533343d941a56bec11ee44983
+      internalID: -51793703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_17
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 176
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37948f8356e3b4c4583ae75d2f826fce
+      internalID: -24806223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_18
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 43
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a696ef0c707ad742b92393df3d44af2
+      internalID: -1584306125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_19
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 43
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8fbc5e1f8a2f3489aed66a42447ada
+      internalID: 1261648758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_20
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 43
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c63cfac4882694a90f482d5cf1ab12
+      internalID: -2024933532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_21
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 43
+        width: 112
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5052a0daff8390540a0d8335111a4c76
+      internalID: -1973793057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_22
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 43
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3be5ff2daa17e4b997b5a39c2095ba
+      internalID: 764596558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: globe-final_23
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 43
+        width: 111
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76de6f46ee0c6e4b9872c9ec66c74c9
+      internalID: 318376548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -116,7 +620,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      globe-final_2: -1978942010
+      globe-final_19: 2099292619
+      globe-final_21: 1947578133
+      globe-final_10: -1988218539
+      globe-final_7: -2072679935
+      globe-final_4: 46314343
+      globe-final_11: -412967685
+      globe-final_17: 1381681859
+      globe-final_9: 2113315538
+      globe-final_0: -977010147
+      globe-final_8: -1978271975
+      globe-final_15: 1909884324
+      globe-final_16: -508610421
+      globe-final_22: -1749730773
+      globe-final_20: -113207578
+      globe-final_23: 1034596548
+      globe-final_3: -51793703
+      globe-final_18: -24806223
+      globe-final_6: -1584306125
+      globe-final_5: 1261648758
+      globe-final_12: -2024933532
+      globe-final_14: -1973793057
+      globe-final_1: 764596558
+      globe-final_13: 318376548
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
