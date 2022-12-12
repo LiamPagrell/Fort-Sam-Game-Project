@@ -87,8 +87,15 @@ public class UI_Inventory : MonoBehaviour
             GameObject.Find("Robot_Eyes").GetComponent<Animator>().SetTrigger("Robo");
         }
         GameObject.Find("Cat").GetComponent<Animator>().SetTrigger("CatConActive");
+        Debug.Log("Pewp1");
         GameObject.Find("BigWhiskers").GetComponent<Animator>().SetTrigger("NeedConRat");
+        Debug.Log("Pewp2");
         GameObject.Find("Robot").GetComponent<Animator>().SetTrigger("TheWobble");
+        Debug.Log("Pewp3");
+        GameObject.Find("Cat").GetComponent<Animator>().SetTrigger("CatAnim");
+        Debug.Log("Pewp4");
+        GameObject.Find("BigWhiskers").GetComponent<Animator>().SetTrigger("RatAnim");
+        Debug.Log("Pewp5");
         //Debug.Log("Poopyman");
     }
 
