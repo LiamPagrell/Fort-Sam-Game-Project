@@ -109,7 +109,7 @@ public class PickupBehaviour : MonoBehaviour
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
         cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
-        roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
+        //roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatAnim");
         //rat.gameObject.GetComponent<Animator>().SetTrigger("RatAnim");
         //StartCoroutine(wait());
