@@ -109,21 +109,23 @@ public class PickupBehaviour : MonoBehaviour
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
         cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
+        roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
+        //cat.gameObject.GetComponent<Animator>().SetTrigger("CatAnim");
+        //rat.gameObject.GetComponent<Animator>().SetTrigger("RatAnim");
+        //StartCoroutine(wait());
 
-        StartCoroutine(wait());
-        
 
     }
     private void Book()
     {
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
     }
-    IEnumerator wait()
-    {
-        Debug.Log("Poopy1");
-        yield return new WaitForSeconds(1f);
-        Debug.Log("Poopy2");
-        roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
-        Debug.Log("Poopy3");
-    }
+    //IEnumerator wait()
+    //{
+    //    Debug.Log("Poopy1");
+    //    yield return new WaitForSeconds(1f);
+    //    Debug.Log("Poopy2");
+    //    roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
+    //    Debug.Log("Poopy3");
+    //}
 }
