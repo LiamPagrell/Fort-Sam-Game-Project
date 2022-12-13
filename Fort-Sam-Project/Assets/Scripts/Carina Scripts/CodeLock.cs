@@ -8,7 +8,10 @@ public class CodeLock : MonoBehaviour
 {
 
     int code = 1518;
-
+    string nr = null;
+    int nrIndex = 0;
+    string alpha;
+    public TextMeshProUGUI uiText = null;
     [SerializeField] TextMeshProUGUI textObject1;
     [SerializeField] TextMeshProUGUI textObject2;
     [SerializeField] TextMeshProUGUI textObject3;
@@ -77,7 +80,28 @@ public class CodeLock : MonoBehaviour
     IEnumerator WinCLosePanel()
     {
         yield return new WaitForSeconds(0.5f);
-        UnlockChest.FindObjectOfType<UnlockChest>().CloseLockWindow();
-        UnlockChest.FindObjectOfType<UnlockChest>().GetComponent<Animator>().Play("ChestOpen");
+        ChestActivate.FindObjectOfType<ChestActivate>().CloseLockWindow();
+    }
+
+    public void CodeFunction(string numbers)
+    {
+        nrIndex++;
+        nr = nr + numbers;
+        uiText.text = nr;
+    }
+
+    public void Enter()
+    {
+        //if (nr == code)
+        //{
+        //    // kommer ur scenen
+        //}
+    }
+
+    public void Delete() // Maybe not needed
+    {
+        nrIndex++;
+        nr = null;
+        uiText.text = nr;
     }
 }
