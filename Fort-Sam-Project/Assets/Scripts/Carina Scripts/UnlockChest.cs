@@ -9,6 +9,11 @@ public class UnlockChest : MonoBehaviour
 
     private void OnMouseDown()
     {
+        CloseLockWindow();
+    }
+
+    public void CloseLockWindow()
+    {
         if (lockPanel != null)
         {
             bool isActive = lockPanel.activeSelf;
