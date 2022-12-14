@@ -13,7 +13,6 @@ public class CollectableCounter : MonoBehaviour
     public void AddSocks()
     {
         CollectedSocks++;
-        Debug.Log("Collected a Sock, You now you have " + CollectedSocks + " Socks collected");
     }
 
     public void Update()
