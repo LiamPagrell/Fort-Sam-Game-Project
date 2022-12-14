@@ -7,59 +7,39 @@ using UnityEngine.SceneManagement;
 public class BackToMenu : MonoBehaviour
 {
     public GameObject lockPanel;
-    public GameObject calender;
-    public GameObject drawing;
-    public GameObject framedPhoto;
     // Start is called before the first frame update
+    void Start()
+    {
 
+        
+   
+
+    }
+
+     
     void Update()
     {
-          
+        
+       
+        
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (lockPanel.activeSelf)
                 {
-                    lockPanel.SetActive(!lockPanel.activeSelf);
+                    bool isActive = lockPanel.activeSelf;
+                    lockPanel.SetActive(!isActive);
                     StartCoroutine(Wait());
-                    return;
 
                 }
 
-                if (calender.activeSelf)
-                 {
-                calender.SetActive(!calender.activeSelf);
-                StartCoroutine(Wait());
-                    return;
+                else if (!lockPanel.activeSelf)
+                {
+                    SceneManager.LoadScene("Menu");
 
-                 }
-
-            if (drawing.activeSelf)
-            {
-                drawing.SetActive(!drawing.activeSelf);
-                StartCoroutine(Wait());
-                return;
-
+                }
             }
-            if (framedPhoto.activeSelf)
-            {
-                framedPhoto.SetActive(!framedPhoto.activeSelf);
-                StartCoroutine(Wait());
-                return;
 
-            }
-            SceneManager.LoadScene("Menu");
-
-               
-
-          
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-
-        }
-
-
+        
     }
 
     IEnumerator Wait()

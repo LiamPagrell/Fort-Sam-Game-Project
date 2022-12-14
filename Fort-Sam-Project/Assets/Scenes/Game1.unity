@@ -1661,7 +1661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f49c028cb8399c4bb4e4864a6a39120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockPanel: {fileID: 0}
 --- !u!1001 &540203157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9157,7 +9156,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 850647320973456625, guid: 9ee8ebd121af8624ab5f9075ea778592, type: 3}
       propertyPath: m_Name
-      value: Calender
+      value: lockPanel
       objectReference: {fileID: 0}
     - target: {fileID: 850647320973456636, guid: 9ee8ebd121af8624ab5f9075ea778592, type: 3}
       propertyPath: m_Pivot.x
