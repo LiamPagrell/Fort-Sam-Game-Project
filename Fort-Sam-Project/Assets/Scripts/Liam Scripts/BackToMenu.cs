@@ -45,9 +45,7 @@ public class BackToMenu : MonoBehaviour
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(3f);
-        Debug.Log("Poopy1");
-        
-        
+       
     }
 
 }
