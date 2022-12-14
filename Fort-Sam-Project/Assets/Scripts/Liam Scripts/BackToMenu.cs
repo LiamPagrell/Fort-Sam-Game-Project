@@ -10,40 +10,84 @@ public class BackToMenu : MonoBehaviour
     public GameObject calender;
     public GameObject drawing;
     public GameObject framedPhoto;
+    public GameObject wasd;
     // Start is called before the first frame update
 
     void Update()
     {
-          
-            if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            if (wasd.activeSelf)
+            {
+                //wasd.SetActive(!wasd.activeSelf);
+                StartCoroutine(Wait(wasd));
+                return;
+
+            }
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (wasd.activeSelf)
+            {
+                //wasd.SetActive(!wasd.activeSelf);
+                StartCoroutine(Wait(wasd));
+                return;
+
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            if (wasd.activeSelf)
+            {
+               // wasd.SetActive(!wasd.activeSelf);
+                StartCoroutine(Wait(wasd));
+                return;
+
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            if (wasd.activeSelf)
+            {
+                //wasd.SetActive(!wasd.activeSelf);
+                StartCoroutine(Wait(wasd));
+                return;
+
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (lockPanel.activeSelf)
                 {
-                    lockPanel.SetActive(!lockPanel.activeSelf);
-                    StartCoroutine(Wait());
+                    //lockPanel.SetActive(!lockPanel.activeSelf);
+                StartCoroutine(Wait(lockPanel));
                     return;
 
                 }
 
                 if (calender.activeSelf)
                  {
-                calender.SetActive(!calender.activeSelf);
-                StartCoroutine(Wait());
+               // calender.SetActive(!calender.activeSelf);
+                StartCoroutine(Wait(calender));
                     return;
 
                  }
 
             if (drawing.activeSelf)
             {
-                drawing.SetActive(!drawing.activeSelf);
-                StartCoroutine(Wait());
+               // drawing.SetActive(!drawing.activeSelf);
+                StartCoroutine(Wait(drawing));
                 return;
 
             }
             if (framedPhoto.activeSelf)
             {
-                framedPhoto.SetActive(!framedPhoto.activeSelf);
-                StartCoroutine(Wait());
+               // framedPhoto.SetActive(!framedPhoto.activeSelf);
+                StartCoroutine(Wait(framedPhoto));
                 return;
 
             }
@@ -62,10 +106,10 @@ public class BackToMenu : MonoBehaviour
 
     }
 
-    IEnumerator Wait()
+    IEnumerator Wait(GameObject objectToTurnOff)
     {
-        yield return new WaitForSeconds(3f);
-       
+        yield return new WaitForSeconds(0.3f);
+        objectToTurnOff.SetActive(false);
     }
 
 }
