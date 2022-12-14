@@ -13,6 +13,7 @@ public class PickupBehaviour : MonoBehaviour
     //[SerializeField] AudioSource clickSound;
     //public GameObject cat;
     Movement player;
+    public SoundManager soundManager;
     private static Inventory inventory;
     private static UI_Inventory uiInventory;
 
@@ -115,6 +116,7 @@ public class PickupBehaviour : MonoBehaviour
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
         cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
+        soundManager.Cozies();
         //roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatAnim");
         //rat.gameObject.GetComponent<Animator>().SetTrigger("RatAnim");
