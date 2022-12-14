@@ -8,8 +8,6 @@ public class PickupBehaviour : MonoBehaviour
     public GameObject roboteyes;
     public GameObject cat;
     public GameObject rat;
-    public GameObject bed;
-    public GameObject remote;
     //[SerializeField] AudioSource clickSound;
     //public GameObject cat;
     Movement player;
@@ -100,7 +98,6 @@ public class PickupBehaviour : MonoBehaviour
     //}
     private void Remote()
     {    
-        remote.gameObject.GetComponent<Animator>().SetTrigger("Remote");
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpHigh");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
     }
@@ -111,7 +108,6 @@ public class PickupBehaviour : MonoBehaviour
     //}
     private void BedCoverAndPillow()
     {
-        bed.gameObject.GetComponent<Animator>().SetTrigger("Sheet");
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
         cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
