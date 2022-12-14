@@ -9,6 +9,7 @@ public class UI_Inventory : MonoBehaviour
     private Inventory inventory;
     private RectTransform itemSlotContainer;
     private Transform itemSloTemplate;
+    public SoundManager soundManager;
     //[SerializeField] GameObject[] itemSlots;
     //[SerializeField] GameObject itemPrefab;
 
@@ -81,10 +82,12 @@ public class UI_Inventory : MonoBehaviour
         Debug.Log("funkar detta?");
         Destroy(itemSlotRectTransform.gameObject);
         GameObject.Find("Helicopter_placeholder").GetComponent<Animator>().SetTrigger("Fly");
+        soundManager.Helikopter();
         IEnumerator wait()
         {
             yield return new WaitForSeconds(3f);
             GameObject.Find("Robot_Eyes").GetComponent<Animator>().SetTrigger("Robo");
+            soundManager.Robo();
         }
         GameObject.Find("Cat").GetComponent<Animator>().SetTrigger("CatConActive");
         GameObject.Find("BigWhiskers").GetComponent<Animator>().SetTrigger("NeedConRat");
