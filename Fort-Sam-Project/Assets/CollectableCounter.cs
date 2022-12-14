@@ -6,6 +6,7 @@ public class CollectableCounter : MonoBehaviour
 {
     [SerializeField]
     private int CollectedSocks = 0;
+    public SockScore sockScore;
 
     //public static CollectableCounter Counter;
 
@@ -13,5 +14,10 @@ public class CollectableCounter : MonoBehaviour
     {
         CollectedSocks++;
         Debug.Log("Collected a Sock, You now you have " + CollectedSocks + " Socks collected");
+    }
+
+    public void Update()
+    {
+        sockScore.UpdateSockText(CollectedSocks);
     }
 }
