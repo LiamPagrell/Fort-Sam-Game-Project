@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CursorInteractable : MonoBehaviour
 {
@@ -16,14 +17,18 @@ public class CursorInteractable : MonoBehaviour
 
     public void OnMouseOver()
     {
-        if (CompareTag("Interactable"))
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
-            Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
-        }
 
-        if (CompareTag("Object"))
-        {
-            Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+            if (CompareTag("Interactable"))
+            {
+                Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+            }
+
+            if (CompareTag("Object"))
+            {
+                Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+            }
         }
     }
 
