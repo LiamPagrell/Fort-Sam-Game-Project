@@ -80,7 +80,10 @@ public class CodeLock : MonoBehaviour
     IEnumerator WinCLosePanel()
     {
         yield return new WaitForSeconds(0.5f);
-        ChestActivate.FindObjectOfType<ChestActivate>().CloseLockWindow();
+        UnlockChest.FindObjectOfType<UnlockChest>().CloseLockWindow();
+        UnlockChest.FindObjectOfType<UnlockChest>().GetComponent<Animator>().Play("ChestOpen");
+
+        GetComponentInParent<RectTransform>().gameObject.SetActive(false);
     }
 
     public void CodeFunction(string numbers)
