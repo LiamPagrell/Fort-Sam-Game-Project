@@ -52,7 +52,10 @@ public class UI_Inventory : MonoBehaviour
         {
             //case ItemType.Skruvmejsel: Screwdriver(itemSlotRectTransform); break;
             //case ItemType.Ball: Ball(itemSlotRectTransform); break;
-            case ItemType.Remote: Remote(itemSlotRectTransform); break;
+            case ItemType.Remote: 
+                Remote(itemSlotRectTransform);
+                inventory.Remove(item);
+                break;
             default:
                 break;
 
@@ -81,6 +84,7 @@ public class UI_Inventory : MonoBehaviour
 
         Debug.Log("funkar detta?");
         Destroy(itemSlotRectTransform.gameObject);
+
         GameObject.Find("Helicopter_placeholder").GetComponent<Animator>().SetTrigger("Fly");
         soundManager.Helikopter();
         IEnumerator wait()

@@ -17,19 +17,22 @@ public class CursorInteractable : MonoBehaviour
 
     public void OnMouseOver()
     {
-        if (!EventSystem.current.IsPointerOverGameObject())
-        {
+        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
 
-            if (CompareTag("Interactable"))
-            {
-                Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
-            }
 
-            if (CompareTag("Object"))
-            {
-                Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
-            }
-        }
+        //if (!EventSystem.current.IsPointerOverGameObject())
+        //{
+
+        //    if (CompareTag("Interactable"))
+        //    {
+        //        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+        //    }
+
+        //    if (CompareTag("Object"))
+        //    {
+        //        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+        //    }
+        //}
     }
 
     public void OnMouseExit()

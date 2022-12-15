@@ -120,8 +120,8 @@ public class Movement : MonoBehaviour
         Vector3 position = transform.position;
         float distance = transform.position.z - Camera.main.transform.position.z;
 
-        float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).y + playerHeight;
-        float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distance)).y - playerHeight/2;
+        float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).y + playerHeight; // bottom
+        float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distance)).y - playerHeight/2; // up
         float lBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).x + playerHeight/2;
         float rBorder = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distance)).x - playerHeight/2;
 
