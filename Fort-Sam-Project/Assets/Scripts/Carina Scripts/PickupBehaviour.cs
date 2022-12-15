@@ -117,6 +117,7 @@ public class PickupBehaviour : MonoBehaviour
         cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
         soundManager.Cozies();
+        soundManager.Purr();
         //roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatAnim");
         //rat.gameObject.GetComponent<Animator>().SetTrigger("RatAnim");

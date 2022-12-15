@@ -16,6 +16,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip RoboSound;
     public AudioClip LampSound;
     public AudioClip GlobeSound;
+    public AudioClip PurrSound;
+    public AudioClip MeowSound;
 
 
     public enum Sound
@@ -28,6 +30,8 @@ public class SoundManager : MonoBehaviour
         Cozies,
         Lamp,
         Globe,
+        Purr,
+        Meow,
     }
    
     public  void RatSqueak()
@@ -76,5 +80,16 @@ public class SoundManager : MonoBehaviour
     {
 
         audioSource.PlayOneShot(GlobeSound);
+    }
+    public void Purr()
+    {
+
+        audioSource.PlayOneShot(PurrSound);
+    }
+
+    public void Meow()
+    {
+
+        audioSource.PlayOneShot(MeowSound);
     }
 }

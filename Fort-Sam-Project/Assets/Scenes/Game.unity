@@ -3463,6 +3463,18 @@ MonoBehaviour:
             m_StringArgument: Snurr
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1469378896}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: Globe
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &107730028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3549,7 +3561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107730026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.724, y: 3.716, z: 0}
+  m_LocalPosition: {x: 1.753, y: 3.813, z: 0}
   m_LocalScale: {x: 0.8930803, y: 0.8930803, z: 0.8930803}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3856,7 +3868,6 @@ GameObject:
   - component: {fileID: 120650305}
   - component: {fileID: 120650304}
   - component: {fileID: 120650306}
-  - component: {fileID: 120650307}
   - component: {fileID: 120650308}
   m_Layer: 0
   m_Name: Sam_placeholder
@@ -4018,102 +4029,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!82 &120650307
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120650300}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 08892bcb39040054099b1b2517dbd2ab, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!70 &120650308
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4245,6 +4160,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: LampSitch
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1469378896}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: Lamp
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!61 &120887375
@@ -6952,6 +6879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColCount: {fileID: 517201043}
+  soundManager: {fileID: 1469378896}
 --- !u!1 &509449544
 GameObject:
   m_ObjectHideFlags: 0
@@ -7956,6 +7884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColCount: {fileID: 517201043}
+  soundManager: {fileID: 1469378896}
 --- !u!1 &598044251
 GameObject:
   m_ObjectHideFlags: 0
@@ -10149,7 +10078,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835851116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.738, y: 3.7068, z: 0}
+  m_LocalPosition: {x: 1.748, y: 3.765, z: 0}
   m_LocalScale: {x: 0.9247366, y: 0.9247366, z: 0.9247366}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14556,6 +14485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColCount: {fileID: 517201043}
+  soundManager: {fileID: 1469378896}
 --- !u!1 &1371199990
 GameObject:
   m_ObjectHideFlags: 0
@@ -17882,6 +17812,10 @@ MonoBehaviour:
   TreasureSound: {fileID: 8300000, guid: 1e8c9d0020c82c04cb540aef7860c388, type: 3}
   CoziesSound: {fileID: 8300000, guid: a91eb6cb69eac8b48a7c888e02a8ee60, type: 3}
   RoboSound: {fileID: 8300000, guid: 35ca3e3cfbf624e4591e1534c1cbf7e2, type: 3}
+  LampSound: {fileID: 8300000, guid: 88ba1a0ce2b9e994c8c4092340438f57, type: 3}
+  GlobeSound: {fileID: 8300000, guid: a9e300d7614389c4fbaa7598c6350e65, type: 3}
+  PurrSound: {fileID: 8300000, guid: 6ae70bd08d56e334db853dec115260d5, type: 3}
+  MeowSound: {fileID: 8300000, guid: 422b49a70bad4da4c924469d7bf89532, type: 3}
 --- !u!82 &1469378897
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18333,6 +18267,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 852100612}
   m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1518756994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1518756996}
+  - component: {fileID: 1518756995}
+  m_Layer: 0
+  m_Name: GlobeStand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1518756995
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518756994}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 1dc9feaceb84af2449837803db25415e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.24, y: 1.41}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1518756996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518756994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.716, y: 3.713, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1533572684
 GameObject:
@@ -24347,6 +24365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColCount: {fileID: 517201043}
+  soundManager: {fileID: 1469378896}
 --- !u!1 &1715914831
 GameObject:
   m_ObjectHideFlags: 0
@@ -24836,6 +24855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColCount: {fileID: 517201043}
+  soundManager: {fileID: 1469378896}
 --- !u!1 &1779625902
 GameObject:
   m_ObjectHideFlags: 0
