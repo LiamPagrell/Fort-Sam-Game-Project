@@ -26,6 +26,8 @@ public class Movement : MonoBehaviour
 
     float scale = 1;
     Vector3 startScale;
+    public float minYpos;
+    public float maxYpos;
 
     // Start is called before the first frame update
     void Start()
@@ -38,9 +40,7 @@ public class Movement : MonoBehaviour
         playerHeight = GetComponent<SpriteRenderer>().bounds.size.y / 2;
 
         startScale = transform.localScale;
-
     }
-   
 
 
     // Update is called once per frame
@@ -83,10 +83,14 @@ public class Movement : MonoBehaviour
         movement.x = x * speed;
         movement.y = y * ySpeed;
 
-        
-        scale -= y * Time.deltaTime * 0.25f;
 
-        scale = Mathf.Clamp(scale, 0.85f, 1.1f);
+       
+        float testposition = Camera.main.WorldToViewportPoint(transform.position).y;
+        scale = Mathf.Lerp(2.5f, 1.5f, Mathf.InverseLerp(minYpos, maxYpos, testposition));
+
+        scale -= startScale.x;
+
+        scale = Mathf.Clamp(scale, 0.5f, 1.5f);
 
         transform.localScale = startScale * scale;
 
@@ -116,8 +120,8 @@ public class Movement : MonoBehaviour
         Vector3 position = transform.position;
         float distance = transform.position.z - Camera.main.transform.position.z;
 
-        float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).y + playerHeight;
-        float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distance)).y - playerHeight;
+        float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).y + playerHeight /2;
+        float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distance)).y;// - playerHeight;
         float lBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).x + playerHeight/2;
         float rBorder = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distance)).x - playerHeight/2;
 
@@ -136,5 +140,21 @@ public class Movement : MonoBehaviour
     //void OnTriggerExit2D(Collider2D other)
     //{
     //    grounded = false;
+    //}
+
+
+    //old scale test code:
+    //(x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    //testposition = Mathf.Clamp(testposition, minYpos, maxYpos);
+    //scale = (testposition - minYpos) * (1.1f - 0.85f) / (maxYpos - minYpos) + 0.85f;
+
+    //if (Input.GetMouseButtonDown(0))
+    //{
+    //    //Debug.Log(Camera.main.ScreenToViewportPoint(Input.mousePosition).y);
+    //    //Debug.Log(Camera.main.WorldToViewportPoint(transform.position).y);
+
+    //    Debug.Log(testposition);
+    //    testposition = Mathf.Lerp(2.5f, 1.5f, Mathf.InverseLerp(minYpos, maxYpos, testposition));
+    //    Debug.Log(testposition);
     //}
 }

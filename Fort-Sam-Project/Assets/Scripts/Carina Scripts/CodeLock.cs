@@ -83,7 +83,7 @@ public class CodeLock : MonoBehaviour
         UnlockChest.FindObjectOfType<UnlockChest>().CloseLockWindow();
         UnlockChest.FindObjectOfType<UnlockChest>().GetComponent<Animator>().Play("ChestOpen");
 
-        GetComponentInParent<RectTransform>().gameObject.SetActive(false);
+        GetComponent<RectTransform>().gameObject.SetActive(false);
     }
 
     public void CodeFunction(string numbers)
