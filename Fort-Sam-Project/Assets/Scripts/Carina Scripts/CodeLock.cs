@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class CodeLock : MonoBehaviour
 {
+    public SoundManager soundManager;
 
     int code = 1518;
     string nr = null;
@@ -80,6 +81,7 @@ public class CodeLock : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         UnlockChest.FindObjectOfType<UnlockChest>().CloseLockWindow();
         UnlockChest.FindObjectOfType<UnlockChest>().GetComponent<Animator>().Play("ChestOpen");
+        soundManager.Treasure();
         GameObject.Find("Remote").GetComponent<Animator>().SetTrigger("RemoteAppear");
         GameObject.Find("TransitionRemote").GetComponent<Animator>().SetTrigger("RemoteOut");
 
