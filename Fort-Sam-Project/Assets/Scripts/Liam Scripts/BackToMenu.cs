@@ -42,7 +42,7 @@ public class BackToMenu : MonoBehaviour
         {
             if (wasd.activeSelf)
             {
-               // wasd.SetActive(!wasd.activeSelf);
+                // wasd.SetActive(!wasd.activeSelf);
                 StartCoroutine(Wait(wasd));
                 return;
 
@@ -60,42 +60,44 @@ public class BackToMenu : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (lockPanel.activeSelf)
             {
-                if (lockPanel.activeSelf)
-                {
-                    //lockPanel.SetActive(!lockPanel.activeSelf);
+                //lockPanel.SetActive(!lockPanel.activeSelf);
                 StartCoroutine(Wait(lockPanel));
-                    return;
+                return;
 
-                }
+            }
 
-                if (calender.activeSelf)
-                 {
-               // calender.SetActive(!calender.activeSelf);
+            if (calender.activeSelf)
+            {
+                // calender.SetActive(!calender.activeSelf);
                 StartCoroutine(Wait(calender));
-                    return;
+                return;
 
-                 }
+            }
 
             if (drawing.activeSelf)
             {
-               // drawing.SetActive(!drawing.activeSelf);
+                // drawing.SetActive(!drawing.activeSelf);
                 StartCoroutine(Wait(drawing));
                 return;
 
             }
             if (framedPhoto.activeSelf)
             {
-               // framedPhoto.SetActive(!framedPhoto.activeSelf);
+                // framedPhoto.SetActive(!framedPhoto.activeSelf);
                 StartCoroutine(Wait(framedPhoto));
                 return;
 
             }
+
+            PickupBehaviour.ResetInventory();
             SceneManager.LoadScene("Menu");
 
-               
 
-          
+
+
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))

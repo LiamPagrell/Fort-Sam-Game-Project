@@ -368,6 +368,9 @@ MonoBehaviour:
   roboteyes: {fileID: 0}
   cat: {fileID: 0}
   rat: {fileID: 0}
+  bed: {fileID: 0}
+  remote: {fileID: 0}
+  soundManager: {fileID: 0}
 --- !u!95 &94277362
 Animator:
   serializedVersion: 4
@@ -426,7 +429,7 @@ MonoBehaviour:
   SnowSound: {fileID: 8300000, guid: 32de4e2c88deb2d4cb20b2c80a578670, type: 3}
   TreasureSound: {fileID: 8300000, guid: 80a4644c17d5ad04495f3569ef3d0e24, type: 3}
   CoziesSound: {fileID: 8300000, guid: a91eb6cb69eac8b48a7c888e02a8ee60, type: 3}
-  RoboSound: {fileID: 8300000, guid: 0e4a821ebaddfb0458834d1905cfdc27, type: 3}
+  RoboSound: {fileID: 8300000, guid: 35ca3e3cfbf624e4591e1534c1cbf7e2, type: 3}
 --- !u!4 &106739297
 Transform:
   m_ObjectHideFlags: 0
@@ -1231,6 +1234,9 @@ MonoBehaviour:
   roboteyes: {fileID: 0}
   cat: {fileID: 0}
   rat: {fileID: 0}
+  bed: {fileID: 0}
+  remote: {fileID: 0}
+  soundManager: {fileID: 0}
 --- !u!58 &348090591
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1662,6 +1668,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lockPanel: {fileID: 0}
+  calender: {fileID: 0}
+  drawing: {fileID: 0}
+  framedPhoto: {fileID: 0}
+  wasd: {fileID: 0}
 --- !u!1001 &540203157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7411,6 +7421,9 @@ MonoBehaviour:
   roboteyes: {fileID: 0}
   cat: {fileID: 0}
   rat: {fileID: 0}
+  bed: {fileID: 0}
+  remote: {fileID: 0}
+  soundManager: {fileID: 0}
 --- !u!95 &1011236164
 Animator:
   serializedVersion: 4
@@ -9147,6 +9160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f284bcc6b596b4caa9660de987086c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundManager: {fileID: 0}
 --- !u!1001 &850647321326953206
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,6 +14,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip TreasureSound;
     public AudioClip CoziesSound;
     public AudioClip RoboSound;
+    public AudioClip LampSound;
+    public AudioClip GlobeSound;
 
 
     public enum Sound
@@ -24,6 +26,8 @@ public class SoundManager : MonoBehaviour
         Snow,
         Treasure,
         Cozies,
+        Lamp,
+        Globe,
     }
    
     public  void RatSqueak()
@@ -62,5 +66,15 @@ public class SoundManager : MonoBehaviour
     {
 
         audioSource.PlayOneShot(RoboSound);
+    }
+    public void Lamp()
+    {
+
+        audioSource.PlayOneShot(LampSound);
+    }
+    public void Globe()
+    {
+
+        audioSource.PlayOneShot(GlobeSound);
     }
 }
