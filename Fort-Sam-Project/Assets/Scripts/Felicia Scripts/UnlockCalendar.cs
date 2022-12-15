@@ -5,6 +5,7 @@ using UnityEngine;
 public class UnlockCalendar : MonoBehaviour
 {
     public GameObject lockPanel;
+    public SoundManager soundManager;
 
 
     private void OnMouseDown()
@@ -13,6 +14,7 @@ public class UnlockCalendar : MonoBehaviour
         {
             bool isActive = lockPanel.activeSelf;
             lockPanel.SetActive(!isActive);
+            soundManager.TurningPages();
         }
     }
 }

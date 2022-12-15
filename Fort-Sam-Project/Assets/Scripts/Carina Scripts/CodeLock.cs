@@ -82,6 +82,8 @@ public class CodeLock : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         UnlockChest.FindObjectOfType<UnlockChest>().CloseLockWindow();
         UnlockChest.FindObjectOfType<UnlockChest>().GetComponent<Animator>().Play("ChestOpen");
+        GameObject.Find("Remote").GetComponent<Animator>().SetTrigger("RemoteAppear");
+        GameObject.Find("TransitionRemote").GetComponent<Animator>().SetTrigger("RemoteOut");
 
         GetComponent<RectTransform>().gameObject.SetActive(false);
     }
