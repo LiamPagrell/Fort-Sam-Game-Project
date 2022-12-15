@@ -6,8 +6,11 @@ public class UnlockChest : MonoBehaviour
 {
     public GameObject lockPanel;
 
-
     private void OnMouseDown()
+    {
+        CloseLockWindow();
+    }
+    public void CloseLockWindow()
     {
         if (lockPanel != null)
         {
