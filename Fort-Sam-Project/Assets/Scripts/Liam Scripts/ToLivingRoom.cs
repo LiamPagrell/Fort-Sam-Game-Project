@@ -8,7 +8,7 @@ public class ToLivingRoom : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Vardagsrummet");
     }
 
     // Update is called once per frame
