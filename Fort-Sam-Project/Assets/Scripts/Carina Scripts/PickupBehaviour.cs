@@ -36,8 +36,9 @@ public class PickupBehaviour : MonoBehaviour
         }
     }
 
-    public void ResetInventory()
+    public static void ResetInventory()
     {
+        Debug.Log("Clearing Inventory");
         inventory = null;
         uiInventory = null;
     }
@@ -48,12 +49,11 @@ public class PickupBehaviour : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && checkDistance < pickUpDistance && CompareTag("Interactable"))
         {
-            Debug.Log("Mouse click!");
             ItemWorld itemWorld = GetComponent<ItemWorld>();
             if (Input.GetMouseButtonDown(0))
             {
                 ClickOnThings(itemWorld.itemType);
-                Debug.Log(this.gameObject.name + " clicked");
+                //Debug.Log(this.gameObject.name + " clicked");
                 if (itemWorld != null)
                 {
                     //touching item
