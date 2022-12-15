@@ -3463,6 +3463,18 @@ MonoBehaviour:
             m_StringArgument: Snurr
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1469378896}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: Globe
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &107730028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4247,6 +4259,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: LampSitch
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1469378896}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: Lamp
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!61 &120887375
@@ -6787,7 +6811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColCount: {fileID: 517201043}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1469378896}
 --- !u!1 &509449544
 GameObject:
   m_ObjectHideFlags: 0
@@ -7627,7 +7651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColCount: {fileID: 517201043}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1469378896}
 --- !u!1 &598044251
 GameObject:
   m_ObjectHideFlags: 0
@@ -11323,6 +11347,7 @@ GameObject:
   - component: {fileID: 1088629188}
   - component: {fileID: 1088629191}
   - component: {fileID: 1088629192}
+  - component: {fileID: 1088629193}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -11441,6 +11466,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243af08e309c9854cb512a68789f14ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1088629193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088629186}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba44be3064900b44ac242787d02a80a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundManager: {fileID: 1469378896}
 --- !u!1 &1094492578
 GameObject:
   m_ObjectHideFlags: 0
@@ -14354,7 +14392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColCount: {fileID: 517201043}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1469378896}
 --- !u!1 &1371199990
 GameObject:
   m_ObjectHideFlags: 0
@@ -17536,8 +17574,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -11.887009, y: -1.3245261}
-  - {x: -10.936121, y: -2.2859664}
+  - {x: 18.60039, y: -1.0562663}
+  - {x: 18.510372, y: -4.1973004}
+  - {x: 18.510372, y: -4.1973004}
+  - {x: 18.510372, y: -4.1973004}
+  - {x: -10.96002, y: -4.1606836}
+  - {x: -11.098192, y: -3.484494}
+  - {x: -10.895554, y: -2.2656832}
   - {x: -10.922678, y: -3.0468469}
   - {x: -10.537956, y: -2.833679}
   - {x: -9.677614, y: -2.847149}
@@ -17575,7 +17618,7 @@ EdgeCollider2D:
   - {x: 8.178954, y: -2.1165848}
   - {x: 14.765321, y: -2.0375187}
   - {x: 14.841912, y: -1.1053253}
-  - {x: 18.616795, y: -1.1135467}
+  - {x: 18.594868, y: -1.047767}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -17681,10 +17724,10 @@ MonoBehaviour:
   TreasureSound: {fileID: 8300000, guid: 80a4644c17d5ad04495f3569ef3d0e24, type: 3}
   CoziesSound: {fileID: 8300000, guid: a91eb6cb69eac8b48a7c888e02a8ee60, type: 3}
   RoboSound: {fileID: 8300000, guid: 0e4a821ebaddfb0458834d1905cfdc27, type: 3}
-  LampSound: {fileID: 0}
-  GlobeSound: {fileID: 0}
-  PurrSound: {fileID: 0}
-  MeowSound: {fileID: 0}
+  LampSound: {fileID: 8300000, guid: 88ba1a0ce2b9e994c8c4092340438f57, type: 3}
+  GlobeSound: {fileID: 8300000, guid: a9e300d7614389c4fbaa7598c6350e65, type: 3}
+  PurrSound: {fileID: 8300000, guid: 6ae70bd08d56e334db853dec115260d5, type: 3}
+  MeowSound: {fileID: 8300000, guid: 422b49a70bad4da4c924469d7bf89532, type: 3}
 --- !u!82 &1469378897
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24150,7 +24193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColCount: {fileID: 517201043}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1469378896}
 --- !u!1 &1715914831
 GameObject:
   m_ObjectHideFlags: 0
@@ -24640,7 +24683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColCount: {fileID: 517201043}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1469378896}
 --- !u!1 &1779625902
 GameObject:
   m_ObjectHideFlags: 0
