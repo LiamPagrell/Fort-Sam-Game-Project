@@ -102,7 +102,7 @@ public class PickupBehaviour : MonoBehaviour
     private void Remote()
     {    
         remote.gameObject.GetComponent<Animator>().SetTrigger("Remote");
-        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpHigh");
+        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
     }
     //private void Skruvmejsel()
