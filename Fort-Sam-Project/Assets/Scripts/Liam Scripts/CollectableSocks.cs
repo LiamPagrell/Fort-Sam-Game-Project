@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollectableSocks : MonoBehaviour
 {
     public CollectableCounter ColCount;
+    public SoundManager soundManager;
 
 
     private void Start()
@@ -18,6 +19,8 @@ public class CollectableSocks : MonoBehaviour
         {
             ColCount.AddSocks();
             Destroy(this.gameObject);
+            soundManager.Cozies();
+
         }
     }
 }
