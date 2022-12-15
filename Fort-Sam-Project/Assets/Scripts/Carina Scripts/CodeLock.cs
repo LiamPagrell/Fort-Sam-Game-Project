@@ -16,10 +16,10 @@ public class CodeLock : MonoBehaviour
     [SerializeField] TextMeshProUGUI textObject2;
     [SerializeField] TextMeshProUGUI textObject3;
     [SerializeField] TextMeshProUGUI textObject4;
-    int counter1;
-    int counter2;
-    int counter3;
-    int counter4;
+    int counter1 = 1;
+    int counter2 = 1;
+    int counter3 = 1;
+    int counter4 = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -27,15 +27,13 @@ public class CodeLock : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public int GetRealNumber(int counter)
     {
-        return (counter % 9) + 1;
+        while (counter < 0)
+        {
+            counter += 10;
+        }
+        return counter % 10;
     }
 
     public void ChangeFirstCounter(int amount)
