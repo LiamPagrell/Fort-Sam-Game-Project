@@ -7,14 +7,30 @@ public class UnlockCalendar : MonoBehaviour
     public GameObject lockPanel;
     public SoundManager soundManager;
 
+    Movement player;
+
+    float checkDistance;
+    float pickUpDistance = 3.6f;
+
+
+    private void Start()
+    {
+        player = FindObjectOfType<Movement>();
+    }
 
     private void OnMouseDown()
     {
-        if (lockPanel != null)
+        checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
+
+        if (checkDistance < pickUpDistance)
         {
-            bool isActive = lockPanel.activeSelf;
-            lockPanel.SetActive(!isActive);
-            soundManager.TurningPages();
+            if (lockPanel != null)
+            {
+                bool isActive = lockPanel.activeSelf;
+                lockPanel.SetActive(!isActive);
+                soundManager.TurningPages();
+            }
         }
+
     }
 }
