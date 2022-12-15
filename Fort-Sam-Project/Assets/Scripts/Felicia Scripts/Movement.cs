@@ -26,8 +26,8 @@ public class Movement : MonoBehaviour
 
     float scale = 1;
     Vector3 startScale;
-    public float minYpos;
-    public float maxYpos;
+    public float minYpos = -0.1f;
+    public float maxYpos = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -86,11 +86,11 @@ public class Movement : MonoBehaviour
 
        
         float testposition = Camera.main.WorldToViewportPoint(transform.position).y;
-        scale = Mathf.Lerp(2.5f, 1.5f, Mathf.InverseLerp(minYpos, maxYpos, testposition));
+        scale = Mathf.Lerp(2.5f, 1.5f, Mathf.InverseLerp(minYpos, maxYpos, testposition)); // floatsen går att justera
 
-        scale -= startScale.x;
+        scale -= startScale.x; // denna går att justera 
 
-        scale = Mathf.Clamp(scale, 0.5f, 1.5f);
+        scale = Mathf.Clamp(scale, 0.5f, 1.5f); // floatsen går att justera
 
         transform.localScale = startScale * scale;
 
@@ -120,8 +120,8 @@ public class Movement : MonoBehaviour
         Vector3 position = transform.position;
         float distance = transform.position.z - Camera.main.transform.position.z;
 
-        float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).y + playerHeight /2;
-        float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distance)).y;// - playerHeight;
+        float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).y + playerHeight;
+        float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, distance)).y - playerHeight/2;
         float lBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distance)).x + playerHeight/2;
         float rBorder = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distance)).x - playerHeight/2;
 
