@@ -3951,6 +3951,8 @@ MonoBehaviour:
   anim: {fileID: 120650306}
   speed: 4
   ySpeed: 1.5
+  minYpos: -0.1
+  maxYpos: 0.5
 --- !u!50 &120650304
 Rigidbody2D:
   serializedVersion: 4
@@ -17681,6 +17683,8 @@ MonoBehaviour:
   RoboSound: {fileID: 8300000, guid: 0e4a821ebaddfb0458834d1905cfdc27, type: 3}
   LampSound: {fileID: 0}
   GlobeSound: {fileID: 0}
+  PurrSound: {fileID: 0}
+  MeowSound: {fileID: 0}
 --- !u!82 &1469378897
 AudioSource:
   m_ObjectHideFlags: 0
