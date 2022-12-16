@@ -20,7 +20,8 @@ public class BackToMenu : MonoBehaviour
             if (wasd.activeSelf)
             {
                 //wasd.SetActive(!wasd.activeSelf);
-                StartCoroutine(Wait(wasd));
+                GameObject.Find("wasd").GetComponent<Animator>().SetTrigger("ConFade");
+                StartCoroutine(Waiter(wasd));
                 return;
 
             }
@@ -32,7 +33,8 @@ public class BackToMenu : MonoBehaviour
             if (wasd.activeSelf)
             {
                 //wasd.SetActive(!wasd.activeSelf);
-                StartCoroutine(Wait(wasd));
+                GameObject.Find("wasd").GetComponent<Animator>().SetTrigger("ConFade");
+                StartCoroutine(Waiter(wasd));
                 return;
 
             }
@@ -43,7 +45,8 @@ public class BackToMenu : MonoBehaviour
             if (wasd.activeSelf)
             {
                 // wasd.SetActive(!wasd.activeSelf);
-                StartCoroutine(Wait(wasd));
+                GameObject.Find("wasd").GetComponent<Animator>().SetTrigger("ConFade");
+                StartCoroutine(Waiter(wasd));
                 return;
 
             }
@@ -53,7 +56,8 @@ public class BackToMenu : MonoBehaviour
             if (wasd.activeSelf)
             {
                 //wasd.SetActive(!wasd.activeSelf);
-                StartCoroutine(Wait(wasd));
+                GameObject.Find("wasd").GetComponent<Animator>().SetTrigger("ConFade");
+                StartCoroutine(Waiter(wasd));
                 return;
 
             }
@@ -111,6 +115,12 @@ public class BackToMenu : MonoBehaviour
     IEnumerator Wait(GameObject objectToTurnOff)
     {
         yield return new WaitForSeconds(0.3f);
+        objectToTurnOff.SetActive(false);
+    }
+
+    IEnumerator Waiter(GameObject objectToTurnOff)
+    {
+        yield return new WaitForSeconds(1f);
         objectToTurnOff.SetActive(false);
     }
 
