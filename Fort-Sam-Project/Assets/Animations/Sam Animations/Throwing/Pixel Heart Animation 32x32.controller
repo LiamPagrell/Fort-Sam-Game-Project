@@ -34,7 +34,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Hearts
+    m_ConditionEvent: ExtraHearts
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4983957132129554211}
@@ -59,12 +59,12 @@ AnimatorController:
   m_Name: Pixel Heart Animation 32x32
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Hearts
+  - m_Name: ExtraHearts
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -148,7 +148,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b587a31a4956f2a4aa7aea8805414128, type: 2}
+  m_Motion: {fileID: 7400000, guid: adde49a66a7522241a0dce5dc99b11d5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
