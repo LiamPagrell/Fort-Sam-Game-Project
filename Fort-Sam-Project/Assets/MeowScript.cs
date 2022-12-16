@@ -8,12 +8,15 @@ public class MeowScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        soundManager.Meow();
+
+        Invoke(nameof(Delay), 0);
+        Invoke(nameof(Delay), 0.5f);
+        Invoke(nameof(Delay), 2);
     }
 
     // Update is called once per frame
-    void Update()
+    void Delay()
     {
-        
+        soundManager.Meow();
     }
 }
