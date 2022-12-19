@@ -43,6 +43,7 @@ public class Movement : MonoBehaviour
     }
 
 
+
     // Update is called once per frame
     void Update()
 
@@ -113,6 +114,16 @@ public class Movement : MonoBehaviour
         rb2d.velocity = movement;
 
         ClampPlayerMovement();
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        anim.SetBool("moving", false);
+        speed = 0.1f;
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        speed = 3.5f;
     }
 
     private void ClampPlayerMovement()
