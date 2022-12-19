@@ -11,14 +11,26 @@ public class ShineScripts : MonoBehaviour
         
     }
 
-    private void OnMouseOver()
+    private void OnMouseOver() ///Eller Mouse Over
     {
         Shiny.gameObject.GetComponent<Animator>().SetTrigger("StartShine");
+        StartCoroutine(Wait());
+    }
+
+    private void OnMouseExit()
+    {
+        Shiny.gameObject.GetComponent<Animator>().SetTrigger("StopShine");
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Shiny.gameObject.GetComponent<Animator>().ResetTrigger("StartShine");
     }
 }

@@ -11,10 +11,10 @@ public class WorldWithShineOff : MonoBehaviour
         
     }
 
-    private void OnMouseOver()
-    {
-        Shiny.gameObject.GetComponent<Animator>().SetTrigger("StopShine");
-    }
+    //private void OnMouseOver()
+    //{
+    //    Shiny.gameObject.GetComponent<Animator>().SetTrigger("StopShine");
+    //}
     // Update is called once per frame
     void Update()
     {

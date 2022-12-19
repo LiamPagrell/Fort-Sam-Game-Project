@@ -5,7 +5,7 @@ using UnityEngine;
 public class UnlockCalendar : MonoBehaviour
 {
     public GameObject lockPanel;
-    public GameObject photo, drawing, calender;
+    public GameObject zoomObject;
     public SoundManager soundManager;
 
     //Movement player;
@@ -25,7 +25,8 @@ public class UnlockCalendar : MonoBehaviour
 
         if (lockPanel != null)
         {
-            if (!calender.activeSelf && !photo.activeSelf && !drawing.activeSelf)
+            //if (!calender.activeSelf && !photo.activeSelf && !drawing.activeSelf)
+            if (!zoomObject.activeSelf)
             {
                 bool isActive = lockPanel.activeSelf;
                 lockPanel.SetActive(!isActive);

@@ -121,10 +121,10 @@ public class Movement : MonoBehaviour
     //    speed = 0.3f;
     //}
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        speed = 3.5f;
-    }
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    speed = 3.5f;
+    //}
 
     private void ClampPlayerMovement()
     {
