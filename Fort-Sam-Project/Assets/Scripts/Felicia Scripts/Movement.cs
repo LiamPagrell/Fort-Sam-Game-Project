@@ -115,11 +115,11 @@ public class Movement : MonoBehaviour
 
         ClampPlayerMovement();
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        anim.SetBool("moving", false);
-        speed = 0.1f;
-    }
+    //private void OnCollisionEnter2D(Collision2D collision) ///Startkod för att fixa Walk anim stop när sam går in i objekt
+    //{
+    //    anim.SetBool("moving", false);
+    //    speed = 0.3f;
+    //}
 
     private void OnCollisionExit2D(Collision2D collision)
     {
