@@ -5,6 +5,7 @@ using UnityEngine;
 public class UnlockCalendar : MonoBehaviour
 {
     public GameObject lockPanel;
+    public GameObject photo, drawing, calender;
     public SoundManager soundManager;
 
     //Movement player;
@@ -24,9 +25,13 @@ public class UnlockCalendar : MonoBehaviour
 
         if (lockPanel != null)
         {
-            bool isActive = lockPanel.activeSelf;
-            lockPanel.SetActive(!isActive);
-            soundManager.TurningPages();
+            if (!calender.activeSelf && !photo.activeSelf && !drawing.activeSelf)
+            {
+                bool isActive = lockPanel.activeSelf;
+                lockPanel.SetActive(!isActive);
+                soundManager.TurningPages();
+            }
+
         }
         /*if (checkDistance < pickUpDistance)
         {

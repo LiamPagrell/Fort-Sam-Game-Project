@@ -5,6 +5,7 @@ using UnityEngine;
 public class UnlockChest : MonoBehaviour
 {
     public GameObject lockPanel;
+    public GameObject photo, drawing, calender;
     Movement player;
 
     float checkDistance;
@@ -28,8 +29,11 @@ public class UnlockChest : MonoBehaviour
     {
         if (lockPanel != null)
         {
-            bool isActive = lockPanel.activeSelf;
-            lockPanel.SetActive(!isActive);
+            if (!calender.activeSelf && !photo.activeSelf && !drawing.activeSelf)
+            {
+                bool isActive = lockPanel.activeSelf;
+                lockPanel.SetActive(!isActive);
+            }
         }
     }
 }
