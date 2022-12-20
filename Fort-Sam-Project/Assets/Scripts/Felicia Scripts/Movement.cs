@@ -29,6 +29,7 @@ public class Movement : MonoBehaviour
     public float minYpos = -0.1f;
     public float maxYpos = 0.5f;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,20 +55,19 @@ public class Movement : MonoBehaviour
 
 
         // gå från walking till idle
-        if (x == 0)
+        if ((x != 0 || y != 0))
         {
-            anim.SetBool("moving", false);
-
+            anim.SetBool("moving", true);
         }
         else
         {
-            anim.SetBool("moving", true);
+            anim.SetBool("moving", false);
         }
 
-        if (y > 0 || y < 0) // walking animation when y walking
-        {
-            anim.SetBool("moving", true);
-        }
+        //if (y > 0 || y < 0) // walking animation when y walking
+        //{
+        //    anim.SetBool("moving", true);
+        //}
 
 
         if (x < 0)
@@ -113,7 +113,8 @@ public class Movement : MonoBehaviour
         //Update our movement
         rb2d.velocity = movement;
 
-        ClampPlayerMovement();
+       // ClampPlayerMovement(); ///Ignore because it make the camera a literal cage for the player character
+
     }
     //private void OnCollisionEnter2D(Collision2D collision) ///Startkod för att fixa Walk anim stop när sam går in i objekt
     //{
