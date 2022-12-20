@@ -8,15 +8,8 @@ public class RatChase : MonoBehaviour
     void Start()
     {
         GameObject.Find("BigWhiskers").GetComponent<Animator>().SetTrigger("RatAnim");
+        Camera.main.GetComponent<CameraFollow>().TemporaryFollow(transform, 3);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
- 
-
-    
 }
