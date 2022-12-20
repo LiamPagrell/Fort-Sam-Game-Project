@@ -113,7 +113,7 @@ public class Movement : MonoBehaviour
         //Update our movement
         rb2d.velocity = movement;
 
-        ClampPlayerMovement();
+       // ClampPlayerMovement(); ///Ignore because it make the camera a literal cage for the player character
 
     }
     //private void OnCollisionEnter2D(Collision2D collision) ///Startkod för att fixa Walk anim stop när sam går in i objekt

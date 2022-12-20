@@ -1130,7 +1130,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
   cursorMode: 0
-  hotSpot: {x: 0, y: 0}
 --- !u!1 &95267658
 GameObject:
   m_ObjectHideFlags: 0
@@ -7559,7 +7558,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
   cursorMode: 0
-  hotSpot: {x: 0, y: -1}
 --- !u!1 &502524603
 GameObject:
   m_ObjectHideFlags: 0
@@ -8589,7 +8587,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
   cursorMode: 0
-  hotSpot: {x: 10, y: 10}
 --- !u!1 &598044251
 GameObject:
   m_ObjectHideFlags: 0
@@ -12381,7 +12378,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
   cursorMode: 0
-  hotSpot: {x: 0, y: 0}
 --- !u!114 &1011236163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13115,6 +13111,7 @@ GameObject:
   - component: {fileID: 1088629191}
   - component: {fileID: 1088629192}
   - component: {fileID: 1088629193}
+  - component: {fileID: 1088629194}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -13246,6 +13243,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundManager: {fileID: 1469378896}
+--- !u!114 &1088629194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088629186}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca311391c8e4ec640b7c5daef70be4b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1094492578
 GameObject:
   m_ObjectHideFlags: 0
@@ -13779,7 +13788,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
   cursorMode: 0
-  hotSpot: {x: 0, y: 0}
 --- !u!114 &1176285913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16071,7 +16079,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
   cursorMode: 0
-  hotSpot: {x: 0, y: 0}
 --- !u!60 &1332860695
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16729,7 +16736,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
   cursorMode: 0
-  hotSpot: {x: 0, y: -1}
 --- !u!1 &1371199990
 GameObject:
   m_ObjectHideFlags: 0
@@ -18159,7 +18165,7 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -11.887009, y: -1.3245261}
+  - {x: -11.068642, y: -3.6977897}
   - {x: -10.936121, y: -2.2859664}
   - {x: -10.922678, y: -3.0468469}
   - {x: -10.537956, y: -2.833679}
@@ -18173,16 +18179,23 @@ EdgeCollider2D:
   - {x: -7.599948, y: -3.1734297}
   - {x: -7.0086584, y: -3.030045}
   - {x: -5.8166647, y: -2.9958541}
-  - {x: -5.1324024, y: -2.9507558}
-  - {x: -5.0073266, y: -2.866271}
+  - {x: -5.2942276, y: -2.9912121}
+  - {x: -5.051968, y: -3.0042515}
+  - {x: -4.8817763, y: -2.965381}
+  - {x: -4.803978, y: -2.8816614}
+  - {x: -4.7890415, y: -2.758619}
   - {x: -4.810921, y: -2.1696067}
   - {x: -4.1092877, y: -1.181618}
-  - {x: -4.054714, y: -1.5797942}
+  - {x: -4.061955, y: -1.5288773}
+  - {x: -4.019591, y: -1.5581799}
   - {x: -3.8612435, y: -1.573597}
   - {x: -3.4135277, y: -1.6386826}
-  - {x: -3.2814097, y: -1.7099202}
+  - {x: -3.3494723, y: -1.7073991}
+  - {x: -3.2814097, y: -1.7280536}
+  - {x: -3.230488, y: -1.7057819}
   - {x: -3.1754541, y: -1.6363242}
   - {x: -2.048322, y: -1.6284502}
+  - {x: -1.9932567, y: -1.6798062}
   - {x: -1.9447179, y: -1.6914716}
   - {x: -0.9825704, y: -1.6596382}
   - {x: 4.732026, y: -1.6548777}
@@ -18193,12 +18206,24 @@ EdgeCollider2D:
   - {x: 6.5296297, y: -1.6332576}
   - {x: 6.545705, y: -1.4800425}
   - {x: 7.2529974, y: -1.4909313}
-  - {x: 7.898099, y: -1.939714}
-  - {x: 8.011301, y: -2.0977569}
-  - {x: 8.178954, y: -2.1165848}
+  - {x: 7.749878, y: -1.8400033}
+  - {x: 7.7700214, y: -2.059296}
+  - {x: 7.8126106, y: -2.1158473}
+  - {x: 7.9291887, y: -2.1262538}
+  - {x: 8.02296, y: -2.1269038}
+  - {x: 8.14308, y: -2.1269116}
+  - {x: 8.170783, y: -2.1093016}
+  - {x: 8.194022, y: -2.07216}
+  - {x: 8.221432, y: -1.9429703}
+  - {x: 13.91947, y: -1.9280729}
+  - {x: 14.014574, y: -2.0563333}
   - {x: 14.765321, y: -2.0375187}
   - {x: 14.841912, y: -1.1053253}
-  - {x: 18.616795, y: -1.1135467}
+  - {x: 16.694956, y: -1.150115}
+  - {x: 16.692482, y: -4.0094333}
+  - {x: 16.696335, y: -4.137024}
+  - {x: -10.98745, y: -4.1690955}
+  - {x: -10.982476, y: -2.9607778}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -25356,7 +25381,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
   cursorMode: 0
-  hotSpot: {x: 0, y: -1}
 --- !u!1 &1715914831
 GameObject:
   m_ObjectHideFlags: 0
@@ -25974,7 +25998,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
   cursorMode: 0
-  hotSpot: {x: 0, y: -1}
 --- !u!1 &1779625902
 GameObject:
   m_ObjectHideFlags: 0
@@ -27476,7 +27499,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: d2082dad7403b0049bd05b599dc0f261, type: 3}
   cursorMode: 0
-  hotSpot: {x: 0, y: 0}
 --- !u!60 &1894172629
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33501,8 +33523,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f6b7278db371ba44ebd13fe98d3ad434, type: 3}
-  m_Color: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3170cde295d770f4ca82e72ba49b3298, type: 3}
+  m_Color: {r: 0.8207547, g: 0.6567771, b: 0.46974006, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33529,7 +33551,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.44, y: 3.82}
+    oldSize: {x: 3.96, y: 2.91}
     newSize: {x: 4.44, y: 3.82}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
