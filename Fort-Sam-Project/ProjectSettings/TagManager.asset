@@ -44,6 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Lamp
+    uniqueID: 1055882163
+    locked: 0
+  - name: Bulb
+    uniqueID: 510783939
+    locked: 0
   - name: lampshade
     uniqueID: 2608556299
     locked: 0

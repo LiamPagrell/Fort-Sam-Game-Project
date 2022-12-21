@@ -10,6 +10,7 @@ public class PickupBehaviour : MonoBehaviour
     public GameObject rat;
     public GameObject bed;
     public GameObject remote;
+    public GameObject checkmark;
     //[SerializeField] AudioSource clickSound;
     //public GameObject cat;
     Movement player;
@@ -118,6 +119,8 @@ public class PickupBehaviour : MonoBehaviour
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
         soundManager.Cozies();
         soundManager.Purr();
+        Debug.Log("täcke");
+        checkmark.SetActive(true);
         //roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatAnim");
         //rat.gameObject.GetComponent<Animator>().SetTrigger("RatAnim");
