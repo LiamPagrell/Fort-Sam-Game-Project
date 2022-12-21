@@ -6,9 +6,9 @@ using TMPro;
 
 public class SockScore : MonoBehaviour
 {
-    public TextMeshProUGUI sockText;
-    public void UpdateSockText(int CollectedSocks)
-    {
-        sockText.text = "Socks collected: " +CollectedSocks;
-    }
+    //public TextMeshProUGUI sockText;
+    //public void UpdateSockText(int CollectedSocks)
+    //{
+    //    sockText.text = "Socks collected: " +CollectedSocks;
+    //}
 }
