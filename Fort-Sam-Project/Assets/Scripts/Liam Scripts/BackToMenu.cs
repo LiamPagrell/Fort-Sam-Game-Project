@@ -63,46 +63,46 @@ public class BackToMenu : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (lockPanel.activeSelf)
-            {
-                //lockPanel.SetActive(!lockPanel.activeSelf);
-                StartCoroutine(Wait(lockPanel));
-                return;
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    if (lockPanel.activeSelf)
+        //    {
+        //        //lockPanel.SetActive(!lockPanel.activeSelf);
+        //        StartCoroutine(Wait(lockPanel));
+        //        return;
 
-            }
+        //    }
 
-            if (calender.activeSelf)
-            {
-                // calender.SetActive(!calender.activeSelf);
-                StartCoroutine(Wait(calender));
-                return;
+        //    if (calender.activeSelf)
+        //    {
+        //        // calender.SetActive(!calender.activeSelf);
+        //        StartCoroutine(Wait(calender));
+        //        return;
 
-            }
+        //    }
 
-            if (drawing.activeSelf)
-            {
-                // drawing.SetActive(!drawing.activeSelf);
-                StartCoroutine(Wait(drawing));
-                return;
+        //    if (drawing.activeSelf)
+        //    {
+        //        // drawing.SetActive(!drawing.activeSelf);
+        //        StartCoroutine(Wait(drawing));
+        //        return;
 
-            }
-            if (framedPhoto.activeSelf)
-            {
-                // framedPhoto.SetActive(!framedPhoto.activeSelf);
-                StartCoroutine(Wait(framedPhoto));
-                return;
+        //    }
+        //    if (framedPhoto.activeSelf)
+        //    {
+        //        // framedPhoto.SetActive(!framedPhoto.activeSelf);
+        //        StartCoroutine(Wait(framedPhoto));
+        //        return;
 
-            }
+        //    }
 
-            PickupBehaviour.ResetInventory();
-            SceneManager.LoadScene("Menu");
-
-
+        //    PickupBehaviour.ResetInventory();
+        //    SceneManager.LoadScene("Menu");
 
 
-        }
+
+
+        //}
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -112,11 +112,11 @@ public class BackToMenu : MonoBehaviour
 
     }
 
-    IEnumerator Wait(GameObject objectToTurnOff)
-    {
-        yield return new WaitForSeconds(0.3f);
-        objectToTurnOff.SetActive(false);
-    }
+    //IEnumerator Wait(GameObject objectToTurnOff)
+    //{
+    //    yield return new WaitForSeconds(0.3f);
+    //    objectToTurnOff.SetActive(false);
+    //}
 
     IEnumerator Waiter(GameObject objectToTurnOff)
     {
