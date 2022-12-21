@@ -31,8 +31,10 @@ public class UnlockChest : MonoBehaviour
         {
             if (!zoomObject.activeSelf)
             {
+                Debug.Log("ChestClicked");
                 bool isActive = lockPanel.activeSelf;
-                lockPanel.SetActive(!isActive);
+                zoomObject.SetActive(!isActive);           
+                Debug.Log("ChestClicked1");
             }
         }
     }
