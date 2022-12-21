@@ -48,5 +48,7 @@ public class PauseController : MonoBehaviour
     public void QuitToMenu()
     {
         SceneManager.LoadScene("Menu");
+        PickupBehaviour.ResetInventory();
+        SceneManager.LoadScene("Menu");
     }
 }
