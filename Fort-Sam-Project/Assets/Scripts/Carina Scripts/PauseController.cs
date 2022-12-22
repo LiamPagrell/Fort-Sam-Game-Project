@@ -7,7 +7,7 @@ public class PauseController : MonoBehaviour
 {
 
     [SerializeField] GameObject pausePanel;
-    [SerializeField] GameObject sockText, backpack;
+    [SerializeField] GameObject backpack;
 
     public static bool gameIsPaused;
 
@@ -27,7 +27,6 @@ public class PauseController : MonoBehaviour
             pausePanel.SetActive(true);
             Time.timeScale = 0f;        // stops time
             AudioListener.pause = true; // paus all music
-            sockText.SetActive(false); 
             backpack.SetActive(false);
         }
         else
@@ -41,7 +40,6 @@ public class PauseController : MonoBehaviour
         pausePanel.SetActive(false);
         Time.timeScale = 1f;
         AudioListener.pause = false;
-        sockText.SetActive(true);
         backpack.SetActive(true);
     }
 
