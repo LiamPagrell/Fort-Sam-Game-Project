@@ -45,6 +45,8 @@ public class PauseController : MonoBehaviour
 
     public void QuitToMenu()
     {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
         SceneManager.LoadScene("Menu");
         PickupBehaviour.ResetInventory();
         SceneManager.LoadScene("Menu");
