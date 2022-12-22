@@ -1177,7 +1177,7 @@ GameObject:
   - component: {fileID: 78621047}
   - component: {fileID: 78621048}
   m_Layer: 0
-  m_Name: ShinyFakeWhisk
+  m_Name: Shine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7673,6 +7673,10 @@ PrefabInstance:
       value: 0.6896552
       objectReference: {fileID: 0}
     - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
       propertyPath: m_Vertices.Array.data[0].position.x
       value: 0.265
       objectReference: {fileID: 0}
@@ -13793,6 +13797,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
       propertyPath: m_Vertices.Array.data[0].position.x
       value: 0.045
       objectReference: {fileID: 0}
@@ -15008,6 +15016,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
       propertyPath: m_Vertices.Array.data[0].position.x
       value: 0.265
       objectReference: {fileID: 0}
@@ -16107,6 +16119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockPanel: {fileID: 1205922939}
   zoomObject: {fileID: 1205922939}
+  open: 0
 --- !u!114 &1176285916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20500,7 +20513,7 @@ GameObject:
   - component: {fileID: 1402494622}
   - component: {fileID: 1402494623}
   m_Layer: 0
-  m_Name: ShinyWhisk
+  m_Name: Shine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21725,6 +21738,10 @@ PrefabInstance:
     - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
       propertyPath: m_Vertices.Array.data[8].color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
       propertyPath: m_Vertices.Array.data[0].position.x
@@ -23522,7 +23539,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 921aa086995f0b54a9e546d0c3b3636c, type: 2}
+  - {fileID: 2100000, guid: 6f70a63b0b87051408243f1f38c9b7e0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39228,6 +39245,10 @@ PrefabInstance:
     - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
       propertyPath: m_Vertices.Array.data[8].color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7165537677670918876, guid: 25e772317e5300042b0eaa3d0a6b7e6e, type: 3}
       propertyPath: m_Vertices.Array.data[0].position.x

@@ -11,6 +11,8 @@ public class UnlockChest : MonoBehaviour
     float checkDistance;
     float pickUpDistance = 3.4f;
 
+    public bool open = false;
+
     private void Start()
     {
         player = FindObjectOfType<Movement>();
@@ -20,7 +22,7 @@ public class UnlockChest : MonoBehaviour
     {
         checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
 
-        if (checkDistance < pickUpDistance)
+        if (checkDistance < pickUpDistance && !open)
         {
             CloseLockWindow();
         }

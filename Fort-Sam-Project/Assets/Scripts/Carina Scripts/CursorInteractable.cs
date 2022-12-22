@@ -40,4 +40,15 @@ public class CursorInteractable : MonoBehaviour
     {
         Cursor.SetCursor(null, Vector2.zero, cursorMode);
     }
+
+    private void OnDestroy()
+    {
+        Cursor.SetCursor(null, Vector2.zero, cursorMode);
+    }
+
+    private void OnDisable()
+    {
+        Cursor.SetCursor(null, Vector2.zero, cursorMode);
+
+    }
 }
