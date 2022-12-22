@@ -74,6 +74,12 @@ public class CodeLock : MonoBehaviour
         {
             Debug.Log("Hackermans, im in!");
             StartCoroutine(WinCLosePanel());
+            //find the chest, turn it off
+            var chest = FindObjectOfType<UnlockChest>();
+            chest.open = true;
+            //Turn of chest cursor interactable as well
+            chest.gameObject.GetComponent<Collider2D>().enabled = false;
+
             escape.SetActive(false);
         }
     }
