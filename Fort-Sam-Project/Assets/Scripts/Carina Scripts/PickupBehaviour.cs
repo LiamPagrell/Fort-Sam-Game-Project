@@ -125,7 +125,7 @@ public class PickupBehaviour : MonoBehaviour
         //roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatAnim");
         //rat.gameObject.GetComponent<Animator>().SetTrigger("RatAnim");
-        //StartCoroutine(wait());
+        //StartCoroutine(Wait());
 
 
     }
@@ -133,12 +133,8 @@ public class PickupBehaviour : MonoBehaviour
     {
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
     }
-    //IEnumerator wait()
+    //IEnumerator Wait()
     //{
-    //    Debug.Log("Poopy1");
     //    yield return new WaitForSeconds(1f);
-    //    Debug.Log("Poopy2");
-    //    roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
-    //    Debug.Log("Poopy3");
     //}
 }
