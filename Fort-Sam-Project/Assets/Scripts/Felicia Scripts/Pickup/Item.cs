@@ -18,7 +18,7 @@ public class Item
 {
     public ItemType itemType;
     public int amount;
-
+    
     public Sprite GetSprite()
     {
         switch (itemType)
@@ -27,7 +27,7 @@ public class Item
             //case ItemType.Skruvmejsel:       return ItemAssets.Instance.skruvmejsel;
             case ItemType.Remote:            return ItemAssets.Instance.remote;
             //case ItemType.Ball:              return ItemAssets.Instance.ball;
-            case ItemType.BedCoverAndPillow: return ItemAssets.Instance.bedcoverandpillow;
+            case ItemType.BedCoverAndPillow: //return ItemAssets.Instance.bedcoverandpillow;
             case ItemType.Book:              return ItemAssets.Instance.book;
         }
     }
