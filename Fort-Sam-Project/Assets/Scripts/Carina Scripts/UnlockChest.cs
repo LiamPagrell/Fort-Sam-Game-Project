@@ -9,6 +9,7 @@ public class UnlockChest : MonoBehaviour
     public GameObject buttons;
     public GameObject closeZO1, closeZO2, closeZO3;
     Movement player;
+    public ParticleSystem konfetti;
 
     float checkDistance;
     float pickUpDistance = 3.4f;
