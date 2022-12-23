@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class CodeLock : MonoBehaviour
 {
     public SoundManager soundManager;
-    public GameObject escape;
 
     int code = 1518;
     string nr = null;
@@ -80,7 +79,6 @@ public class CodeLock : MonoBehaviour
             //Turn of chest cursor interactable as well
             chest.gameObject.GetComponent<Collider2D>().enabled = false;
 
-            escape.SetActive(false);
         }
     }
 

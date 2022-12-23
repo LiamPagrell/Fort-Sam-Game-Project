@@ -104,6 +104,7 @@ public class PickupBehaviour : MonoBehaviour
     {    
         remote.gameObject.GetComponent<Animator>().SetTrigger("Remote");
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
+        GameObject.Find("BackAnims").GetComponent<Animator>().SetTrigger("itemGot");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
     }
     //private void Skruvmejsel()
@@ -120,7 +121,8 @@ public class PickupBehaviour : MonoBehaviour
         soundManager.Cozies();
         soundManager.Purr();
         Debug.Log("täcke");
-        checkmark.SetActive(true);
+        GameObject.Find("BackAnims").GetComponent<Animator>().SetTrigger("itemGot");
+        checkmark.SetActive(true);    
         //roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatAnim");
         //rat.gameObject.GetComponent<Animator>().SetTrigger("RatAnim");
