@@ -8,7 +8,7 @@ public class PickupBehaviour : MonoBehaviour
     public GameObject roboteyes;
     public GameObject cat;
     public GameObject rat;
-    public GameObject bed;
+    //public GameObject bed;
     public GameObject remote;
     public GameObject checkmark;
     //[SerializeField] AudioSource clickSound;
@@ -83,7 +83,7 @@ public class PickupBehaviour : MonoBehaviour
             //case ItemType.Ball: Ball(); break;
             case ItemType.Remote:Remote(); break;
             //case ItemType.Skruvmejsel: Skruvmejsel(); break;
-            case ItemType.BedCoverAndPillow: BedCoverAndPillow(); break;
+           // case ItemType.BedCoverAndPillow: BedCoverAndPillow(); break;
             case ItemType.Book: Book(); break;
             default:
                 break;
@@ -112,9 +112,9 @@ public class PickupBehaviour : MonoBehaviour
 
     //    player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
     //}
-    private void BedCoverAndPillow()
+    public void BedCoverAndPillow()
     {
-        bed.gameObject.GetComponent<Animator>().SetTrigger("Sheet");
+        //bed.gameObject.GetComponent<Animator>().SetTrigger("Sheet");
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
         cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRun");
