@@ -9,6 +9,15 @@ public class SamToRatShooKitchen : MonoBehaviour
         if (other.gameObject.CompareTag("BigRat"))
         {
             GameObject.Find("BigWhiskers").GetComponent<Animator>().SetTrigger("RatShoo");
+            StartCoroutine(Wait());
         }
     }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GameObject.Find("Sam_placeholder").GetComponent<Animator>().SetTrigger("ShooReact");
+    }
+
+        
 }
