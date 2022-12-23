@@ -19,7 +19,7 @@ public class PickupBehaviour : MonoBehaviour
     private static UI_Inventory uiInventory;
 
     float checkDistance;
-    float pickUpDistance = 3.4f;
+    float pickUpDistance = 4f;
 
     void Start()
     {

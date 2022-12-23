@@ -3848,11 +3848,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1471.509
+      value: 1372.423
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 86.113
+      value: 152.301
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_LocalScale.x
@@ -3896,11 +3896,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -1.126
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -701
+      value: -676.1797
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11799,7 +11799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1054.017
+      value: 1087.395
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_SizeDelta.y
@@ -11847,7 +11847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 935
+      value: 922.4832
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -12076,11 +12076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1471.509
+      value: 1378.499
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 86.113
+      value: 123.499
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_LocalScale.x
@@ -12124,11 +12124,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000038147
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 698
+      value: 683.9804
       objectReference: {fileID: 0}
     - target: {fileID: 6331999854910206835, guid: bb5f4b2882767114283c84517c3b5190, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14116,7 +14116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1088450089
 Transform:
   m_ObjectHideFlags: 0
@@ -17396,7 +17396,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -29036,7 +29036,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17729354, y: -0.7473719}
+  m_Offset: {x: -0.15507644, y: -0.7473719}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -29047,7 +29047,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.8656716, y: 5.935531}
+  m_Size: {x: 4.2009315, y: 5.935531}
   m_EdgeRadius: 0
 --- !u!212 &1842027962
 SpriteRenderer:

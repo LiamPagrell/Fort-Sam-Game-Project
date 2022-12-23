@@ -35,6 +35,7 @@ public class UnlockCalendar : MonoBehaviour
                 
                 StartCoroutine(wait());
                 buttons.SetActive(!isActive);
+                Debug.Log("buttons");
             }
 
         }
@@ -47,7 +48,8 @@ public class UnlockCalendar : MonoBehaviour
 
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(1f);
-
+        Debug.Log("Enum");
+        yield return new WaitForSeconds(3f);
+        
     }
 }
