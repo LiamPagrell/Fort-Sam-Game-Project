@@ -5517,7 +5517,7 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1469378896}
           m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-          m_MethodName: Cozies
+          m_MethodName: Pip
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -26051,6 +26051,7 @@ MonoBehaviour:
   GlobeSound: {fileID: 8300000, guid: a9e300d7614389c4fbaa7598c6350e65, type: 3}
   PurrSound: {fileID: 8300000, guid: d7a19c2151bbaa84e939949d1c0a7eff, type: 3}
   MeowSound: {fileID: 8300000, guid: 422b49a70bad4da4c924469d7bf89532, type: 3}
+  PipSound: {fileID: 8300000, guid: c3d51e74e3d1c9c45820ade823a13f85, type: 3}
 --- !u!82 &1469378897
 AudioSource:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip GlobeSound;
     public AudioClip PurrSound;
     public AudioClip MeowSound;
+    public AudioClip PipSound;
 
 
     public enum Sound
@@ -32,6 +33,7 @@ public class SoundManager : MonoBehaviour
         Globe,
         Purr,
         Meow,
+        Pip,
     }
    
     public  void RatSqueak()
@@ -91,5 +93,10 @@ public class SoundManager : MonoBehaviour
     {
 
         audioSource.PlayOneShot(MeowSound);
+    }
+    public void Pip()
+    {
+
+        audioSource.PlayOneShot(PipSound);
     }
 }
