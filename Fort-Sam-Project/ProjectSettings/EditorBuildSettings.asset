@@ -12,9 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Scenes in use/Game.unity
     guid: 854e10afc19bb1d45aabd9d12b5ff9c6
   - enabled: 1
+    path: Assets/Scenes/Scenes in use/Hallen.unity
+    guid: 4bc13d22db930414da008766c7d593fb
+  - enabled: 1
     path: Assets/Scenes/Scenes in use/Vardagsrummet.unity
     guid: dea736a154dae1342aeb272f15aad166
   - enabled: 1
     path: Assets/Scenes/Scenes in use/Credits.unity
     guid: ed8c59636a75969438187c3b28dbb40d
+  - enabled: 1
+    path: Assets/Scenes/Scenes in use/Vinden.unity
+    guid: 7ffa81657196ea244b8c261c90aa8fe3
   m_configObjects: {}

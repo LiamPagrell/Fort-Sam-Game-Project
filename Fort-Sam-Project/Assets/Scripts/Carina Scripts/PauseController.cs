@@ -15,24 +15,20 @@ public class PauseController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            gameIsPaused = !gameIsPaused;
-            PauseGame();
+            if (!gameIsPaused)
+            {
+                PauseGame();
+            }
         }
     }
 
     public void PauseGame()
     {
-        if (gameIsPaused)
-        {
-            pausePanel.SetActive(true);
-            Time.timeScale = 0f;        // stops time
-            AudioListener.pause = true; // paus all music
-            backpack.SetActive(false);
-        }
-        else
-        {
-            ResumeGame();
-        }
+        pausePanel.SetActive(true);
+        Time.timeScale = 0f;        // stops time
+        AudioListener.pause = true; // paus all music
+        backpack.SetActive(false);
+        gameIsPaused = true;
     }
 
     public void ResumeGame()
@@ -41,6 +37,7 @@ public class PauseController : MonoBehaviour
         Time.timeScale = 1f;
         AudioListener.pause = false;
         backpack.SetActive(true);
+        gameIsPaused = false;
     }
 
     public void QuitToMenu()
@@ -49,5 +46,6 @@ public class PauseController : MonoBehaviour
         AudioListener.pause = false;
         PickupBehaviour.ResetInventory();
         SceneManager.LoadScene("Menu");
+        gameIsPaused = false;
     }
 }

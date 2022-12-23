@@ -21,6 +21,7 @@ public class CodeLock : MonoBehaviour
     int counter2 = 1;
     int counter3 = 1;
     int counter4 = 1;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +74,7 @@ public class CodeLock : MonoBehaviour
             chest.open = true;
             //Turn of chest cursor interactable as well
             chest.gameObject.GetComponent<Collider2D>().enabled = false;
+            chest.konfetti.gameObject.SetActive(true);
 
         }
     }
