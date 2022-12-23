@@ -4001,7 +4001,6 @@ GameObject:
   - component: {fileID: 966151515}
   - component: {fileID: 966151521}
   - component: {fileID: 966151520}
-  - component: {fileID: 966151519}
   - component: {fileID: 966151518}
   - component: {fileID: 966151517}
   - component: {fileID: 966151516}
@@ -4021,8 +4020,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966151514}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.43, y: -0.94, z: -0.1079}
-  m_LocalScale: {x: 0.69586575, y: 0.67195845, z: 0.7737}
+  m_LocalPosition: {x: -10.8, y: 0.22, z: -0.1079}
+  m_LocalScale: {x: 1, y: 1, z: 0.7737}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1251261215}
@@ -4045,8 +4044,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.36520228, y: -3.8646998}
-  m_Size: {x: 2.047833, y: 0.44608396}
+  m_Offset: {x: -0.29700944, y: -2.6924372}
+  m_Size: {x: 1.6932347, y: 0.41783848}
   m_Direction: 1
 --- !u!95 &966151517
 Animator:
@@ -4089,32 +4088,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &966151519
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966151514}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.078889966, y: -3.912239}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.84, y: 8.13}
-    newSize: {x: 2.58, y: 5.99}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.7208922, y: 0.56766725}
-  m_EdgeRadius: 0
 --- !u!114 &966151520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4130,8 +4103,9 @@ MonoBehaviour:
   anim: {fileID: 966151517}
   speed: 4
   ySpeed: 1.5
-  minYpos: -0.1
-  maxYpos: 0.5
+  shadow: {fileID: 1244052072}
+  minYpos: 0.1
+  maxYpos: 0.7
 --- !u!212 &966151521
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4173,7 +4147,7 @@ SpriteRenderer:
   m_SortingLayerID: 1677588025
   m_SortingLayer: 6
   m_SortingOrder: 8
-  m_Sprite: {fileID: 21300000, guid: cf918645c0226344086cd194a3799630, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 18b23209926706a4ab4dbc997b1fa3e4, type: 3}
   m_Color: {r: 0.55906016, g: 0.69132376, b: 0.9811321, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5228,6 +5202,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockPanel: {fileID: 91877203}
   zoomObject: {fileID: 91877203}
+  buttons: {fileID: 0}
+  closeZO1: {fileID: 0}
+  closeZO2: {fileID: 0}
+  closeZO3: {fileID: 0}
+  konfetti: {fileID: 0}
   open: 0
 --- !u!1 &1200317909
 GameObject:
@@ -5868,9 +5847,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244052070}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22, y: -3.92, z: -0.000022870789}
-  m_LocalScale: {x: 2.464906, y: 0.4609165, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.03, y: -2.7, z: -0.000022870789}
+  m_LocalScale: {x: 2.1447148, y: 0.4609165, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 966151515}
@@ -5974,7 +5953,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pfItemWorld: {fileID: 899600962}
   remote: {fileID: 21300000, guid: c2869fc0efc86514a91b2c0f9b2cfc2b, type: 3}
-  bedcoverandpillow: {fileID: 21300000, guid: 91517f02b5095d14fa3d38f4d35d55a5, type: 3}
   book: {fileID: 21300000, guid: e6ad919cab8173846aeb4a6fbe001691, type: 3}
 --- !u!1 &1261284069
 GameObject:

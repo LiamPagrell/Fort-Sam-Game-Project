@@ -1074,7 +1074,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 10
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -5222,7 +5222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153248978}
   m_LocalRotation: {x: -0.99991816, y: -0, z: -0, w: -0.012794601}
-  m_LocalPosition: {x: 3.83, y: 0.19, z: -0.10262222}
+  m_LocalPosition: {x: 3.83, y: 0.58, z: -0.10262222}
   m_LocalScale: {x: 1.319625, y: 1.2424335, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6065,7 +6065,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 10
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -11645,7 +11645,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 10
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -16923,7 +16923,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.207
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -18400,7 +18400,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 10
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -22548,7 +22548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888419368}
   m_LocalRotation: {x: -0.99991816, y: -0, z: -0, w: -0.012794601}
-  m_LocalPosition: {x: 3.72, y: -0.77, z: -0.10262222}
+  m_LocalPosition: {x: 3.55, y: -0.87, z: -0.10262222}
   m_LocalScale: {x: 1.319625, y: 1.2424335, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23009,7 +23009,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pfItemWorld: {fileID: 790233961}
   remote: {fileID: 21300000, guid: c2869fc0efc86514a91b2c0f9b2cfc2b, type: 3}
-  bedcoverandpillow: {fileID: 21300000, guid: 91517f02b5095d14fa3d38f4d35d55a5, type: 3}
   book: {fileID: 21300000, guid: e6ad919cab8173846aeb4a6fbe001691, type: 3}
 --- !u!1 &935623241 stripped
 GameObject:
@@ -28574,7 +28573,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 10
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -32722,7 +32721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839185237}
   m_LocalRotation: {x: -0.99991816, y: -0, z: -0, w: -0.012794601}
-  m_LocalPosition: {x: 5.68, y: 0.15, z: -0.10262222}
+  m_LocalPosition: {x: 5.68, y: -0.42, z: -0.10262222}
   m_LocalScale: {x: 1.319625, y: 1.2424335, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33757,7 +33756,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 10
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0

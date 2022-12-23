@@ -23,6 +23,7 @@ public class Movement : MonoBehaviour
     //If we are on the ground
     //bool grounded;
     SpriteRenderer spriteRend;
+    public SpriteRenderer shadow;
 
     float scale = 1;
     Vector3 startScale;
@@ -33,6 +34,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        shadow = GameObject.Find("DropDownShadowSam").GetComponent<SpriteRenderer>();
         //Find our Rigidbody2D
         rb2d = GetComponent<Rigidbody2D>();
         spriteRend = GetComponent<SpriteRenderer>();
@@ -73,11 +75,12 @@ public class Movement : MonoBehaviour
         if (x < 0)
         {
             spriteRend.flipX = true;
-
+            shadow.flipX = true;
         }
         else if (x > 0)
         {
             spriteRend.flipX = false;
+            shadow.flipX = false;
         }
 
         //Only update x direction
