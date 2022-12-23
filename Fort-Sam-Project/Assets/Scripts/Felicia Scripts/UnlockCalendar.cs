@@ -32,16 +32,17 @@ public class UnlockCalendar : MonoBehaviour
             {
                 bool isActive = lockPanel.activeSelf;
                 lockPanel.SetActive(!isActive);
+                buttons.SetActive(false);
                 closeZO1.SetActive(false);
                 closeZO2.SetActive(false);
                 closeZO3.SetActive(false);
                 closeZO4.SetActive(false);
                 closeZO5.SetActive(false);
                 closeZO6.SetActive(false);
-                buttons.SetActive(false);
                 soundManager.TurningPages();
-                
+
                 StartCoroutine(wait());
+
             }
 
         }
@@ -54,7 +55,6 @@ public class UnlockCalendar : MonoBehaviour
 
     IEnumerator wait()
     {
-        Debug.Log("Enum");
         yield return new WaitForSeconds(0.5f);
         buttons.SetActive(true);
 
