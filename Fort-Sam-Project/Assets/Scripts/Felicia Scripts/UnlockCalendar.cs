@@ -6,6 +6,8 @@ public class UnlockCalendar : MonoBehaviour
 {
     public GameObject lockPanel;
     public GameObject zoomObject;
+    public GameObject buttons;
+    public GameObject closeZO1, closeZO2, closeZO3, closeZO4, closeZO5, closeZO6;
     public SoundManager soundManager;
 
     //Movement player;
@@ -30,7 +32,17 @@ public class UnlockCalendar : MonoBehaviour
             {
                 bool isActive = lockPanel.activeSelf;
                 lockPanel.SetActive(!isActive);
+                buttons.SetActive(false);
+                closeZO1.SetActive(false);
+                closeZO2.SetActive(false);
+                closeZO3.SetActive(false);
+                closeZO4.SetActive(false);
+                closeZO5.SetActive(false);
+                closeZO6.SetActive(false);
                 soundManager.TurningPages();
+
+                StartCoroutine(wait());
+
             }
 
         }
@@ -38,6 +50,13 @@ public class UnlockCalendar : MonoBehaviour
         {
 
         }*/
+
+    }
+
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(0.5f);
+        buttons.SetActive(true);
 
     }
 }

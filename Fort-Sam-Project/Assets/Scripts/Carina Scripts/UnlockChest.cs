@@ -6,10 +6,15 @@ public class UnlockChest : MonoBehaviour
 {
     public GameObject lockPanel;
     public GameObject zoomObject;
+    public GameObject buttons;
+    public GameObject closeZO1, closeZO2, closeZO3;
     Movement player;
+    public ParticleSystem konfetti;
 
     float checkDistance;
     float pickUpDistance = 3.4f;
+
+    public bool open = false;
 
     private void Start()
     {
@@ -20,7 +25,7 @@ public class UnlockChest : MonoBehaviour
     {
         checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
 
-        if (checkDistance < pickUpDistance)
+        if (checkDistance < pickUpDistance && !open)
         {
             CloseLockWindow();
         }
@@ -32,8 +37,21 @@ public class UnlockChest : MonoBehaviour
             if (!zoomObject.activeSelf)
             {
                 bool isActive = lockPanel.activeSelf;
-                lockPanel.SetActive(!isActive);
+                zoomObject.SetActive(!isActive);
+                buttons.SetActive(false);
+                closeZO1.SetActive(false);
+                closeZO2.SetActive(false);
+                closeZO3.SetActive(false);
+
+                StartCoroutine(wait());
+
             }
         }
+    }
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(0.5f);
+        buttons.SetActive(true);
+
     }
 }

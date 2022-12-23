@@ -21,6 +21,7 @@ public class CodeLock : MonoBehaviour
     int counter2 = 1;
     int counter3 = 1;
     int counter4 = 1;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -39,28 +40,24 @@ public class CodeLock : MonoBehaviour
 
     public void ChangeFirstCounter(int amount)
     {
-        Debug.Log("heo");
         counter1 += amount;
         textObject1.text = $"{GetRealNumber(counter1)}";
         CheckCode();
     }
     public void ChangeSecondCounter(int amount)
     {
-        Debug.Log("heo");
         counter2 += amount;
         textObject2.text = GetRealNumber(counter2).ToString();
         CheckCode();
     }
     public void ChangeThirdCounter(int amount)
     {
-        Debug.Log("heo");
         counter3 += amount;
         textObject3.text = GetRealNumber(counter3).ToString();
         CheckCode();
     }
     public void ChangeFourthCounter(int amount)
     {
-        Debug.Log("heo");
         counter4 += amount;
         textObject4.text = GetRealNumber(counter4).ToString();
         CheckCode();
@@ -71,8 +68,14 @@ public class CodeLock : MonoBehaviour
         int number = GetRealNumber(counter1) * 1000 + GetRealNumber(counter2) * 100 + GetRealNumber(counter3) * 10 + GetRealNumber(counter4);
         if(number == code)
         {
-            Debug.Log("Hackermans, im in!");
             StartCoroutine(WinCLosePanel());
+            //find the chest, turn it off
+            var chest = FindObjectOfType<UnlockChest>();
+            chest.open = true;
+            //Turn of chest cursor interactable as well
+            chest.gameObject.GetComponent<Collider2D>().enabled = false;
+            chest.konfetti.gameObject.SetActive(true);
+
         }
     }
 
