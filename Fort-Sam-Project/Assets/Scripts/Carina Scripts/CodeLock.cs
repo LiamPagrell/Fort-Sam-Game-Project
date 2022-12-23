@@ -74,22 +74,27 @@ public class CodeLock : MonoBehaviour
             chest.open = true;
             //Turn of chest cursor interactable as well
             chest.gameObject.GetComponent<Collider2D>().enabled = false;
-            chest.konfetti.gameObject.SetActive(true);
+            
 
         }
     }
 
     IEnumerator WinCLosePanel()
     {
+        var chest = FindObjectOfType<UnlockChest>();
         yield return new WaitForSeconds(0.5f);
         UnlockChest.FindObjectOfType<UnlockChest>().CloseLockWindow();
         UnlockChest.FindObjectOfType<UnlockChest>().GetComponent<Animator>().Play("ChestOpen");
         soundManager.Treasure();
         GameObject.Find("Remote").GetComponent<Animator>().SetTrigger("RemoteAppear");
+        chest.konfetti.gameObject.SetActive(true);
         GameObject.Find("TransitionRemote").GetComponent<Animator>().SetTrigger("RemoteOut");
 
         GetComponent<RectTransform>().gameObject.SetActive(false);
     }
+
+
+
 
     public void CodeFunction(string numbers)
     {
