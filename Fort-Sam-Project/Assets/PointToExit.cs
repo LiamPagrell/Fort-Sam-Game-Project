@@ -15,7 +15,6 @@ public class PointToExit : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            arrow.SetActive(true);
             GameObject.Find("PointToExit").GetComponent<Animator>().SetTrigger("Point");
 
         }
