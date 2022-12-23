@@ -121,7 +121,6 @@ public class PickupBehaviour : MonoBehaviour
         soundManager.Cozies();
         soundManager.Purr();
         Debug.Log("täcke");
-        GameObject.Find("BackAnims").GetComponent<Animator>().SetTrigger("itemGot");
         checkmark.SetActive(true);    
         //roboteyes.gameObject.GetComponent<Animator>().SetTrigger("CatJump");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatAnim");

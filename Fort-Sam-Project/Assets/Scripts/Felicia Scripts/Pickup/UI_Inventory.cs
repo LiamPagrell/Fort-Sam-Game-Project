@@ -30,7 +30,6 @@ public class UI_Inventory : MonoBehaviour
         foreach (Transform child in itemSlotContainer.transform)
         {
             GameObject.Destroy(child.gameObject);
-            Debug.Log("förstört barn");
         }
 
         foreach (Item item in inventory.GetItemList())
@@ -82,7 +81,6 @@ public class UI_Inventory : MonoBehaviour
     {
         StartCoroutine(wait());
 
-        Debug.Log("funkar detta?");
         Destroy(itemSlotRectTransform.gameObject);
 
         GameObject.Find("Helicopter_placeholder").GetComponent<Animator>().SetTrigger("Fly");
