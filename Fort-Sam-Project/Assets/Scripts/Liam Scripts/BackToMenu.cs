@@ -120,7 +120,7 @@ public class BackToMenu : MonoBehaviour
 
     IEnumerator Waiter(GameObject objectToTurnOff)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
         objectToTurnOff.SetActive(false);
     }
 
