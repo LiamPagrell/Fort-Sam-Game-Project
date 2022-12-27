@@ -13030,6 +13030,7 @@ MonoBehaviour:
   pfItemWorld: {fileID: 1331576124}
   remote: {fileID: 21300000, guid: c2869fc0efc86514a91b2c0f9b2cfc2b, type: 3}
   book: {fileID: 21300000, guid: e6ad919cab8173846aeb4a6fbe001691, type: 3}
+  cheese: {fileID: 0}
 --- !u!4 &965161072
 Transform:
   m_ObjectHideFlags: 0
@@ -22191,6 +22192,7 @@ GameObject:
   - component: {fileID: 1332860696}
   - component: {fileID: 1332860697}
   - component: {fileID: 1332860698}
+  - component: {fileID: 1332860699}
   m_Layer: 0
   m_Name: PillowAndBlanket_Placeholder
   m_TagString: Interactable
@@ -22432,6 +22434,25 @@ MonoBehaviour:
   checkmark: {fileID: 734053718}
   sam: {fileID: 120650300}
   soundManager: {fileID: 1469378896}
+--- !u!114 &1332860699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332860687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf660ab06f14f7d40a7a155da394c98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharAnimator: {fileID: 120650300}
+  player: {fileID: 120650300}
+  playerMovementScript: {fileID: 120650303}
+  animText: PickingUpMedium
+  itemAppear: {fileID: 0}
+  itemDisappear: {fileID: 1332860687}
+  pickUpDistance: 4
 --- !u!224 &1340732783 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 850647320973456636, guid: 9ee8ebd121af8624ab5f9075ea778592, type: 3}
@@ -34419,11 +34440,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf660ab06f14f7d40a7a155da394c98c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemAnimator: {fileID: 120650300}
-  item: {fileID: 1181640395}
-  itemDisappear: {fileID: 1894172623}
+  CharAnimator: {fileID: 120650300}
+  player: {fileID: 120650300}
+  playerMovementScript: {fileID: 120650303}
   animText: PickingLow
-  pickUpDistance: 4
+  itemAppear: {fileID: 1181640395}
+  itemDisappear: {fileID: 1894172623}
+  pickUpDistance: 3
 --- !u!1 &1895715643
 GameObject:
   m_ObjectHideFlags: 0

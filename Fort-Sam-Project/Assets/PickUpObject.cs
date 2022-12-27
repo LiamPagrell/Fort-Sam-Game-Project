@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PickUpObject : MonoBehaviour
 {
-    public GameObject itemAnimator;
-    public GameObject item;
-    public GameObject itemDisappear;
+    public GameObject CharAnimator;
     public GameObject player;
+    public Movement playerMovementScript;
     public string animText;
+   
+    public GameObject itemAppear;
+    public GameObject itemDisappear;
+
 
     float checkDistance;
     public float pickUpDistance = 1;
@@ -25,9 +28,11 @@ public class PickUpObject : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && checkDistance < pickUpDistance && CompareTag("Interactable"))
         {
-            item.SetActive(true);
-            itemDisappear.SetActive(false);
-            itemAnimator.gameObject.GetComponent<Animator>().Play(animText);           
+            player.gameObject.GetComponent<Movement>().enabled = false;
+            playerMovementScript.StopMovement();
+            StartCoroutine(Items());
+
+            CharAnimator.gameObject.GetComponent<Animator>().Play(animText);
         }
 
     }
@@ -36,5 +41,14 @@ public class PickUpObject : MonoBehaviour
     void Update()
     {
         
+    }
+
+    IEnumerator Items()
+    {
+        yield return new WaitForSeconds(0.5f);
+        player.gameObject.GetComponent<Movement>().enabled = true;
+        playerMovementScript.StartMovement();
+        itemAppear.SetActive(true);
+        itemDisappear.SetActive(false);
     }
 }
