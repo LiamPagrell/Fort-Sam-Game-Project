@@ -22,8 +22,6 @@ public class BednCover : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && checkDistance < pickUpDistance && CompareTag("Interactable"))
         {
-
-            sam.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
             GameObject.Find("PillowAndBlanket_Placeholder").GetComponent<Animator>().SetTrigger("Sheet");
             GameObject.Find("Cat").GetComponent<Animator>().SetTrigger("CatActive");
             GameObject.Find("BigWhiskers").GetComponent<Animator>().SetTrigger("RatRun");
@@ -34,10 +32,16 @@ public class BednCover : MonoBehaviour
             soundManager.Purr();
 
             checkmark.SetActive(true);
-            Destroy(this.gameObject);
+            StartCoroutine(WaitDestroy());
         }
 
 
 
+    }
+
+    IEnumerator WaitDestroy()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Destroy(this.gameObject);
     }
 }

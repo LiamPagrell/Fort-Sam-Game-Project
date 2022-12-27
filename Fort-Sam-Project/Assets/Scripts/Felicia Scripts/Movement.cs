@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     //Player Movement Speed
     public float speed;
     [SerializeField] float ySpeed = 1.5f;
+
     
     private float playerHeight;
 
@@ -118,6 +119,20 @@ public class Movement : MonoBehaviour
 
        // ClampPlayerMovement(); ///Ignore because it make the camera a literal cage for the player character
 
+    }
+
+    public void StopMovement()
+    {
+        movement.x = 0;
+        movement.y = 0;
+        rb2d.velocity = movement;
+    }
+
+    public void StartMovement()
+    {
+        movement.x = speed;
+        movement.y = ySpeed;
+        rb2d.velocity = movement;
     }
     //private void OnCollisionEnter2D(Collision2D collision) ///Startkod för att fixa Walk anim stop när sam går in i objekt
     //{
