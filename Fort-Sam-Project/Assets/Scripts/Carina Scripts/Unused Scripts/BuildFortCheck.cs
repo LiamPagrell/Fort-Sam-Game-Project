@@ -23,7 +23,7 @@ public class BuildFortCheck : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //if (hasFortItems)
+            /*if (hasFortItems)
             {
                 hasFortItems = true;
                 buttonToPress.SetActive(true);
@@ -32,6 +32,21 @@ public class BuildFortCheck : MonoBehaviour
                 {
                     // build fort
                 }
+            }*/
+
+            BuildFort(hasFortItems);
+        }
+    }
+
+    public void BuildFort(bool hasFortItems)
+    {
+        if (hasFortItems)
+        {
+            buttonToPress.SetActive(true);
+            
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                //build fort
             }
         }
     }
