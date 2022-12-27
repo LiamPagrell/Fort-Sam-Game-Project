@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Scenes in use/Menu.unity
     guid: 0429d4794d136b240a870a81b87a77d5
   - enabled: 1
-    path: Assets/Scenes/Scenes in use/Game.unity
+    path: Assets/Scenes/Scenes in use/SamRoom.unity
     guid: 854e10afc19bb1d45aabd9d12b5ff9c6
   - enabled: 1
     path: Assets/Scenes/Scenes in use/Hallen.unity
