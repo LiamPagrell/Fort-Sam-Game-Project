@@ -36,7 +36,7 @@ public class SoundManager : MonoBehaviour
         Pip,
     }
    
-    public  void RatSqueak()
+    public void RatSqueak()
     {
         
         audioSource.PlayOneShot(RatSqueakSound);

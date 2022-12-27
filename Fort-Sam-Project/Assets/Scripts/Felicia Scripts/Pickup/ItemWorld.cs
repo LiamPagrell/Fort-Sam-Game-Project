@@ -34,7 +34,7 @@ public class ItemWorld : MonoBehaviour
             item.enabled = false;
         }
 
-        Invoke(nameof(Die), 0.3f);
+        Invoke(nameof(Die), 0.55f);
     }
 
     private void Die()

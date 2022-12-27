@@ -19,7 +19,7 @@ public class PickupBehaviour : MonoBehaviour
     private static UI_Inventory uiInventory;
 
     float checkDistance;
-    float pickUpDistance = 4f;
+    public float pickUpDistance = 4f;
 
     void Start()
     {
@@ -103,7 +103,7 @@ public class PickupBehaviour : MonoBehaviour
     private void Remote()
     {    
         remote.gameObject.GetComponent<Animator>().SetTrigger("Remote");
-        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
+        //player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
         GameObject.Find("BackAnims").GetComponent<Animator>().SetTrigger("itemGot");
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatActive");
     }
@@ -135,6 +135,8 @@ public class PickupBehaviour : MonoBehaviour
     }
     //IEnumerator Wait()
     //{
-    //    yield return new WaitForSeconds(1f);
+    //    yield return new WaitForSeconds(0.5 f);
+    //    player.gameObject.GetComponent<Movement>().enabled = true;
+    //    player.StartMovement();
     //}
 }
