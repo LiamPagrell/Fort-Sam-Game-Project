@@ -5,7 +5,7 @@ using UnityEngine;
 public class FortLightsPickup : MonoBehaviour
 {
     float checkDistance;
-    float pickUpDistance = 3f;
+    float pickUpDistance = 2f;
 
     Movement player;
 

@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class BookBuildFort : MonoBehaviour
 {
     [SerializeField] GameObject buildFortButton;
+    [SerializeField] GameObject pillowFort;
+    [SerializeField] Animator animator;
+    [SerializeField] GameObject transitionImage;
     public bool hasFortItems;
 
     void Start()
@@ -33,6 +36,15 @@ public class BookBuildFort : MonoBehaviour
 
     public void LoadEndScene()
     {
-        SceneManager.LoadScene("Credits");
+        transitionImage.SetActive(true);
+        //SceneManager.LoadScene("Credits");
+        StartCoroutine(FortFinished());
+    }
+
+    IEnumerator FortFinished()
+    {
+        animator.SetTrigger("TriggerTransition");
+        yield return new WaitForSeconds(1f);
+        pillowFort.SetActive(true);
     }
 }
