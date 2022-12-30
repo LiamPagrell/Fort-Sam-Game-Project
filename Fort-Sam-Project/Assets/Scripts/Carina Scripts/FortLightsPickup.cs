@@ -7,6 +7,8 @@ public class FortLightsPickup : MonoBehaviour
     float checkDistance;
     float pickUpDistance = 2f;
 
+    [SerializeField] GameObject buildFortIconActivate;
+
     Movement player;
 
     private void Start()
@@ -21,6 +23,7 @@ public class FortLightsPickup : MonoBehaviour
         if (checkDistance < pickUpDistance)
         {
             BookBuildFort.FindObjectOfType<BookBuildFort>().BuildFort(true);
+            buildFortIconActivate.SetActive(true);
             Destroy(gameObject);
         }
     }

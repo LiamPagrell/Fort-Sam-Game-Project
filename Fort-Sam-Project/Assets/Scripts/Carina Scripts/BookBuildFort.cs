@@ -10,6 +10,9 @@ public class BookBuildFort : MonoBehaviour
     [SerializeField] GameObject pillowFort;
     [SerializeField] Animator animator;
     [SerializeField] GameObject transitionImage;
+    [SerializeField] GameObject fortBook;
+    [SerializeField] GameObject buildFortIconActivate;
+
     public bool hasFortItems;
 
     void Start()
@@ -36,15 +39,18 @@ public class BookBuildFort : MonoBehaviour
 
     public void LoadEndScene()
     {
-        transitionImage.SetActive(true);
         //SceneManager.LoadScene("Credits");
         StartCoroutine(FortFinished());
     }
 
     IEnumerator FortFinished()
     {
+        yield return new WaitForSeconds(0.4f);
+        transitionImage.SetActive(true);
         animator.SetTrigger("TriggerTransition");
         yield return new WaitForSeconds(1f);
         pillowFort.SetActive(true);
+        fortBook.SetActive(false);
+        buildFortIconActivate.SetActive(false);
     }
 }
