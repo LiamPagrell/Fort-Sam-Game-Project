@@ -1987,6 +1987,7 @@ MonoBehaviour:
   PurrSound: {fileID: 8300000, guid: d7a19c2151bbaa84e939949d1c0a7eff, type: 3}
   MeowSound: {fileID: 8300000, guid: 422b49a70bad4da4c924469d7bf89532, type: 3}
   PipSound: {fileID: 0}
+  StrumSound: {fileID: 8300000, guid: 142e6354c440884408ff013f418a9c4c, type: 3}
 --- !u!82 &383045882
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3868,7 +3869,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690542970}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.662086, y: -0.88232976, z: -0.22190045}
+  m_LocalPosition: {x: -19.09, y: -0.84, z: -0.22190045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5561,7 +5562,7 @@ SpriteRenderer:
   m_SortingLayer: 6
   m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 18b23209926706a4ab4dbc997b1fa3e4, type: 3}
-  m_Color: {r: 0.55906016, g: 0.69132376, b: 0.9811321, a: 1}
+  m_Color: {r: 0.6270203, g: 0.73332274, b: 0.9716981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5678,7 +5679,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 75
+  m_characterSpacing: 73
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -7134,7 +7135,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8ce82c83d0058e45840001ee0284d67, type: 3}
-  m_Color: {r: 0.35993233, g: 0.4197045, b: 0.6886792, a: 1}
+  m_Color: {r: 0.5943396, g: 0.4732289, b: 0.4732289, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10051,8 +10052,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: a0a81b490642fbd46b8d7bdbe49dfc52, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 47207b6a55178d44e8209e1be4e21bed, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18370,8 +18371,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.37532, y: -239.63914}
-  m_SizeDelta: {x: 496.6757, y: 91.6527}
+  m_AnchoredPosition: {x: -5.5836, y: -239.63914}
+  m_SizeDelta: {x: 481.0923, y: 91.6527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2007216689
 MonoBehaviour:
@@ -23825,7 +23826,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 383045881}
           m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-          m_MethodName: Meow
+          m_MethodName: Strum
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -29582,7 +29583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6189966598601496922, guid: a5bef01bc357b49469f02b3d46c8f7d0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects:
