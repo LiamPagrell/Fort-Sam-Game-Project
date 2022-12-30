@@ -41,7 +41,7 @@ public class Movement : MonoBehaviour
         spriteRend = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
-        playerHeight = GetComponent<SpriteRenderer>().bounds.size.y / 2;
+        //playerHeight = GetComponent<SpriteRenderer>().bounds.size.y / 2;
 
         startScale = transform.localScale;
     }
