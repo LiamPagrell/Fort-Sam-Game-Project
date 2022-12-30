@@ -6,6 +6,11 @@ using TMPro;
 public class KitchenLock : MonoBehaviour
 {
     [SerializeField] TMP_InputField Input;
+    public GameObject fridge;
+    public GameObject cheese;
+    public GameObject locket;
+    public GameObject rat;
+
     void Start()
     {
         
@@ -18,7 +23,7 @@ public class KitchenLock : MonoBehaviour
     }
     public void CheckCode()
     {
-        if (Input.text == "krita")
+        if (Input.text == "gilbert")
         {
             StartCoroutine(WinCLosePanel());
         }
@@ -27,6 +32,15 @@ public class KitchenLock : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         this.gameObject.SetActive(false);
+        locket.gameObject.SetActive(false);
+        fridge.SetActive(true);
+        cheese.gameObject.GetComponent<Animator>().SetTrigger("cheese");
+        yield return new WaitForSeconds(1f);
+        fridge.gameObject.SetActive(false);
+        //rat.gameObject.GetComponent<Animator>().SetTrigger("rat");
+
 
     }
+
+    
 }
