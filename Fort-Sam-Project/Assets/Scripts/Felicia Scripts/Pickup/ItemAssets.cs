@@ -22,4 +22,6 @@ public class ItemAssets : MonoBehaviour
    // public Sprite bedcoverandpillow;
     public Sprite book;
     public Sprite cheese;
+    public Sprite key;
+    public Sprite toyFish;
 }
