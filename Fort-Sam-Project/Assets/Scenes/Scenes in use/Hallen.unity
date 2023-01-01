@@ -272,7 +272,6 @@ GameObject:
   - component: {fileID: 72200183}
   - component: {fileID: 72200182}
   - component: {fileID: 72200181}
-  - component: {fileID: 72200180}
   m_Layer: 0
   m_Name: Sam_placeholder
   m_TagString: Player
@@ -299,18 +298,6 @@ Transform:
   m_Father: {fileID: 1026673036}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &72200180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 72200178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 906d39d0627301f44b5e747f52e5f56a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &72200181
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1100,11 +1087,11 @@ GameObject:
   - component: {fileID: 363604488}
   m_Layer: 0
   m_Name: Key
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &363604484
 Transform:
   m_ObjectHideFlags: 0
@@ -1160,7 +1147,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 6d033eaff9e151141b4e6b94aa670d47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1185,9 +1172,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.072219685, y: -0.037276346}
+  m_Offset: {x: -0.11595266, y: 0.047454763}
   serializedVersion: 2
-  m_Radius: 1.4700847
+  m_Radius: 1.8254853
 --- !u!114 &363604487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10511,9 +10498,11 @@ GameObject:
   - component: {fileID: 1338313688}
   - component: {fileID: 1338313690}
   - component: {fileID: 1338313691}
+  - component: {fileID: 1338313692}
+  - component: {fileID: 1338313693}
   m_Layer: 0
   m_Name: Love interest Fish
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10637,12 +10626,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7a1d7c21ab52d646b4309c865fe129a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pfItemWorld: {fileID: 0}
+  pfItemWorld: {fileID: 2032141022}
   remote: {fileID: 0}
   book: {fileID: 0}
   cheese: {fileID: 0}
   key: {fileID: 21300000, guid: 7b84cd2d1221ca645bb9176c66333746, type: 3}
   toyFish: {fileID: 21300000, guid: 9761ae6f3fb31254aa42af0dd2b825de, type: 3}
+--- !u!114 &1338313692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338313686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9d1028151106d4dbc8210ea7ad9e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 4
+--- !u!114 &1338313693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338313686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81540c29a8dd74dafbb3f70913df15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roboteyes: {fileID: 0}
+  cat: {fileID: 0}
+  rat: {fileID: 0}
+  remote: {fileID: 0}
+  checkmark: {fileID: 0}
+  key: {fileID: 0}
+  toyFish: {fileID: 1338313686}
+  soundManager: {fileID: 0}
+  pickUpDistance: 4
 --- !u!1 &1363561715
 GameObject:
   m_ObjectHideFlags: 0
