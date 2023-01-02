@@ -15,6 +15,9 @@ public class FishBowlInteract : MonoBehaviour
 
     [SerializeField] GameObject fishBowl;
     [SerializeField] GameObject fishyFish;
+    [SerializeField] GameObject backGroundFish;
+    [SerializeField] GameObject keyCheck;
+    [SerializeField] GameObject toyFish;
 
     void Start()
     {
@@ -27,7 +30,7 @@ public class FishBowlInteract : MonoBehaviour
     {
         checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
 
-        //if (checkDistance < pickUpDistance)
+        if (checkDistance < pickUpDistance)
         {
             if (!isZoomed)
             {
@@ -48,6 +51,11 @@ public class FishBowlInteract : MonoBehaviour
         isZoomed = true;
         fishBowl.SetActive(true);
         fishyFish.SetActive(true);
+        backGroundFish.SetActive(false);
+        if (keyCheck == null)
+        {
+            toyFish.SetActive(true);
+        }
     }
 
     public void ZoomOutFishBowl()
@@ -57,5 +65,10 @@ public class FishBowlInteract : MonoBehaviour
         Camera.main.transform.eulerAngles = camPos;
         fishBowl.SetActive(false);
         fishyFish.SetActive(false);
+        backGroundFish.SetActive(true);
+        if(keyCheck == null)
+        {
+            toyFish.SetActive(false);
+        }
     }
 }

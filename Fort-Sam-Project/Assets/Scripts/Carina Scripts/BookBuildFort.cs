@@ -52,5 +52,7 @@ public class BookBuildFort : MonoBehaviour
         pillowFort.SetActive(true);
         fortBook.SetActive(false);
         buildFortIconActivate.SetActive(false);
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("Outro");
     }
 }
