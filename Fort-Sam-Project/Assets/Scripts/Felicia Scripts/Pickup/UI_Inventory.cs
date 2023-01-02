@@ -108,6 +108,14 @@ public class UI_Inventory : MonoBehaviour
         Destroy(itemSlotRectTransform.gameObject);
         GameObject.Find("LoveinterestFish (1)").GetComponent<Animator>().SetTrigger("ToyFishBowl");
         FindObjectOfType<GetKeyFromFishBowl>().KeyCanBePickuped();
+        StartCoroutine(ToyWobble());
+
+        IEnumerator ToyWobble()
+        {
+            yield return new WaitForSeconds(1f);
+            GameObject.Find("LoveinterestFish (1)").GetComponent<Animator>().SetTrigger("ToyFishWobble");
+
+        }
     }
 
     //private void RefreshInventoryItemsSAMUEL()
