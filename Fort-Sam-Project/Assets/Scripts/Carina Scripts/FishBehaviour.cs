@@ -23,17 +23,17 @@ public class FishBehaviour : MonoBehaviour
     public void AngryFish()
     {
         {
-            GetComponent<Animator>().Play("AngryFish");
+            GetComponent<Animator>().SetTrigger("AngryFish");
         }
     }
 
     public void FishTransition()
     {
-        GetComponent<Animator>().Play("FishTransition");
+        GetComponent<Animator>().SetTrigger("FishChange");
     }
 
     public void LoveFishy()
     {
-        GetComponent<Animator>().Play("FishInLove");
+        GetComponent<Animator>().SetTrigger("FishLove");
     }
 }

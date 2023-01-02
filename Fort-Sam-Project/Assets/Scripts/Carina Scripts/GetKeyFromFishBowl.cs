@@ -43,6 +43,5 @@ public class GetKeyFromFishBowl : MonoBehaviour
     public void AfterKeyPickuped()
     {
         fishBowlCollider.gameObject.SetActive(true);
-        
     }
 }
