@@ -33,5 +33,5 @@ public class strumpaList : MonoBehaviour
     //    }
         //sockBookPanel.
         
-    }
+    //}
 }
