@@ -8,7 +8,9 @@ public class UnlockChest : MonoBehaviour
     public GameObject zoomObject;
     public GameObject buttons;
     public GameObject closeZO1, closeZO2, closeZO3;
+    //public Movement playerMovementScript;
     Movement player;
+    //public GameObject player;
     public ParticleSystem konfetti;
 
     float checkDistance;
@@ -27,7 +29,9 @@ public class UnlockChest : MonoBehaviour
 
         if (checkDistance < pickUpDistance && !open)
         {
+            
             CloseLockWindow();
+            
         }
     }
     public void CloseLockWindow()
@@ -42,16 +46,31 @@ public class UnlockChest : MonoBehaviour
                 closeZO1.SetActive(false);
                 closeZO2.SetActive(false);
                 closeZO3.SetActive(false);
+                //player.gameObject.GetComponent<Movement>().enabled = false;
+                //playerMovementScript.StopMovement();
+                //player.gameObject.GetComponent<Animator>().SetBool("moving", false);
 
                 StartCoroutine(wait());
 
             }
+            //else
+            //{
+            //    Debug.Log("movetest1");
+            //    player.gameObject.GetComponent<Movement>().enabled = true;
+            //    Debug.Log("movetest2");
+            //    playerMovementScript.StartMovement();
+            //    Debug.Log("movetest3");
+            //    player.gameObject.GetComponent<Animator>().SetBool("moving", true);
+            //}
         }
     }
     IEnumerator wait()
     {
         yield return new WaitForSeconds(0.5f);
         buttons.SetActive(true);
+        
 
     }
+
+
 }

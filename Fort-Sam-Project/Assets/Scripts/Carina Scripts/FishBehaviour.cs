@@ -5,25 +5,35 @@ using UnityEngine;
 public class FishBehaviour : MonoBehaviour
 {
 
-    Animator animator;
+    [SerializeField] GameObject keyCheck;
 
     private void Update()
     {
-        AngryFish();
+        if (keyCheck != null)
+        {
+            AngryFish();
+        }
+        else
+        {
+            LoveFishy();
+        }
+
     }
 
     public void AngryFish()
     {
-
-        //if (FindObjectOfType<FishBowlInteract>().isZoomed == true)
         {
             GetComponent<Animator>().SetTrigger("AngryFish");
         }
     }
 
-    public void LoveFishy()
+    public void FishTransition()
     {
         GetComponent<Animator>().SetTrigger("FishChange");
+    }
+
+    public void LoveFishy()
+    {
         GetComponent<Animator>().SetTrigger("FishLove");
     }
 }
