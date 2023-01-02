@@ -7,7 +7,6 @@ TagManager:
   - Interactable
   - Object
   - Collectable
-  - BigRat
   layers:
   - Default
   - TransparentFX

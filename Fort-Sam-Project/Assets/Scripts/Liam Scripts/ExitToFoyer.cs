@@ -13,8 +13,8 @@ public class ExitToFoyer : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            GameObject.Find("Characters").GetComponent<Animator>().SetTrigger("TransitLiving");
-            GameObject.Find("TransitionSam").GetComponent<Animator>().SetTrigger("TransitionLiving");
+            GameObject.Find("Characters").GetComponent<Animator>().SetTrigger("Transit");
+            GameObject.Find("TransitionSam").GetComponent<Animator>().SetTrigger("Transition");
         }
     }
     // Update is called once per frame
