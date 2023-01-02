@@ -20,6 +20,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip MeowSound;
     public AudioClip PipSound;
     public AudioClip StrumSound;
+    public AudioClip TvNewsSound;
 
 
     public enum Sound
@@ -36,6 +37,7 @@ public class SoundManager : MonoBehaviour
         Meow,
         Pip,
         Strum,
+        TvNews,
     }
    
     public void RatSqueak()
@@ -105,5 +107,10 @@ public class SoundManager : MonoBehaviour
     {
 
         audioSource.PlayOneShot(StrumSound);
+    }
+    public void TvNews()
+    {
+
+        audioSource.PlayOneShot(TvNewsSound);
     }
 }
