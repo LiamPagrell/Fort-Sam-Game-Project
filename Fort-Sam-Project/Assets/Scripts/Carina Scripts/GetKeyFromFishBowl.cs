@@ -5,7 +5,8 @@ using UnityEngine;
 public class GetKeyFromFishBowl : MonoBehaviour
 {
     [SerializeField] GameObject preventKeyPickup;
-
+    [SerializeField] GameObject fishBowlCollider;
+ 
     float waitTime = 1f;
 
     void Start()
@@ -26,6 +27,7 @@ public class GetKeyFromFishBowl : MonoBehaviour
 
     IEnumerator FishInLoveSequence()
     {
+        fishBowlCollider.gameObject.SetActive(false);
 
         Debug.Log("got here");
         yield return new WaitForSeconds(waitTime);

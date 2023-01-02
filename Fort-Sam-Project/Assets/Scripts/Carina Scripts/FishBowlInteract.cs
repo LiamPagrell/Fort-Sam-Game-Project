@@ -15,7 +15,6 @@ public class FishBowlInteract : MonoBehaviour
 
     [SerializeField] GameObject fishBowl;
     [SerializeField] GameObject fishyFish;
-    [SerializeField] CircleCollider2D bowlCollider;
 
     void Start()
     {
@@ -34,10 +33,10 @@ public class FishBowlInteract : MonoBehaviour
             {
                 FishBowlZoom();
             }
-            /*else
+            else
             {
                 ZoomOutFishBowl();
-            }*/
+            }
         }
     }
 
@@ -49,7 +48,6 @@ public class FishBowlInteract : MonoBehaviour
         isZoomed = true;
         fishBowl.SetActive(true);
         fishyFish.SetActive(true);
-        bowlCollider.gameObject.SetActive(false);
     }
 
     public void ZoomOutFishBowl()

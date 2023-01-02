@@ -10157,7 +10157,6 @@ MonoBehaviour:
   isZoomed: 0
   fishBowl: {fileID: 1682736855}
   fishyFish: {fileID: 1859072083}
-  bowlCollider: {fileID: 1201745515}
 --- !u!58 &1201745515
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11370,6 +11369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preventKeyPickup: {fileID: 19085793}
+  fishBowlCollider: {fileID: 1201745513}
 --- !u!1 &1490224472
 GameObject:
   m_ObjectHideFlags: 0
