@@ -11,6 +11,8 @@ public class PickupBehaviour : MonoBehaviour
     //public GameObject bed;
     public GameObject remote;
     public GameObject checkmark;
+    public GameObject key;
+    public GameObject toyFish;
     //[SerializeField] AudioSource clickSound;
     //public GameObject cat;
     Movement player;
