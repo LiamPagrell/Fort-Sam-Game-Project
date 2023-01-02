@@ -8,6 +8,7 @@ public class UnlockCalendar : MonoBehaviour
     public GameObject zoomObject;
     public GameObject buttons;
     public GameObject closeZO1, closeZO2, closeZO3, closeZO4, closeZO5, closeZO6;
+    Movement player;
     public SoundManager soundManager;
 
     //Movement player;
@@ -19,6 +20,7 @@ public class UnlockCalendar : MonoBehaviour
     private void Start()
     {
         //player = FindObjectOfType<Movement>();
+        player = FindObjectOfType<Movement>();
     }
 
     private void OnMouseDown()
