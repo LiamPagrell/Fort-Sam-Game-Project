@@ -5,35 +5,21 @@ using UnityEngine;
 public class FishBehaviour : MonoBehaviour
 {
 
-    [SerializeField] GameObject keyCheck;
-
     private void Update()
     {
-        if (keyCheck != null)
-        {
-            AngryFish();
-        }
-        else
-        {
-            LoveFishy();
-        }
-
+        AngryFish();
     }
 
     public void AngryFish()
     {
         {
-            GetComponent<Animator>().Play("AngryFish");
+            GetComponent<Animator>().SetTrigger("AngryFish");
         }
-    }
-
-    public void FishTransition()
-    {
-        GetComponent<Animator>().Play("FishTransition");
     }
 
     public void LoveFishy()
     {
-        GetComponent<Animator>().Play("FishInLove");
+        GetComponent<Animator>().SetTrigger("FishChange");
+        GetComponent<Animator>().SetTrigger("FishLove");
     }
 }

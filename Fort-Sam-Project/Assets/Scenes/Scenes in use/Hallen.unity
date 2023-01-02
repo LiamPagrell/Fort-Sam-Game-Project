@@ -705,6 +705,10 @@ GameObject:
   - component: {fileID: 181367588}
   - component: {fileID: 181367587}
   - component: {fileID: 181367586}
+  - component: {fileID: 181367585}
+  - component: {fileID: 181367584}
+  - component: {fileID: 181367583}
+  - component: {fileID: 181367582}
   - component: {fileID: 181367581}
   m_Layer: 0
   m_Name: LoveinterestFish (1)
@@ -733,6 +737,72 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &181367582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181367580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81540c29a8dd74dafbb3f70913df15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roboteyes: {fileID: 0}
+  cat: {fileID: 0}
+  rat: {fileID: 0}
+  remote: {fileID: 0}
+  checkmark: {fileID: 0}
+  key: {fileID: 0}
+  toyFish: {fileID: 181367580}
+  soundManager: {fileID: 0}
+  pickUpDistance: 4
+--- !u!114 &181367583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181367580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9d1028151106d4dbc8210ea7ad9e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 4
+--- !u!114 &181367584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181367580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7a1d7c21ab52d646b4309c865fe129a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pfItemWorld: {fileID: 2032141022}
+  remote: {fileID: 0}
+  book: {fileID: 0}
+  cheese: {fileID: 0}
+  key: {fileID: 21300000, guid: 7b84cd2d1221ca645bb9176c66333746, type: 3}
+  toyFish: {fileID: 21300000, guid: 9761ae6f3fb31254aa42af0dd2b825de, type: 3}
+--- !u!114 &181367585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181367580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6531dce541696494c9812646e093b37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 94f2773fa0e7d8c489b0ca7e0f66f01e, type: 3}
+  cursorMode: 0
 --- !u!61 &181367586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11300,7 +11370,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preventKeyPickup: {fileID: 19085793}
   fishBowlCollider: {fileID: 1201745513}
-  keyCheck: {fileID: 363604483}
 --- !u!1 &1490224472
 GameObject:
   m_ObjectHideFlags: 0
@@ -13035,7 +13104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e02b1baddc8b54429b56986ca10e9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyCheck: {fileID: 363604483}
 --- !u!1 &1860026941
 GameObject:
   m_ObjectHideFlags: 0
