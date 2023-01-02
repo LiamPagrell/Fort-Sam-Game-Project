@@ -55,6 +55,10 @@ public class UI_Inventory : MonoBehaviour
                 Remote(itemSlotRectTransform);
                 inventory.Remove(item);
                 break;
+            case ItemType.ToyFish:
+                ToyFish(itemSlotRectTransform);
+                inventory.Remove(item);
+                break;
             default:
                 break;
 
@@ -97,6 +101,13 @@ public class UI_Inventory : MonoBehaviour
         //GameObject.Find("Cat").GetComponent<Animator>().SetTrigger("CatAnim");
         //GameObject.Find("BigWhiskers").GetComponent<Animator>().SetTrigger("RatAnim");
         //Debug.Log("Poopyman");
+    }
+
+    public void ToyFish(RectTransform itemSlotRectTransform)
+    {
+        Destroy(itemSlotRectTransform.gameObject);
+        GameObject.Find("LoveinterestFish (1)").GetComponent<Animator>().SetTrigger("ToyFishBowl");
+        FindObjectOfType<GetKeyFromFishBowl>().KeyCanBePickuped();
     }
 
     //private void RefreshInventoryItemsSAMUEL()

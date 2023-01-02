@@ -6,7 +6,7 @@ using UnityEngine;
 public class FishBowlInteract : MonoBehaviour
 {
     float checkDistance;
-    float pickUpDistance = 2.5f;
+    float pickUpDistance = 4f;
     float zoomSize;
     Vector3 camPos;
     float smoothSpeed = 2.0f;
@@ -15,7 +15,7 @@ public class FishBowlInteract : MonoBehaviour
 
     [SerializeField] GameObject fishBowl;
     [SerializeField] GameObject fishyFish;
-    [SerializeField] GameObject key;
+    [SerializeField] CircleCollider2D bowlCollider;
 
     void Start()
     {
@@ -34,10 +34,10 @@ public class FishBowlInteract : MonoBehaviour
             {
                 FishBowlZoom();
             }
-            else
+            /*else
             {
                 ZoomOutFishBowl();
-            }
+            }*/
         }
     }
 
@@ -49,7 +49,7 @@ public class FishBowlInteract : MonoBehaviour
         isZoomed = true;
         fishBowl.SetActive(true);
         fishyFish.SetActive(true);
-        key.SetActive(true);
+        bowlCollider.gameObject.SetActive(false);
     }
 
     public void ZoomOutFishBowl()
@@ -59,6 +59,5 @@ public class FishBowlInteract : MonoBehaviour
         Camera.main.transform.eulerAngles = camPos;
         fishBowl.SetActive(false);
         fishyFish.SetActive(false);
-        key.SetActive(false);
     }
 }

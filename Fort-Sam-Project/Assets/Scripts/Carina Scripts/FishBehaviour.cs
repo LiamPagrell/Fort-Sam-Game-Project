@@ -5,8 +5,6 @@ using UnityEngine;
 public class FishBehaviour : MonoBehaviour
 {
 
-    Animator animator;
-
     private void Update()
     {
         AngryFish();
@@ -14,8 +12,6 @@ public class FishBehaviour : MonoBehaviour
 
     public void AngryFish()
     {
-
-        //if (FindObjectOfType<FishBowlInteract>().isZoomed == true)
         {
             GetComponent<Animator>().SetTrigger("AngryFish");
         }
