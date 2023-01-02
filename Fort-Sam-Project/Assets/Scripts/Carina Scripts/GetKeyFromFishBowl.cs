@@ -7,13 +7,9 @@ public class GetKeyFromFishBowl : MonoBehaviour
     [SerializeField] GameObject preventKeyPickup;
     [SerializeField] GameObject fishBowlCollider;
     [SerializeField] GameObject keyCheck;
+    [SerializeField] GameObject backgroundToyfish;
 
     float waitTime = 1f;
-
-    void Start()
-    {
-
-    }
 
 
     void Update()
@@ -43,5 +39,6 @@ public class GetKeyFromFishBowl : MonoBehaviour
     public void AfterKeyPickuped()
     {
         fishBowlCollider.gameObject.SetActive(true);
+        backgroundToyfish.SetActive(true);
     }
 }

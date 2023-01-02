@@ -345,7 +345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72200178}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.47, y: -1.78, z: -0.1079}
+  m_LocalPosition: {x: 11.47, y: -1.45, z: -0.1079}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.7737}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10196,6 +10196,9 @@ MonoBehaviour:
   isZoomed: 0
   fishBowl: {fileID: 1682736855}
   fishyFish: {fileID: 1859072083}
+  backGroundFish: {fileID: 334684989}
+  keyCheck: {fileID: 363604483}
+  toyFish: {fileID: 181367580}
 --- !u!58 &1201745515
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11410,6 +11413,7 @@ MonoBehaviour:
   preventKeyPickup: {fileID: 19085793}
   fishBowlCollider: {fileID: 1201745513}
   keyCheck: {fileID: 363604483}
+  backgroundToyfish: {fileID: 1745560958}
 --- !u!1 &1490224472
 GameObject:
   m_ObjectHideFlags: 0
@@ -12224,7 +12228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1745560959
 Transform:
   m_ObjectHideFlags: 0
