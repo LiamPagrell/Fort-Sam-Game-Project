@@ -21,6 +21,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip PipSound;
     public AudioClip StrumSound;
     public AudioClip TvNewsSound;
+    public AudioClip KettleSound;
+    public AudioClip ToastedSound;
 
 
     public enum Sound
@@ -38,6 +40,8 @@ public class SoundManager : MonoBehaviour
         Pip,
         Strum,
         TvNews,
+        Kettle,
+        Toasted,
     }
    
     public void RatSqueak()
@@ -112,5 +116,15 @@ public class SoundManager : MonoBehaviour
     {
 
         audioSource.PlayOneShot(TvNewsSound);
+    }
+    public void Kettle()
+    {
+
+        audioSource.PlayOneShot(KettleSound);
+    }
+    public void Toasted()
+    {
+
+        audioSource.PlayOneShot(ToastedSound);
     }
 }
