@@ -1237,7 +1237,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1058105769}
         m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
-        m_MethodName: ChangetoGameScreen
+        m_MethodName: ChangetoIntro
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

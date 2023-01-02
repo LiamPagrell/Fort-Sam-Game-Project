@@ -11,6 +11,12 @@ public class GameHandler : MonoBehaviour
         SceneManager.LoadScene("Menu");
        
     }
+
+    public void ChangetoIntro()
+    {
+        SceneManager.LoadScene("Intro");
+
+    }
     public void ChangetoGameScreen()
     {
         SceneManager.LoadScene("Game");
