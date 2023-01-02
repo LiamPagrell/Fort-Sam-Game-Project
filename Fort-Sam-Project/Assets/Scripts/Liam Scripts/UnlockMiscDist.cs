@@ -2,19 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnlockChest : MonoBehaviour
+public class UnlockMiscDist : MonoBehaviour
 {
-    public GameObject lockPanel;
+    public GameObject zoomedNull;
     public GameObject zoomObject;
     public GameObject buttons;
-    public GameObject closeZO1, closeZO2, closeZO3;
-    //public Movement playerMovementScript;
+    public GameObject closeZO1, closeZO2, closeZO3; /// Create a separate gameObject that is an empty object just to fill in the blanks that you might get if you have less than 3 zoomed objects that needs closing i.e closeZO
     Movement player;
-    //public GameObject player;
     public ParticleSystem konfetti;
+    public SoundManager soundManager;
 
     float checkDistance;
-    float pickUpDistance = 3.4f;
+    public float pickUpDistance = 3.4f;
 
     public bool open = false;
 
@@ -29,48 +28,31 @@ public class UnlockChest : MonoBehaviour
 
         if (checkDistance < pickUpDistance && !open)
         {
-            
-            CloseLockWindow();
-            
+            CloseZoomedObj();
         }
     }
-    public void CloseLockWindow()
+    public void CloseZoomedObj()
     {
-        if (lockPanel != null)
+        if (zoomedNull != null)
         {
             if (!zoomObject.activeSelf)
             {
-                bool isActive = lockPanel.activeSelf;
+                bool isActive = zoomedNull.activeSelf;
                 zoomObject.SetActive(!isActive);
                 buttons.SetActive(false);
                 closeZO1.SetActive(false);
                 closeZO2.SetActive(false);
                 closeZO3.SetActive(false);
-                //player.gameObject.GetComponent<Movement>().enabled = false;
-                //playerMovementScript.StopMovement();
-                //player.gameObject.GetComponent<Animator>().SetBool("moving", false);
 
                 StartCoroutine(wait());
 
             }
-            //else
-            //{
-            //    Debug.Log("movetest1");
-            //    player.gameObject.GetComponent<Movement>().enabled = true;
-            //    Debug.Log("movetest2");
-            //    playerMovementScript.StartMovement();
-            //    Debug.Log("movetest3");
-            //    player.gameObject.GetComponent<Animator>().SetBool("moving", true);
-            //}
         }
     }
     IEnumerator wait()
     {
         yield return new WaitForSeconds(0.5f);
         buttons.SetActive(true);
-        
 
     }
-
-
 }

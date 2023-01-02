@@ -12,6 +12,9 @@ public class KitchenLock : MonoBehaviour
     public GameObject locket;
     public GameObject rat;
     bool foundCode;
+    public ParticleSystem konfetti;
+    public SoundManager soundManager;
+  
 
     void Start()
     {
@@ -47,9 +50,12 @@ public class KitchenLock : MonoBehaviour
         fridge.gameObject.SetActive(true);
         cheese.gameObject.GetComponent<Animator>().SetTrigger("cheese");
         yield return new WaitForSeconds(1f);
+        konfetti.gameObject.SetActive(true);
+        soundManager.Treasure();
         Debug.Log("working");
         fridge.gameObject.SetActive(false);
         rat.gameObject.GetComponent<Animator>().SetTrigger("RatRunnin");
+        //Camera.main.GetComponent<CameraFollow>().TemporaryFollow(transform, 3);
         rat.gameObject.GetComponent<BoxCollider2D>().enabled= false;
 
         Input.gameObject.SetActive(false);

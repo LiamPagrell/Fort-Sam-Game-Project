@@ -587,6 +587,7 @@ GameObject:
   - component: {fileID: 113228868}
   - component: {fileID: 113228869}
   - component: {fileID: 113228870}
+  - component: {fileID: 113228871}
   m_Layer: 0
   m_Name: sock-attic
   m_TagString: Untagged
@@ -697,6 +698,47 @@ PolygonCollider2D:
       - {x: 0.17999999, y: -0.04}
       - {x: 0.17, y: 0.17999999}
   m_UseDelaunayMesh: 0
+--- !u!114 &113228871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113228867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 390352639}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 113228867}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &153248978
 GameObject:
   m_ObjectHideFlags: 0
@@ -23756,6 +23798,8 @@ MonoBehaviour:
   remote: {fileID: 21300000, guid: c2869fc0efc86514a91b2c0f9b2cfc2b, type: 3}
   book: {fileID: 21300000, guid: e6ad919cab8173846aeb4a6fbe001691, type: 3}
   cheese: {fileID: 0}
+  key: {fileID: 0}
+  toyFish: {fileID: 0}
 --- !u!1 &935623241 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 850647320973456625, guid: 9ee8ebd121af8624ab5f9075ea778592, type: 3}
@@ -23928,6 +23972,10 @@ MonoBehaviour:
   PurrSound: {fileID: 8300000, guid: d7a19c2151bbaa84e939949d1c0a7eff, type: 3}
   MeowSound: {fileID: 8300000, guid: 422b49a70bad4da4c924469d7bf89532, type: 3}
   PipSound: {fileID: 0}
+  StrumSound: {fileID: 0}
+  TvNewsSound: {fileID: 0}
+  KettleSound: {fileID: 0}
+  ToastedSound: {fileID: 0}
 --- !u!82 &964592344
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27754,6 +27802,7 @@ GameObject:
   - component: {fileID: 1475588572}
   - component: {fileID: 1475588573}
   - component: {fileID: 1475588574}
+  - component: {fileID: 1475588575}
   m_Layer: 0
   m_Name: sock-attic
   m_TagString: Untagged
@@ -27864,6 +27913,47 @@ PolygonCollider2D:
       - {x: 0.17999999, y: -0.04}
       - {x: 0.17, y: 0.17999999}
   m_UseDelaunayMesh: 0
+--- !u!114 &1475588575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475588571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286039782}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1475588571}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1490760362
 GameObject:
   m_ObjectHideFlags: 0
@@ -28573,6 +28663,7 @@ GameObject:
   - component: {fileID: 1733025511}
   - component: {fileID: 1733025512}
   - component: {fileID: 1733025513}
+  - component: {fileID: 1733025514}
   m_Layer: 0
   m_Name: strumpa-4
   m_TagString: Untagged
@@ -28680,6 +28771,47 @@ PolygonCollider2D:
       - {x: 0.24499999, y: -0.099999994}
       - {x: 0.044999998, y: 0.26999998}
   m_UseDelaunayMesh: 0
+--- !u!114 &1733025514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733025510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 498569992}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &1738594776
 GameObject:
   m_ObjectHideFlags: 0
