@@ -26,46 +26,17 @@ public class GreenCrossword : MonoBehaviour
     [SerializeField] TextMeshProUGUI GreenLatteText;
     public SoundManager soundManager;
 
-
-
-    bool foundCodeLamb;
-    bool foundCodeGlobe;
-    bool foundCodeBeet;
-    bool foundCodePrice;
-    bool foundCodeLatte;
     void Start()
     {
         InputEgg.onValueChanged.AddListener(delegate { CheckCodeEgg(); });
         InputPig.onValueChanged.AddListener(delegate { CheckCodePig(); });
+        InputPig.onValueChanged.AddListener(delegate { CheckCodeLamb(); });
+        InputPig.onValueChanged.AddListener(delegate { CheckCodeGlobe(); });
+        InputPig.onValueChanged.AddListener(delegate { CheckCodeBeet(); });
+        InputPig.onValueChanged.AddListener(delegate { CheckCodePrice(); });
+        InputPig.onValueChanged.AddListener(delegate { CheckCodeLatte(); });
     }
 
-    void Update()
-    {
-        if (!foundCodeLamb)
-        {
-            CheckCodeLamb();  
-        }
-
-        if (!foundCodeGlobe)
-        {
-            CheckCodeGlobe();
-        }
-
-        if (!foundCodeBeet)
-        {
-            CheckCodeBeet();
-        }
-
-        if (!foundCodePrice)
-        {
-            CheckCodePrice();
-        }
-
-        if (!foundCodeLatte)
-        {
-            CheckCodeLatte();
-        }
-    }
     public void CheckCodeEgg()
     {
         if (InputEgg.text == "egg")
@@ -86,8 +57,7 @@ public class GreenCrossword : MonoBehaviour
     {
         if (InputLamb.text == "lamb")
         {
-            foundCodeLamb = true;
-            StartCoroutine(WinCLosePanelLamb());
+            StartCoroutine(WinCLosePanel(InputLamb, GreenLambText));
         }
     }
 
@@ -95,8 +65,7 @@ public class GreenCrossword : MonoBehaviour
     {
         if (InputGlobe.text == "globe")
         {
-            foundCodeGlobe = true;
-            StartCoroutine(WinCLosePanelGlobe());
+            StartCoroutine(WinCLosePanel(InputGlobe, GreenGlobeText));
         }
     }
 
@@ -104,8 +73,7 @@ public class GreenCrossword : MonoBehaviour
     {
         if (InputBeet.text == "beet")
         {
-            foundCodeBeet = true;
-            StartCoroutine(WinCLosePanelBeet());
+            StartCoroutine(WinCLosePanel(InputBeet, GreenBeetText));
         }
     }
 
@@ -113,8 +81,7 @@ public class GreenCrossword : MonoBehaviour
     {
         if (InputPrice.text == "price")
         {
-            foundCodePrice = true;
-            StartCoroutine(WinCLosePanelPrice());
+            StartCoroutine(WinCLosePanel(InputPrice, GreenPriceText ));
         }
     }
 
@@ -122,8 +89,7 @@ public class GreenCrossword : MonoBehaviour
     {
         if (InputLatte.text == "latte")
         {
-            foundCodeLatte = true;
-            StartCoroutine(WinCLosePanelLatte());
+            StartCoroutine(WinCLosePanel(InputLatte, GreenLatteText));
         }
     }
     IEnumerator WinCLosePanel(TMP_InputField inputField, TextMeshProUGUI greenText)
@@ -134,55 +100,4 @@ public class GreenCrossword : MonoBehaviour
         inputField.enabled = false;
         soundManager.Treasure();
     }
-
-    IEnumerator WinCLosePanelLamb()
-    {
-        yield return new WaitForSeconds(0.5f);
-        GreenLambText.color = new Color(37, 73, 59);
-        InputLamb.DeactivateInputField();
-        InputLamb.enabled = false;
-        soundManager.Treasure();
-
-    }
-
-    IEnumerator WinCLosePanelGlobe()
-    {
-        yield return new WaitForSeconds(0.5f);
-        GreenGlobeText.color = new Color(37, 73, 59);
-        InputGlobe.DeactivateInputField();
-        InputGlobe.enabled = false;
-        soundManager.Treasure();
-
-    }
-
-    IEnumerator WinCLosePanelBeet()
-    {
-        yield return new WaitForSeconds(0.5f);
-        GreenBeetText.color = new Color(37, 73, 59);
-        InputBeet.DeactivateInputField();
-        InputBeet.enabled = false;
-        soundManager.Treasure();
-
-    }
-
-    IEnumerator WinCLosePanelPrice()
-    {
-        yield return new WaitForSeconds(0.5f);
-        GreenPriceText.color = new Color(37, 73, 59);
-        InputPrice.DeactivateInputField();
-        InputPrice.enabled = false;
-        soundManager.Treasure();
-
-    }
-
-    IEnumerator WinCLosePanelLatte()
-    {
-        yield return new WaitForSeconds(0.5f);
-        GreenLatteText.color = new Color(37, 73, 59);
-        InputLatte.DeactivateInputField();
-        InputLatte.enabled = false;
-        soundManager.Treasure();
-
-    }
-
 }
