@@ -41,11 +41,11 @@ public class KitchenLock : MonoBehaviour
         //yield return new WaitForSeconds(1f); ///Needs removal probably
         //konfetti.gameObject.SetActive(true); ///Needs to be uncommented when in use
         soundManager.Treasure();
-        //fridge.gameObject.SetActive(false);
-        //rat.gameObject.GetComponent<Animator>().SetTrigger("RatRunnin");
+        //fridge.gameObject.SetActive(false); ///Needs removal probably
+        //rat.gameObject.GetComponent<Animator>().SetTrigger("RatRunnin"); ///Needs removal probably
         //Camera.main.GetComponent<CameraFollow>().TemporaryFollow(transform, 3); ///Needs removal probably
-        rat.gameObject.GetComponent<BoxCollider2D>().enabled= false;
-        rat.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+        //rat.gameObject.GetComponent<BoxCollider2D>().enabled= false; ///Needs removal probably
+        //rat.gameObject.GetComponent<CapsuleCollider2D>().enabled = false; ///Needs removal probably
         GameObject.Find("kitchenlock").GetComponent<BoxCollider2D>().enabled = false;
         //FindObjectOfType<ShineScripts>().enabled = false;
 
