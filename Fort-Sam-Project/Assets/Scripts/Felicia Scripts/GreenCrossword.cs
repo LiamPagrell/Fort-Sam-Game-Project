@@ -10,12 +10,13 @@ using UnityEngine.Windows;
 public class GreenCrossword : MonoBehaviour
 {
     [SerializeField] TMP_InputField InputEgg;
+    [SerializeField] TextMeshProUGUI GreenEggText;
 
 
     bool foundCode;
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -23,8 +24,6 @@ public class GreenCrossword : MonoBehaviour
         if (!foundCode)
         {
             CheckCodeEgg();
-            Debug.Log("workin");
-            Debug.Log(InputEgg.text);
         }
     }
     public void CheckCodeEgg()
@@ -38,10 +37,8 @@ public class GreenCrossword : MonoBehaviour
     }
     IEnumerator WinCLosePanel()
     {
-     yield return new WaitForSeconds(0.5f);
-        //GetComponentInChildren<Text>().color = Color.green;
-        //TextMeshProUGUI greenEgg = InputEgg.transform.Find("Text").GetComponent<TextMeshProUGUI>();
-        //greenEgg.color = Color.green;
+        yield return new WaitForSeconds(0.5f);
+        GreenEggText.color = Color.green;
         InputEgg.DeactivateInputField();
         InputEgg.enabled = false;
 
