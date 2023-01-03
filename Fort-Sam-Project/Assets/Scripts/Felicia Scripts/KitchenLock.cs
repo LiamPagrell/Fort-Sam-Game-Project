@@ -6,36 +6,25 @@ using Unity.VisualScripting;
 
 public class KitchenLock : MonoBehaviour
 {
-    [SerializeField] TMP_InputField Input;
+    [SerializeField] TMP_InputField inputField;
     public GameObject fridge;
     public GameObject cheese;
     public GameObject locket;
     public GameObject rat;
-    bool foundCode;
     public ParticleSystem konfetti;
     public SoundManager soundManager;
   
 
     void Start()
     {
-        
+        inputField.onValueChanged.AddListener(delegate { CheckCode(); });
     }
 
    
-    void Update()
-    {
-       
-        if (!foundCode)
-        {
-            CheckCode();
-        }
-        
-    }
     public void CheckCode()
     {
-        if (Input.text == "gilbert")
+        if (inputField.text == "gilbert")
         {
-            foundCode = true;
             Debug.Log("rightCode");
             StartCoroutine(WinCLosePanel());
         }
@@ -45,21 +34,24 @@ public class KitchenLock : MonoBehaviour
     IEnumerator WinCLosePanel()
     {
         yield return new WaitForSeconds(0.5f);
-        //this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false); ///Needs removal probably
         locket.gameObject.SetActive(false);
         fridge.gameObject.SetActive(true);
         cheese.gameObject.GetComponent<Animator>().SetTrigger("cheese");
-        yield return new WaitForSeconds(1f);
-        konfetti.gameObject.SetActive(true);
+        //yield return new WaitForSeconds(1f); ///Needs removal probably
+        //konfetti.gameObject.SetActive(true); ///Needs to be uncommented when in use
         soundManager.Treasure();
-        Debug.Log("working");
-        fridge.gameObject.SetActive(false);
-        rat.gameObject.GetComponent<Animator>().SetTrigger("RatRunnin");
-        //Camera.main.GetComponent<CameraFollow>().TemporaryFollow(transform, 3);
+        //fridge.gameObject.SetActive(false);
+        //rat.gameObject.GetComponent<Animator>().SetTrigger("RatRunnin");
+        //Camera.main.GetComponent<CameraFollow>().TemporaryFollow(transform, 3); ///Needs removal probably
         rat.gameObject.GetComponent<BoxCollider2D>().enabled= false;
+        rat.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+        FindObjectOfType<ShineScripts>().enabled = false;
 
-        Input.gameObject.SetActive(false);
 
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = true;
+        
+        inputField.gameObject.SetActive(false);
 
     }
 
