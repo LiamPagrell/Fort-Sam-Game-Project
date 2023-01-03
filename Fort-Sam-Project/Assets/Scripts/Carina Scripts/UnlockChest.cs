@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Unity.VisualScripting;
 
 public class UnlockChest : MonoBehaviour
 {
@@ -8,7 +10,8 @@ public class UnlockChest : MonoBehaviour
     public GameObject zoomObject;
     public GameObject buttons;
     public GameObject closeZO1, closeZO2, closeZO3;
-    Movement player;
+    Movement playerMovement;
+    //public GameObject player;
     public ParticleSystem konfetti;
 
     float checkDistance;
@@ -18,16 +21,18 @@ public class UnlockChest : MonoBehaviour
 
     private void Start()
     {
-        player = FindObjectOfType<Movement>();
+        playerMovement = FindObjectOfType<Movement>();
     }
 
     private void OnMouseDown()
     {
-        checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
+        checkDistance = Vector2.Distance(this.transform.position, playerMovement.transform.position);
 
         if (checkDistance < pickUpDistance && !open)
         {
+            
             CloseLockWindow();
+            
         }
     }
     public void CloseLockWindow()
@@ -43,15 +48,32 @@ public class UnlockChest : MonoBehaviour
                 closeZO2.SetActive(false);
                 closeZO3.SetActive(false);
 
+                playerMovement.StopMovement();
+                playerMovement.enabled = false;
+                playerMovement.gameObject.GetComponent<Animator>().SetBool("moving", false);
+
                 StartCoroutine(wait());
 
             }
+
+
+
         }
     }
+
+    public void UnlockMovement()
+    {
+        playerMovement.enabled = true;
+        playerMovement.StartMovement();
+    }
+
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         buttons.SetActive(true);
+        
 
     }
+
+
 }
