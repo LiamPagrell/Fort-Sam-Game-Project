@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 113228870}
   - component: {fileID: 113228871}
   m_Layer: 0
-  m_Name: sock-attic
+  m_Name: strumpa-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27884,7 +27884,7 @@ GameObject:
   - component: {fileID: 1475588574}
   - component: {fileID: 1475588575}
   m_Layer: 0
-  m_Name: sock-attic
+  m_Name: strumpa-10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28745,7 +28745,7 @@ GameObject:
   - component: {fileID: 1733025513}
   - component: {fileID: 1733025514}
   m_Layer: 0
-  m_Name: strumpa-4
+  m_Name: strumpa-9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
