@@ -8,12 +8,13 @@ public class ToLivingRoom : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene("Vardagsrummet");
+        transform.parent.GetComponent<Animator>().enabled = false;
+        Invoke(nameof(Load), 0.1f);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Load()
     {
-        
+        SceneManager.LoadScene("Vardagsrummet");
+
     }
 }
