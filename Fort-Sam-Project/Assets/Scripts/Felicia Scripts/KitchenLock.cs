@@ -46,7 +46,8 @@ public class KitchenLock : MonoBehaviour
         //Camera.main.GetComponent<CameraFollow>().TemporaryFollow(transform, 3); ///Needs removal probably
         rat.gameObject.GetComponent<BoxCollider2D>().enabled= false;
         rat.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
-        FindObjectOfType<ShineScripts>().enabled = false;
+        GameObject.Find("kitchenlock").GetComponent<BoxCollider2D>().enabled = false;
+        //FindObjectOfType<ShineScripts>().enabled = false;
 
 
         GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = true;
