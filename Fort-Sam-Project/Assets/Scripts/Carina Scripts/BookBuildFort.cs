@@ -12,6 +12,8 @@ public class BookBuildFort : MonoBehaviour
     [SerializeField] GameObject transitionImage;
     [SerializeField] GameObject fortBook;
     [SerializeField] GameObject buildFortIconActivate;
+    public ParticleSystem konfetti;
+    public GameObject player;
 
     public bool hasFortItems;
 
@@ -51,8 +53,10 @@ public class BookBuildFort : MonoBehaviour
         yield return new WaitForSeconds(1f);
         pillowFort.SetActive(true);
         fortBook.SetActive(false);
+        player.gameObject.GetComponent<Animator>().SetTrigger("Happy");
+        konfetti.gameObject.SetActive(true);
         buildFortIconActivate.SetActive(false);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("Outro");
     }
 }
