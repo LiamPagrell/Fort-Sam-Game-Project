@@ -52,7 +52,7 @@ public class UnlockChest : MonoBehaviour
                 playerMovement.enabled = false;
                 playerMovement.gameObject.GetComponent<Animator>().SetBool("moving", false);
 
-                StartCoroutine(wait());
+                Invoke(nameof(waiter), 0.1f);
 
             }
 
@@ -67,9 +67,8 @@ public class UnlockChest : MonoBehaviour
         playerMovement.StartMovement();
     }
 
-    IEnumerator wait()
+    public void waiter()
     {
-        yield return new WaitForSeconds(0.1f);
         buttons.SetActive(true);
         
 

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class UnlockCalendar : MonoBehaviour
 {
@@ -43,7 +45,7 @@ public class UnlockCalendar : MonoBehaviour
                 closeZO6.SetActive(false);
                 soundManager.TurningPages();
 
-                StartCoroutine(wait());
+                Invoke(nameof(wait), 0.1f);
 
             }
 
@@ -55,9 +57,8 @@ public class UnlockCalendar : MonoBehaviour
 
     }
 
-    IEnumerator wait()
+    public void wait()
     {
-        yield return new WaitForSeconds(0.1f);
         buttons.SetActive(true);
 
     }
