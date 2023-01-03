@@ -15186,19 +15186,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputEgg: {fileID: 2146352980}
   GreenEggText: {fileID: 125093550}
-  InputPig: {fileID: 0}
-  GreenPigText: {fileID: 0}
-  InputLamb: {fileID: 0}
-  GreenLambText: {fileID: 0}
-  InputGlobe: {fileID: 0}
-  GreenGlobeText: {fileID: 0}
-  InputBeet: {fileID: 0}
-  GreenBeetText: {fileID: 0}
-  InputPrice: {fileID: 0}
-  GreenPriceText: {fileID: 0}
-  InputLatte: {fileID: 0}
-  GreenLatteText: {fileID: 0}
-  soundManager: {fileID: 0}
+  InputPig: {fileID: 1018001005}
+  GreenPigText: {fileID: 1786359210}
+  InputLamb: {fileID: 1528103052}
+  GreenLambText: {fileID: 809509821}
+  InputGlobe: {fileID: 1779111991}
+  GreenGlobeText: {fileID: 690907114}
+  InputBeet: {fileID: 918819893}
+  GreenBeetText: {fileID: 859146261}
+  InputPrice: {fileID: 657804540}
+  GreenPriceText: {fileID: 74583261}
+  InputLatte: {fileID: 1107807745}
+  GreenLatteText: {fileID: 2061998736}
+  soundManager: {fileID: 383045881}
 --- !u!1 &1107807743
 GameObject:
   m_ObjectHideFlags: 0
