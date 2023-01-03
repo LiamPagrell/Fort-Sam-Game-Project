@@ -345,7 +345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72200178}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.47, y: -1.78, z: -0.1079}
+  m_LocalPosition: {x: 11.47, y: -1.45, z: -0.1079}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.7737}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -819,7 +819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181367580}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.443, y: -4.81, z: -0.01937106}
+  m_LocalPosition: {x: 6.7, y: -4.14, z: -0.01937106}
   m_LocalScale: {x: 0.14, y: 0.14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1592,8 +1592,9 @@ EdgeCollider2D:
   - {x: -3.7970335, y: -3.0150425}
   - {x: -3.824489, y: -2.8910358}
   - {x: -3.2947567, y: -2.0957618}
-  - {x: -2.888955, y: -1.9693174}
-  - {x: -0.25665903, y: -1.9526446}
+  - {x: -2.174555, y: -1.503875}
+  - {x: -0.0942955, y: -1.519675}
+  - {x: -0.015771866, y: -2.0402424}
   - {x: 0.018067002, y: -2.289902}
   - {x: 0.026190042, y: -2.54321}
   - {x: 0.04967332, y: -2.6961555}
@@ -10196,6 +10197,9 @@ MonoBehaviour:
   isZoomed: 0
   fishBowl: {fileID: 1682736855}
   fishyFish: {fileID: 1859072083}
+  backGroundFish: {fileID: 334684989}
+  keyCheck: {fileID: 363604483}
+  toyFish: {fileID: 181367580}
 --- !u!58 &1201745515
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11410,6 +11414,7 @@ MonoBehaviour:
   preventKeyPickup: {fileID: 19085793}
   fishBowlCollider: {fileID: 1201745513}
   keyCheck: {fileID: 363604483}
+  backgroundToyfish: {fileID: 1745560958}
 --- !u!1 &1490224472
 GameObject:
   m_ObjectHideFlags: 0
@@ -11884,6 +11889,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68999a501a4dc6b499357ed266fa5519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TransitionSam: {fileID: 0}
+  Characters: {fileID: 0}
 --- !u!61 &1603939477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12224,7 +12231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1745560959
 Transform:
   m_ObjectHideFlags: 0
@@ -13210,7 +13217,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 605de3d50b0d58e4697178d878f9d162, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

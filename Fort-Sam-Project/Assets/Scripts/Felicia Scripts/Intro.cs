@@ -37,19 +37,63 @@ public class Intro : MonoBehaviour
         {
             case 0: break;
 
-            case 1: new WaitForSeconds(0.5f); calm.gameObject.SetActive(false); cicadas.gameObject.SetActive(true); break;
+            case 1:   StartCoroutine(Case1()); break;
 
-            case 2: cicadas.gameObject.SetActive(false); lightsOn.gameObject.SetActive(true); break;
+            case 2:   StartCoroutine(Case2()); break;
 
-            case 3:lightsOn.gameObject.SetActive(false); house.gameObject.SetActive(false); hearingVoices.gameObject.SetActive(true); sam.gameObject.SetActive(true); break;
+            case 3: StartCoroutine(Case3()); break;
 
-            case 4:hearingVoices.gameObject.SetActive(false); mom.gameObject.SetActive(true); break;
+            case 4: StartCoroutine(Case4()); break;
 
-            case 5: dad.gameObject.SetActive(true); mom.gameObject.SetActive(false); break;
+            case 5: StartCoroutine(Case5()); break;
 
-            case 6: dad.gameObject.SetActive(false); passed.gameObject.SetActive(true); break;
+            case 6: StartCoroutine(Case6()); break;
 
             case 7: SceneManager.LoadScene("SamRoom"); break;
+
+        }
+        IEnumerator Case1()
+        {
+            yield return new WaitForSeconds(0.2f);
+            calm.gameObject.SetActive(false);
+            cicadas.gameObject.SetActive(true);
+        }
+
+        IEnumerator Case2()
+        {
+            yield return new WaitForSeconds(0.2f);
+            cicadas.gameObject.SetActive(false);
+           lightsOn.gameObject.SetActive(true);
+        }
+
+        IEnumerator Case3()
+        {
+            yield return new WaitForSeconds(0.2f);
+            lightsOn.gameObject.SetActive(false);
+            house.gameObject.SetActive(false);
+            hearingVoices.gameObject.SetActive(true);
+            sam.gameObject.SetActive(true);
+
+        }
+        IEnumerator Case4()
+        {
+            yield return new WaitForSeconds(0.2f);
+            hearingVoices.gameObject.SetActive(false);
+            mom.gameObject.SetActive(true);
+
+        }
+        IEnumerator Case5()
+        {
+            yield return new WaitForSeconds(0.2f);
+            dad.gameObject.SetActive(true);
+            mom.gameObject.SetActive(false);
+
+        }
+        IEnumerator Case6()
+        {
+            yield return new WaitForSeconds(0.2f);
+            dad.gameObject.SetActive(false);
+            passed.gameObject.SetActive(true);
 
         }
     }
