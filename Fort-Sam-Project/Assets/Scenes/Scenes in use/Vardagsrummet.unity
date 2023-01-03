@@ -15120,6 +15120,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputEgg: {fileID: 2146352980}
   GreenEggText: {fileID: 125093550}
+  InputPig: {fileID: 0}
+  GreenPigText: {fileID: 0}
+  InputLamb: {fileID: 0}
+  GreenLambText: {fileID: 0}
+  InputGlobe: {fileID: 0}
+  GreenGlobeText: {fileID: 0}
+  InputBeet: {fileID: 0}
+  GreenBeetText: {fileID: 0}
+  InputPrice: {fileID: 0}
+  GreenPriceText: {fileID: 0}
+  InputLatte: {fileID: 0}
+  GreenLatteText: {fileID: 0}
+  soundManager: {fileID: 0}
 --- !u!1 &1107807743
 GameObject:
   m_ObjectHideFlags: 0
@@ -27354,6 +27367,7 @@ GameObject:
   - component: {fileID: 1760276362}
   - component: {fileID: 1760276361}
   - component: {fileID: 1760276364}
+  - component: {fileID: 1760276365}
   m_Layer: 0
   m_Name: strumpa-5
   m_TagString: Untagged
@@ -27558,6 +27572,18 @@ PolygonCollider2D:
       - {x: 0.415, y: -0.275}
       - {x: 0.385, y: -0.205}
   m_UseDelaunayMesh: 0
+--- !u!114 &1760276365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760276356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65aedb7dc19e4b44299c4a7de028d412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1771574841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29187,6 +29213,7 @@ GameObject:
   - component: {fileID: 1816547273}
   - component: {fileID: 1816547272}
   - component: {fileID: 1816547275}
+  - component: {fileID: 1816547276}
   m_Layer: 0
   m_Name: strumpa-6
   m_TagString: Untagged
@@ -29383,6 +29410,18 @@ PolygonCollider2D:
       - {x: 0.24499999, y: -0.099999994}
       - {x: 0.044999998, y: 0.26999998}
   m_UseDelaunayMesh: 0
+--- !u!114 &1816547276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816547267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65aedb7dc19e4b44299c4a7de028d412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1825305048
 GameObject:
   m_ObjectHideFlags: 0
