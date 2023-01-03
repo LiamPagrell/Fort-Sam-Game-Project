@@ -58,5 +58,7 @@ public class BookBuildFort : MonoBehaviour
         buildFortIconActivate.SetActive(false);
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("Outro");
+     
+
     }
 }
