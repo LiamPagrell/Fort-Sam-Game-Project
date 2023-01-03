@@ -141,7 +141,7 @@ public class GreenCrossword : MonoBehaviour
     IEnumerator WinCLosePanelEgg()
     {
         yield return new WaitForSeconds(0.5f);
-        GreenEggText.color = Color.green;
+        GreenEggText.color = new Color(37, 73, 59);
         InputEgg.DeactivateInputField();
         InputEgg.enabled = false;
         soundManager.Treasure();
@@ -151,7 +151,7 @@ public class GreenCrossword : MonoBehaviour
     IEnumerator WinCLosePanelPig()
     {
         yield return new WaitForSeconds(0.5f);
-        GreenPigText.color = Color.green;
+        GreenPigText.color = new Color(37, 73, 59);
         InputPig.DeactivateInputField();
         InputPig.enabled = false;
         soundManager.Treasure();
@@ -161,7 +161,7 @@ public class GreenCrossword : MonoBehaviour
     IEnumerator WinCLosePanelLamb()
     {
         yield return new WaitForSeconds(0.5f);
-        GreenLambText.color = Color.green;
+        GreenLambText.color = new Color(37, 73, 59);
         InputLamb.DeactivateInputField();
         InputLamb.enabled = false;
         soundManager.Treasure();
@@ -171,7 +171,7 @@ public class GreenCrossword : MonoBehaviour
     IEnumerator WinCLosePanelGlobe()
     {
         yield return new WaitForSeconds(0.5f);
-        GreenGlobeText.color = Color.green;
+        GreenGlobeText.color = new Color(37, 73, 59);
         InputGlobe.DeactivateInputField();
         InputGlobe.enabled = false;
         soundManager.Treasure();
@@ -181,7 +181,7 @@ public class GreenCrossword : MonoBehaviour
     IEnumerator WinCLosePanelBeet()
     {
         yield return new WaitForSeconds(0.5f);
-        GreenBeetText.color = Color.green;
+        GreenBeetText.color = new Color(37, 73, 59);
         InputBeet.DeactivateInputField();
         InputBeet.enabled = false;
         soundManager.Treasure();
@@ -191,7 +191,7 @@ public class GreenCrossword : MonoBehaviour
     IEnumerator WinCLosePanelPrice()
     {
         yield return new WaitForSeconds(0.5f);
-        GreenPriceText.color = Color.green;
+        GreenPriceText.color = new Color(37, 73, 59);
         InputPrice.DeactivateInputField();
         InputPrice.enabled = false;
         soundManager.Treasure();
@@ -201,7 +201,7 @@ public class GreenCrossword : MonoBehaviour
     IEnumerator WinCLosePanelLatte()
     {
         yield return new WaitForSeconds(0.5f);
-        GreenLatteText.color = Color.green;
+        GreenLatteText.color = new Color(37, 73, 59);
         InputLatte.DeactivateInputField();
         InputLatte.enabled = false;
         soundManager.Treasure();
