@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Unity.VisualScripting;
 
 public class UnlockChest : MonoBehaviour
 {
+    [SerializeField] TMP_InputField Input;
     public GameObject lockPanel;
     public GameObject zoomObject;
     public GameObject buttons;
@@ -46,6 +49,7 @@ public class UnlockChest : MonoBehaviour
                 closeZO1.SetActive(false);
                 closeZO2.SetActive(false);
                 closeZO3.SetActive(false);
+                
                 //player.gameObject.GetComponent<Movement>().enabled = false;
                 //playerMovementScript.StopMovement();
                 //player.gameObject.GetComponent<Animator>().SetBool("moving", false);
@@ -61,12 +65,13 @@ public class UnlockChest : MonoBehaviour
             //    playerMovementScript.StartMovement();
             //    Debug.Log("movetest3");
             //    player.gameObject.GetComponent<Animator>().SetBool("moving", true);
+            //    Input.gameObject.SetActive(false);
             //}
         }
     }
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         buttons.SetActive(true);
         
 
