@@ -6,13 +6,11 @@ using Unity.VisualScripting;
 
 public class UnlockChest : MonoBehaviour
 {
-    [SerializeField] TMP_InputField Input;
     public GameObject lockPanel;
     public GameObject zoomObject;
     public GameObject buttons;
     public GameObject closeZO1, closeZO2, closeZO3;
-    //public Movement playerMovementScript;
-    Movement player;
+    Movement playerMovement;
     //public GameObject player;
     public ParticleSystem konfetti;
 
@@ -23,12 +21,12 @@ public class UnlockChest : MonoBehaviour
 
     private void Start()
     {
-        player = FindObjectOfType<Movement>();
+        playerMovement = FindObjectOfType<Movement>();
     }
 
     private void OnMouseDown()
     {
-        checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
+        checkDistance = Vector2.Distance(this.transform.position, playerMovement.transform.position);
 
         if (checkDistance < pickUpDistance && !open)
         {
@@ -49,26 +47,26 @@ public class UnlockChest : MonoBehaviour
                 closeZO1.SetActive(false);
                 closeZO2.SetActive(false);
                 closeZO3.SetActive(false);
-                
-                //player.gameObject.GetComponent<Movement>().enabled = false;
-                //playerMovementScript.StopMovement();
-                //player.gameObject.GetComponent<Animator>().SetBool("moving", false);
+
+                playerMovement.StopMovement();
+                playerMovement.enabled = false;
+                playerMovement.gameObject.GetComponent<Animator>().SetBool("moving", false);
 
                 StartCoroutine(wait());
 
             }
-            //else
-            //{
-            //    Debug.Log("movetest1");
-            //    player.gameObject.GetComponent<Movement>().enabled = true;
-            //    Debug.Log("movetest2");
-            //    playerMovementScript.StartMovement();
-            //    Debug.Log("movetest3");
-            //    player.gameObject.GetComponent<Animator>().SetBool("moving", true);
-            //    Input.gameObject.SetActive(false);
-            //}
+
+
+
         }
     }
+
+    public void UnlockMovement()
+    {
+        playerMovement.enabled = true;
+        playerMovement.StartMovement();
+    }
+
     IEnumerator wait()
     {
         yield return new WaitForSeconds(0.1f);

@@ -65,6 +65,7 @@ public class KitchenLockCode : MonoBehaviour
             //find the chest, turn it off
             var chest = FindObjectOfType<UnlockChest>();
             chest.open = true;
+            chest.UnlockMovement();
             //Turn of chest cursor interactable as well
             chest.gameObject.GetComponent<Collider2D>().enabled = false;
             escape.SetActive(false);
