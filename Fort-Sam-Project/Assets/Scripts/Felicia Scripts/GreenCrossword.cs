@@ -10,40 +10,201 @@ using UnityEngine.Windows;
 public class GreenCrossword : MonoBehaviour
 {
     [SerializeField] TMP_InputField InputEgg;
+    [SerializeField] TextMeshProUGUI GreenEggText;
+    [SerializeField] TMP_InputField InputPig;
+    [SerializeField] TextMeshProUGUI GreenPigText;
+    [SerializeField] TMP_InputField InputLamb;
+    [SerializeField] TextMeshProUGUI GreenLambText;
+    [SerializeField] TMP_InputField InputGlobe;
+    [SerializeField] TextMeshProUGUI GreenGlobeText;
+    [SerializeField] TMP_InputField InputBeet;
+    [SerializeField] TextMeshProUGUI GreenBeetText;
+    [SerializeField] TMP_InputField InputPrice;
+    [SerializeField] TextMeshProUGUI GreenPriceText;
+    [SerializeField] TMP_InputField InputLatte;
+    [SerializeField] TextMeshProUGUI GreenLatteText;
+    public SoundManager soundManager;
 
 
-    bool foundCode;
+
+    bool foundCodeEgg;
+    bool foundCodePig;
+    bool foundCodeLamb;
+    bool foundCodeGlobe;
+    bool foundCodeBeet;
+    bool foundCodePrice;
+    bool foundCodeLatte;
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        if (!foundCode)
+        if (!foundCodeEgg)
         {
             CheckCodeEgg();
-            Debug.Log("workin");
-            Debug.Log(InputEgg.text);
+        }
+
+        if(!foundCodePig)
+        {
+          CheckCodePig();
+        }
+
+        if (!foundCodeLamb)
+        {
+            CheckCodeLamb();  
+        }
+
+        if (!foundCodeGlobe)
+        {
+            CheckCodeGlobe();
+        }
+
+        if (!foundCodeBeet)
+        {
+            CheckCodeBeet();
+        }
+
+        if (!foundCodePrice)
+        {
+            CheckCodePrice();
+        }
+
+        if (!foundCodeLatte)
+        {
+            CheckCodeLatte();
         }
     }
     public void CheckCodeEgg()
     {
         if (InputEgg.text == "egg")
         {
-            foundCode = true;
-            Debug.Log("rightCodeEgg");
-            StartCoroutine(WinCLosePanel());
+            foundCodeEgg = true;
+            StartCoroutine(WinCLosePanelEgg());
         }
     }
-    IEnumerator WinCLosePanel()
+
+    public void CheckCodePig()
     {
-     yield return new WaitForSeconds(0.5f);
-        //GetComponentInChildren<Text>().color = Color.green;
-        //TextMeshProUGUI greenEgg = InputEgg.transform.Find("Text").GetComponent<TextMeshProUGUI>();
-        //greenEgg.color = Color.green;
+        if (InputPig.text == "pig")
+        {
+            foundCodePig = true;
+            StartCoroutine(WinCLosePanelPig());
+        }
+    }
+
+    public void CheckCodeLamb()
+    {
+        if (InputLamb.text == "lamb")
+        {
+            foundCodeLamb = true;
+            StartCoroutine(WinCLosePanelLamb());
+        }
+    }
+
+    public void CheckCodeGlobe()
+    {
+        if (InputGlobe.text == "globe")
+        {
+            foundCodeGlobe = true;
+            StartCoroutine(WinCLosePanelGlobe());
+        }
+    }
+
+    public void CheckCodeBeet()
+    {
+        if (InputBeet.text == "beet")
+        {
+            foundCodeBeet = true;
+            StartCoroutine(WinCLosePanelBeet());
+        }
+    }
+
+    public void CheckCodePrice()
+    {
+        if (InputPrice.text == "price")
+        {
+            foundCodePrice = true;
+            StartCoroutine(WinCLosePanelPrice());
+        }
+    }
+
+    public void CheckCodeLatte()
+    {
+        if (InputLatte.text == "latte")
+        {
+            foundCodeLatte = true;
+            StartCoroutine(WinCLosePanelLatte());
+        }
+    }
+    IEnumerator WinCLosePanelEgg()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GreenEggText.color = Color.green;
         InputEgg.DeactivateInputField();
         InputEgg.enabled = false;
+        soundManager.Treasure();
+
+    }
+
+    IEnumerator WinCLosePanelPig()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GreenPigText.color = Color.green;
+        InputPig.DeactivateInputField();
+        InputPig.enabled = false;
+        soundManager.Treasure();
+
+    }
+
+    IEnumerator WinCLosePanelLamb()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GreenLambText.color = Color.green;
+        InputLamb.DeactivateInputField();
+        InputLamb.enabled = false;
+        soundManager.Treasure();
+
+    }
+
+    IEnumerator WinCLosePanelGlobe()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GreenGlobeText.color = Color.green;
+        InputGlobe.DeactivateInputField();
+        InputGlobe.enabled = false;
+        soundManager.Treasure();
+
+    }
+
+    IEnumerator WinCLosePanelBeet()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GreenBeetText.color = Color.green;
+        InputBeet.DeactivateInputField();
+        InputBeet.enabled = false;
+        soundManager.Treasure();
+
+    }
+
+    IEnumerator WinCLosePanelPrice()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GreenPriceText.color = Color.green;
+        InputPrice.DeactivateInputField();
+        InputPrice.enabled = false;
+        soundManager.Treasure();
+
+    }
+
+    IEnumerator WinCLosePanelLatte()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GreenLatteText.color = Color.green;
+        InputLatte.DeactivateInputField();
+        InputLatte.enabled = false;
+        soundManager.Treasure();
 
     }
 
