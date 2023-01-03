@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using System.Net.Sockets;
 using UnityEngine.UI;
 using UnityEngine.Windows;
+using UnityEngine.UIElements;
 
 public class GreenCrossword : MonoBehaviour
 {
@@ -27,8 +28,6 @@ public class GreenCrossword : MonoBehaviour
 
 
 
-    bool foundCodeEgg;
-    bool foundCodePig;
     bool foundCodeLamb;
     bool foundCodeGlobe;
     bool foundCodeBeet;
@@ -36,21 +35,12 @@ public class GreenCrossword : MonoBehaviour
     bool foundCodeLatte;
     void Start()
     {
-
+        InputEgg.onValueChanged.AddListener(delegate { CheckCodeEgg(); });
+        InputPig.onValueChanged.AddListener(delegate { CheckCodePig(); });
     }
 
     void Update()
     {
-        if (!foundCodeEgg)
-        {
-            CheckCodeEgg();
-        }
-
-        if(!foundCodePig)
-        {
-          CheckCodePig();
-        }
-
         if (!foundCodeLamb)
         {
             CheckCodeLamb();  
@@ -80,8 +70,7 @@ public class GreenCrossword : MonoBehaviour
     {
         if (InputEgg.text == "egg")
         {
-            foundCodeEgg = true;
-            StartCoroutine(WinCLosePanelEgg());
+            StartCoroutine(WinCLosePanel(InputEgg, GreenEggText));
         }
     }
 
@@ -89,8 +78,7 @@ public class GreenCrossword : MonoBehaviour
     {
         if (InputPig.text == "pig")
         {
-            foundCodePig = true;
-            StartCoroutine(WinCLosePanelPig());
+            StartCoroutine(WinCLosePanel(InputPig, GreenPigText));
         }
     }
 
@@ -138,24 +126,13 @@ public class GreenCrossword : MonoBehaviour
             StartCoroutine(WinCLosePanelLatte());
         }
     }
-    IEnumerator WinCLosePanelEgg()
+    IEnumerator WinCLosePanel(TMP_InputField inputField, TextMeshProUGUI greenText)
     {
         yield return new WaitForSeconds(0.5f);
-        GreenEggText.color = new Color(37, 73, 59);
-        InputEgg.DeactivateInputField();
-        InputEgg.enabled = false;
+        greenText.color = new Color(37, 73, 59);
+        inputField.DeactivateInputField();
+        inputField.enabled = false;
         soundManager.Treasure();
-
-    }
-
-    IEnumerator WinCLosePanelPig()
-    {
-        yield return new WaitForSeconds(0.5f);
-        GreenPigText.color = new Color(37, 73, 59);
-        InputPig.DeactivateInputField();
-        InputPig.enabled = false;
-        soundManager.Treasure();
-
     }
 
     IEnumerator WinCLosePanelLamb()

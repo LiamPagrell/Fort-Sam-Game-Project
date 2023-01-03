@@ -17,6 +17,11 @@ public class SockCounter : MonoBehaviour
 
     void Start()
     {
+        UpdateSockUI();
+    }
+
+    private void UpdateSockUI()
+    {
         for (int i = 0; i < socks.Length; i++)
         {
 
@@ -24,9 +29,12 @@ public class SockCounter : MonoBehaviour
             {
                 socks[i].SetActive(true);
             }
-
         }
+    }
 
+    private void OnEnable()
+    {
+        UpdateSockUI();
     }
 
     private void Update()
