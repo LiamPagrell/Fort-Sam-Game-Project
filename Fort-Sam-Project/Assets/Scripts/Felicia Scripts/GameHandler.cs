@@ -19,7 +19,7 @@ public class GameHandler : MonoBehaviour
     }
     public void ChangetoGameScreen()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("SamRoom");
         
     }
 
