@@ -5530,7 +5530,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.03047514, y: -0.46715736}
@@ -23289,6 +23289,7 @@ MonoBehaviour:
   fortBook: {fileID: 4444644990065945167}
   buildFortIconActivate: {fileID: 1088649622}
   poofSmoke: {fileID: 106699007}
+  transitionText: {fileID: 1169114695}
   konfetti: {fileID: 598498943}
   player: {fileID: 1132286667}
   hasFortItems: 0
