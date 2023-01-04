@@ -21993,7 +21993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6046212, g: 0.49685532, b: 0.745283, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -23701,7 +23701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.56599754, g: 0.3833511, b: 0.6698113, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -29973,7 +29973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.58216476, g: 0.40204102, b: 0.7264151, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -35128,6 +35128,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1188399521}
     m_Modifications:
+    - target: {fileID: 1261284069, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1882656230, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -35138,7 +35142,7 @@ PrefabInstance:
       objectReference: {fileID: 1235420628}
     - target: {fileID: 8270700191566016718, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8270700191676421313, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
       propertyPath: m_IsActive
