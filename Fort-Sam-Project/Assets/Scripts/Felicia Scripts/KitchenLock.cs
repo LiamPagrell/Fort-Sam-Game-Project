@@ -45,7 +45,7 @@ public class KitchenLock : MonoBehaviour
         fridge.gameObject.GetComponent<Animator>().SetTrigger("openSesame");
         frigglock.gameObject.GetComponent<Animator>().SetTrigger("babyfelldown");
         //yield return new WaitForSeconds(1f); ///Needs removal probably
-        ///konfetti.gameObject.SetActive(true); ///[Needs to be uncommented when in use]
+        konfetti.gameObject.SetActive(true); 
         GameObject.Find("kitchenlock").GetComponent<BoxCollider2D>().enabled = false;
         GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = true;
         soundManager.Treasure();
