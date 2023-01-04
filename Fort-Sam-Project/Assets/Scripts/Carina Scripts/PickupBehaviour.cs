@@ -81,7 +81,6 @@ public class PickupBehaviour : MonoBehaviour
     private void ClickOnThings(ItemType itemType)
     {
         //SoundManager.Instance.PlayRatAudio(clickSound);
-        Debug.Log(itemType);
 
         switch (itemType)
         {
