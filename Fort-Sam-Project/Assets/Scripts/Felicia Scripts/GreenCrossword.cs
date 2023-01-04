@@ -28,6 +28,7 @@ public class GreenCrossword : MonoBehaviour
     public SoundManager soundManager;
     public ParticleSystem konfetti;
     public GameObject korsord;
+    Movement player;
     string locked;
     string locked1;
     string locked2;
@@ -38,6 +39,7 @@ public class GreenCrossword : MonoBehaviour
 
     void Start()
     {
+        player = FindObjectOfType<Movement>();
         InputEgg.onValueChanged.AddListener(delegate { CheckCodeEgg(); });
         InputPig.onValueChanged.AddListener(delegate { CheckCodePig(); });
         InputLamb.onValueChanged.AddListener(delegate { CheckCodeLamb(); });
@@ -160,6 +162,8 @@ public class GreenCrossword : MonoBehaviour
     IEnumerator WinCLosePanel(TMP_InputField inputField, TextMeshProUGUI greenText)
     {
         yield return new WaitForSecondsRealtime(0.5f);
+        player.gameObject.GetComponent<Movement>().enabled = true;
+        player.gameObject.GetComponent<Movement>().StartMovement();
         greenText.color = new Color(37, 73, 59);
         inputField.DeactivateInputField();
         inputField.enabled = false;
