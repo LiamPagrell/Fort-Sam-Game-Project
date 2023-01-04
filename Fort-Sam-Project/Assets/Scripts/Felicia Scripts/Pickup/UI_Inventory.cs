@@ -109,6 +109,7 @@ public class UI_Inventory : MonoBehaviour
 
     public void ToyFish(RectTransform itemSlotRectTransform)
     {
+        FindObjectOfType<FishBowlInteract>().FishBowlZoom();
         Destroy(itemSlotRectTransform.gameObject);
         GameObject.Find("LoveinterestFish (1)").GetComponent<Animator>().SetTrigger("ToyFishBowl");
         FindObjectOfType<GetKeyFromFishBowl>().KeyCanBePickuped();
