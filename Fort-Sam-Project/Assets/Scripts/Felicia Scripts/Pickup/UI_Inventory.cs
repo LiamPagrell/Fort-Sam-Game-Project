@@ -12,10 +12,13 @@ public class UI_Inventory : MonoBehaviour
     public SoundManager soundManager;
     //[SerializeField] GameObject[] itemSlots;
     //[SerializeField] GameObject itemPrefab;
-    
+    public bool GotCheese;
+
 
     private void Awake()
     {
+        GotCheese = false;
+
         itemSlotContainer = transform.Find("ItemSlotContainer").GetComponent<RectTransform>();
         itemSloTemplate = transform.Find("ItemSlotTemplate");
         itemSloTemplate.gameObject.SetActive(false);
@@ -114,11 +117,10 @@ public class UI_Inventory : MonoBehaviour
 
     public void Cheese(RectTransform itemSlotRectTransform)
     {
-        
-
+        GotCheese = true;
         Destroy(itemSlotRectTransform.gameObject);
-
     }
+
     public void ToyFish(RectTransform itemSlotRectTransform)
     {
         FindObjectOfType<FishBowlInteract>().FishBowlZoom();

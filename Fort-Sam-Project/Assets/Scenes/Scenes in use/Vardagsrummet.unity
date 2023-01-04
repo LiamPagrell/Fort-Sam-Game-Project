@@ -9194,7 +9194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rat: {fileID: 462491907}
   player: {fileID: 966151514}
-  pockpick: {fileID: 65872427}
+  UI_Inv: {fileID: 640933167}
 --- !u!1 &479626584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 451171022986764790, guid: 17a428b0227c4bb4fa40eaffa5c0bbda, type: 3}
@@ -10848,6 +10848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundManager: {fileID: 383045881}
+  GotCheese: 0
 --- !u!1 &657804538
 GameObject:
   m_ObjectHideFlags: 0
@@ -39306,15 +39307,15 @@ PrefabInstance:
     - target: {fileID: 2016676327375614075, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
       propertyPath: socks.Array.data[5]
       value: 
-      objectReference: {fileID: 1760276356}
+      objectReference: {fileID: 2034146473}
     - target: {fileID: 2016676327375614075, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
       propertyPath: socks.Array.data[6]
       value: 
-      objectReference: {fileID: 1816547267}
+      objectReference: {fileID: 2034146472}
     - target: {fileID: 2016676327375614075, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
       propertyPath: socks.Array.data[7]
       value: 
-      objectReference: {fileID: 1172416861}
+      objectReference: {fileID: 2034146471}
     - target: {fileID: 6697938098244452589, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
       propertyPath: livingRoomCheck
       value: 
@@ -39421,6 +39422,21 @@ PrefabInstance:
 --- !u!224 &2034146470 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8270700193297907861, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
+  m_PrefabInstance: {fileID: 2034146469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2034146471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6197741237079584067, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
+  m_PrefabInstance: {fileID: 2034146469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2034146472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5445734528384425543, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
+  m_PrefabInstance: {fileID: 2034146469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2034146473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5752788579660371630, guid: d4b229df489eecf419a2a5d3896c05d2, type: 3}
   m_PrefabInstance: {fileID: 2034146469}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2050226183
