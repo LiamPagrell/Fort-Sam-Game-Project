@@ -36,6 +36,7 @@ public class GreenCrossword : MonoBehaviour
         InputBeet.onValueChanged.AddListener(delegate { CheckCodeBeet(); });
         InputPrice.onValueChanged.AddListener(delegate { CheckCodePrice(); });
         InputLatte.onValueChanged.AddListener(delegate { CheckCodeLatte(); });
+        
     }
 
     public void CheckCodeEgg()
@@ -99,8 +100,8 @@ public class GreenCrossword : MonoBehaviour
         if(InputLatte.text == "latte"& InputPrice.text == "price" & InputBeet.text == "beet" & InputGlobe.text == "globe"& InputLamb.text == "lamb"& InputPig.text == "pig"& InputEgg.text == "egg")
         {
             soundManager.Treasure();
-            konfetti.gameObject.SetActive(true);
-
+            konfetti.gameObject.SetActive(true);    
+            //GameObject.Find("korsord").SetActive(false);
         }
     }
     IEnumerator WinCLosePanel(TMP_InputField inputField, TextMeshProUGUI greenText)
@@ -110,5 +111,7 @@ public class GreenCrossword : MonoBehaviour
         inputField.DeactivateInputField();
         inputField.enabled = false;
         soundManager.Treasure();
+        //EverythingRight();
     }
+
 }
