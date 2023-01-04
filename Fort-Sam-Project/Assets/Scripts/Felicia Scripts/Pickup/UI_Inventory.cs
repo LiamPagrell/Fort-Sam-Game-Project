@@ -12,6 +12,7 @@ public class UI_Inventory : MonoBehaviour
     public SoundManager soundManager;
     //[SerializeField] GameObject[] itemSlots;
     //[SerializeField] GameObject itemPrefab;
+    
 
     private void Awake()
     {
@@ -114,6 +115,7 @@ public class UI_Inventory : MonoBehaviour
     public void Cheese(RectTransform itemSlotRectTransform)
     {
         
+
         Destroy(itemSlotRectTransform.gameObject);
 
     }

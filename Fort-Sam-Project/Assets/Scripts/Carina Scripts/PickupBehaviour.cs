@@ -24,9 +24,12 @@ public class PickupBehaviour : MonoBehaviour
     float checkDistance;
     public float pickUpDistance = 4f;
 
+    public bool GotCheese; 
+
     void Start()
     {
         player = FindObjectOfType<Movement>();
+        GotCheese = false;
 
         if (inventory == null)
         {
@@ -140,6 +143,7 @@ public class PickupBehaviour : MonoBehaviour
 
     private void Cheese()
     {
+        GotCheese = true;
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
         player.gameObject.GetComponent<Movement>().StopMovement();
         player.gameObject.GetComponent<Movement>().enabled = false;
