@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Or my dad? He would probably turn on the tv and doze right off to sleep...
+  m_text: Or his dad? Although, he would probably watch TV and doze right off...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Such a calm and sleepy night...
+  m_text: It's a calm and quiet night...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_sharedMaterial: {fileID: 8710850067379508459, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
@@ -899,7 +899,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Wait this house has their lights on...
+  m_text: All the while, lights pour out from Sam's window, illuminating the sleepless
+    night..
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_sharedMaterial: {fileID: 8710850067379508459, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
@@ -1034,8 +1035,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ugh the cicadas are too loud, my lights are too bright and I keep hearing
-    this voice...
+  m_text: Because for Sam, the cicadas obnoxiously make his ears ring, the lights
+    make his eyes hurt and he keeps hearing this voice...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_sharedMaterial: {fileID: 8710850067379508459, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
@@ -1480,7 +1481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What would my mom do if she knew I had trouble sleeping..?
+  m_text: At times like this, he wonders what his mom would do.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1654,7 +1655,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nah that won't do. I should check the box that she left me before she passed...
+  m_text: Like a stroke of fate, he remembers the box that mom left before she passed...
+    maybe it can help.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1917,7 +1919,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You can hear the cicadas singing...
+  m_text: "The cicadas lullaby can be heard from the grass and the bird\xB4s song
+    echoes from the treetops, ensuring tranquil dreams"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_sharedMaterial: {fileID: 8710850067379508459, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
