@@ -42,7 +42,6 @@ public class BookBuildFort : MonoBehaviour
 
     public void LoadEndScene()
     {
-        //SceneManager.LoadScene("Credits");
         StartCoroutine(FortFinished());
     }
 
