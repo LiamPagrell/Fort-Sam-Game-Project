@@ -5,7 +5,7 @@ using UnityEngine;
 public class FortLightsPickup : MonoBehaviour
 {
     float checkDistance;
-    float pickUpDistance = 2f;
+    float pickUpDistance = 10f;
 
     [SerializeField] GameObject buildFortIconActivate;
 
@@ -19,8 +19,9 @@ public class FortLightsPickup : MonoBehaviour
     public void OnMouseDown()
     {
         checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
-        
-        if (checkDistance < pickUpDistance)
+
+        //if (checkDistance < pickUpDistance)
+        if (Input.GetMouseButtonDown(0) && checkDistance < pickUpDistance && CompareTag("Interactable"))
         {
             BookBuildFort.FindObjectOfType<BookBuildFort>().BuildFort(true);
             buildFortIconActivate.SetActive(true);

@@ -22453,7 +22453,7 @@ GameObject:
   - component: {fileID: 1153655151}
   m_Layer: 0
   m_Name: FortLights
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35000,6 +35000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundManager: {fileID: 964592343}
+  GotCheese: 0
 --- !u!1 &2114202701
 GameObject:
   m_ObjectHideFlags: 0
