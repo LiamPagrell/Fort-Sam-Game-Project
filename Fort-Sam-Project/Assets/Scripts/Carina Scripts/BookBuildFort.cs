@@ -13,6 +13,7 @@ public class BookBuildFort : MonoBehaviour
     [SerializeField] GameObject fortBook;
     [SerializeField] GameObject buildFortIconActivate;
     [SerializeField] GameObject poofSmoke;
+    [SerializeField] GameObject transitionText;
     public ParticleSystem konfetti;
     public GameObject player;
 
@@ -47,16 +48,19 @@ public class BookBuildFort : MonoBehaviour
 
     IEnumerator FortFinished()
     {
-        yield return new WaitForSecondsRealtime(0.4f);
+        yield return new WaitForSecondsRealtime(1f);
         transitionImage.SetActive(true);
         animator.SetTrigger("TriggerTransition");
-        yield return new WaitForSecondsRealtime(1f);
+        fortBook.SetActive(false);
+        yield return new WaitForSecondsRealtime(2f);
         pillowFort.SetActive(true);
         poofSmoke.GetComponent<Animator>().Play("PoofSmoke");
-        fortBook.SetActive(false);
         player.gameObject.GetComponent<Animator>().SetTrigger("Happy");
         konfetti.gameObject.SetActive(true);
         buildFortIconActivate.SetActive(false);
+        yield return new WaitForSecondsRealtime(2f);
+        transitionText.SetActive(false);
+        animator.SetTrigger("FadeIn");
         yield return new WaitForSecondsRealtime(2f);
         SceneManager.LoadScene("Outro");
      
