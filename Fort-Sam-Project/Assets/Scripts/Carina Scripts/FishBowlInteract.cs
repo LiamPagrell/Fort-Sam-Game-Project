@@ -6,7 +6,7 @@ using UnityEngine;
 public class FishBowlInteract : MonoBehaviour
 {
     float checkDistance;
-    float pickUpDistance = 3f;
+    float pickUpDistance = 4f;
     float zoomSize;
     Vector3 camPos;
     //float smoothSpeed = 2.0f;

@@ -59,6 +59,10 @@ public class UI_Inventory : MonoBehaviour
                 ToyFish(itemSlotRectTransform);
                 inventory.Remove(item);
                 break;
+            case ItemType.Key:
+                Key(itemSlotRectTransform);
+                inventory.Remove(item);
+                break;
             default:
                 break;
 
@@ -116,6 +120,12 @@ public class UI_Inventory : MonoBehaviour
             GameObject.Find("LoveinterestFish (1)").GetComponent<Animator>().SetTrigger("ToyFishWobble");
 
         }
+    }
+
+    public void Key(RectTransform itemSlotRectTransform)
+    {
+        //Destroy(itemSlotRectTransform.gameObject);
+        FindObjectOfType<DoorAtticTransition>().DoorOpen(true);
     }
 
     //private void RefreshInventoryItemsSAMUEL()

@@ -11,6 +11,7 @@ public class KitchenLock : MonoBehaviour
     public GameObject cheese;
     public GameObject locket;
     public GameObject rat;
+    public GameObject frigglock;
     public ParticleSystem konfetti;
     public SoundManager soundManager;
   
@@ -36,10 +37,12 @@ public class KitchenLock : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         //this.gameObject.SetActive(false); ///Needs removal probably
         locket.gameObject.SetActive(false);
-        fridge.gameObject.SetActive(true);
+        //fridge.gameObject.SetActive(true); ///Needs removal probably
         cheese.gameObject.GetComponent<Animator>().SetTrigger("cheese");
+        fridge.gameObject.GetComponent<Animator>().SetTrigger("openSesame");
+        frigglock.gameObject.GetComponent<Animator>().SetTrigger("babyfelldown");
         //yield return new WaitForSeconds(1f); ///Needs removal probably
-        //konfetti.gameObject.SetActive(true); ///Needs to be uncommented when in use
+        ///konfetti.gameObject.SetActive(true); ///[Needs to be uncommented when in use]
         soundManager.Treasure();
         //fridge.gameObject.SetActive(false); ///Needs removal probably
         //rat.gameObject.GetComponent<Animator>().SetTrigger("RatRunnin"); ///Needs removal probably
@@ -47,11 +50,7 @@ public class KitchenLock : MonoBehaviour
         //rat.gameObject.GetComponent<BoxCollider2D>().enabled= false; ///Needs removal probably
         //rat.gameObject.GetComponent<CapsuleCollider2D>().enabled = false; ///Needs removal probably
         GameObject.Find("kitchenlock").GetComponent<BoxCollider2D>().enabled = false;
-        //FindObjectOfType<ShineScripts>().enabled = false;
-
-
         GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = true;
-        
         inputField.gameObject.SetActive(false);
 
     }
