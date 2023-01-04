@@ -49,7 +49,6 @@ public class PickUpObject : MonoBehaviour
 
     void Items()
     {
-        Debug.Log("move on");
         playerMovementScript.enabled = true;
         itemAppear.SetActive(true);
         itemDisappear.SetActive(false);
