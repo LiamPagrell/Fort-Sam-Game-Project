@@ -16,7 +16,7 @@ public class ExitToLivingFromFoyer : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Invoke(nameof(Load), 0.5f);
+            Invoke(nameof(Load), 0.2f);
         }
         //Characters.GetComponent<Animator>().SetTrigger("TransitLiving");
         //TransitionSam.GetComponent<Animator>().SetTrigger("TransitionAlive");
