@@ -94,7 +94,7 @@ public class GreenCrossword : MonoBehaviour
     }
     IEnumerator WinCLosePanel(TMP_InputField inputField, TextMeshProUGUI greenText)
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSecondsRealtime(0.5f);
         greenText.color = new Color(37, 73, 59);
         inputField.DeactivateInputField();
         inputField.enabled = false;

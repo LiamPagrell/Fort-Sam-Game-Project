@@ -15,7 +15,7 @@ public class SamToRatShooKitchen : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSecondsRealtime(0.3f);
         GameObject.Find("Sam_placeholder").GetComponent<Animator>().SetTrigger("ShooReact");
     }
 

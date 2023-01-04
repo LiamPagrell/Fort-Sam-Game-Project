@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -52, y: -440.4}
-  m_SizeDelta: {x: 1760.2975, y: 50}
+  m_AnchoredPosition: {x: -38, y: -173}
+  m_SizeDelta: {x: 636.432, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411182872
 MonoBehaviour:
@@ -184,13 +184,13 @@ MonoBehaviour:
   m_text: Or his dad? Although, he would probably watch TV and doze right off...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8710850067379508459, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4291539361
   m_fontColor: {r: 0.6313726, g: 0.69411767, b: 0.79607844, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
-  m_fontSizeBase: 46
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -147.13965, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &411182873
@@ -293,7 +293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 476, y: -440.4}
+  m_AnchoredPosition: {x: 734, y: -189}
   m_SizeDelta: {x: 1760.2975, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &531676344
@@ -343,8 +343,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -876,8 +876,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 476, y: -440.4}
-  m_SizeDelta: {x: 1760.2975, y: 50}
+  m_AnchoredPosition: {x: -53, y: -141}
+  m_SizeDelta: {x: 523.9687, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1149362235
 MonoBehaviour:
@@ -927,8 +927,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1012,8 +1012,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -52, y: -440.4}
-  m_SizeDelta: {x: 1760.2975, y: 50}
+  m_AnchoredPosition: {x: -71, y: -125}
+  m_SizeDelta: {x: 502.2501, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1150227072
 MonoBehaviour:
@@ -1063,8 +1063,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
-  m_fontSizeBase: 46
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1458,8 +1458,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -52, y: -440.4}
-  m_SizeDelta: {x: 1760.2975, y: 50}
+  m_AnchoredPosition: {x: -57.210236, y: -179}
+  m_SizeDelta: {x: 434.5608, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691462744
 MonoBehaviour:
@@ -1484,13 +1484,13 @@ MonoBehaviour:
   m_text: At times like this, he wonders what his mom would do.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8710850067379508459, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4291539361
   m_fontColor: {r: 0.6313726, g: 0.69411767, b: 0.79607844, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1508,8 +1508,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
-  m_fontSizeBase: 46
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1547,7 +1547,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -147.13965, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1691462745
@@ -1632,8 +1632,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -52, y: -440.4}
-  m_SizeDelta: {x: 1760.2975, y: 50}
+  m_AnchoredPosition: {x: -61, y: -141}
+  m_SizeDelta: {x: 583.5873, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1857144519
 MonoBehaviour:
@@ -1659,13 +1659,13 @@ MonoBehaviour:
     maybe it can help.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8710850067379508459, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4291539361
   m_fontColor: {r: 0.6313726, g: 0.69411767, b: 0.79607844, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1683,8 +1683,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
-  m_fontSizeBase: 46
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1722,7 +1722,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -147.13965, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1857144520
@@ -1896,8 +1896,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 476, y: -440.4}
-  m_SizeDelta: {x: 1760.2975, y: 50}
+  m_AnchoredPosition: {x: -54, y: -219}
+  m_SizeDelta: {x: 591.6645, y: 209.0305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2015434295
 MonoBehaviour:
@@ -1947,8 +1947,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

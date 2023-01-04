@@ -17,7 +17,7 @@ public class outro : MonoBehaviour
 
     IEnumerator FortFinished()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene("Outro2");
 
 
