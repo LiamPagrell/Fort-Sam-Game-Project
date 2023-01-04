@@ -5798,6 +5798,8 @@ GameObject:
   - component: {fileID: 65872425}
   - component: {fileID: 65872426}
   - component: {fileID: 65872427}
+  - component: {fileID: 65872428}
+  - component: {fileID: 65872429}
   m_Layer: 5
   m_Name: CheeseInteract
   m_TagString: Untagged
@@ -5937,8 +5939,36 @@ MonoBehaviour:
   checkmark: {fileID: 0}
   key: {fileID: 0}
   toyFish: {fileID: 0}
+  cheese: {fileID: 65872421}
   soundManager: {fileID: 0}
-  pickUpDistance: 4
+  pickUpDistance: 2
+--- !u!114 &65872428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65872421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6531dce541696494c9812646e093b37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 94f2773fa0e7d8c489b0ca7e0f66f01e, type: 3}
+  cursorMode: 0
+--- !u!114 &65872429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65872421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9d1028151106d4dbc8210ea7ad9e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 2
 --- !u!1001 &66325076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9210,7 +9240,7 @@ GameObject:
   - component: {fileID: 498349400}
   - component: {fileID: 498349403}
   m_Layer: 0
-  m_Name: Kettle (Need Kettle sprite)
+  m_Name: Kettle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19517,7 +19547,7 @@ GameObject:
   - component: {fileID: 1685475862}
   - component: {fileID: 1685475865}
   m_Layer: 0
-  m_Name: DishSoap (Need DishSoap sprite)
+  m_Name: DishSoap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35075,7 +35105,7 @@ GameObject:
   - component: {fileID: 2059219999}
   - component: {fileID: 2059220002}
   m_Layer: 0
-  m_Name: Gitarr (Need Gitarr sprite)
+  m_Name: Gitarr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

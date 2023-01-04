@@ -15,6 +15,7 @@ public enum ItemType
     Cheese,
     Key,
     ToyFish,
+    
 }
 
 public class Item
@@ -32,7 +33,7 @@ public class Item
             //case ItemType.Ball:              return ItemAssets.Instance.ball;
             //case ItemType.BedCoverAndPillow: return null;
             case ItemType.Book:              return ItemAssets.Instance.book;
-            case ItemType.Cheese: return ItemAssets.Instance.cheese;
+            case ItemType.Cheese:            return ItemAssets.Instance.cheese;
             case ItemType.Key:               return ItemAssets.Instance.key;
             case ItemType.ToyFish:           return ItemAssets.Instance.toyFish;
         }

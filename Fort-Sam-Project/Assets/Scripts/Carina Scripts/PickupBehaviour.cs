@@ -13,6 +13,7 @@ public class PickupBehaviour : MonoBehaviour
     public GameObject checkmark;
     public GameObject key;
     public GameObject toyFish;
+    public GameObject cheese;
     //[SerializeField] AudioSource clickSound;
     //public GameObject cat;
     Movement player;
@@ -87,6 +88,7 @@ public class PickupBehaviour : MonoBehaviour
             //case ItemType.Skruvmejsel: Skruvmejsel(); break;
            // case ItemType.BedCoverAndPillow: BedCoverAndPillow(); break;
             case ItemType.Book: Book(); break;
+            case ItemType.Cheese: Cheese(); break;
             default:
                 break;
 
@@ -135,10 +137,17 @@ public class PickupBehaviour : MonoBehaviour
     {
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
     }
-    //IEnumerator Wait()
-    //{
-    //    yield return new WaitForSeconds(0.5 f);
-    //    player.gameObject.GetComponent<Movement>().enabled = true;
-    //    player.StartMovement();
-    //}
+
+    private void Cheese()
+    {
+        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
+        player.gameObject.GetComponent<Movement>().StopMovement();
+        player.gameObject.GetComponent<Movement>().enabled = false;
+        Invoke(nameof(Wait), 0.5f);
+    }
+    public void Wait()
+    {
+        player.gameObject.GetComponent<Movement>().enabled = true;
+        player.StartMovement();
+    }
 }

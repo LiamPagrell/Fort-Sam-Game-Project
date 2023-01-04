@@ -63,6 +63,10 @@ public class UI_Inventory : MonoBehaviour
                 Key(itemSlotRectTransform);
                 inventory.Remove(item);
                 break;
+            case ItemType.Cheese:
+                Cheese(itemSlotRectTransform);
+                inventory.Remove(item);
+                break;
             default:
                 break;
 
@@ -107,6 +111,12 @@ public class UI_Inventory : MonoBehaviour
         //Debug.Log("Poopyman");
     }
 
+    public void Cheese(RectTransform itemSlotRectTransform)
+    {
+        
+        Destroy(itemSlotRectTransform.gameObject);
+
+    }
     public void ToyFish(RectTransform itemSlotRectTransform)
     {
         FindObjectOfType<FishBowlInteract>().FishBowlZoom();
