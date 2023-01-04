@@ -28,7 +28,6 @@ public class KitchenLock : MonoBehaviour
     {
         if (inputField.text == "gilbert")
         {
-            Debug.Log("rightCode");
             StartCoroutine(WinCLosePanel());
         }
     }
@@ -37,23 +36,15 @@ public class KitchenLock : MonoBehaviour
     IEnumerator WinCLosePanel()
     {
         yield return new WaitForSeconds(0.5f);
-        //this.gameObject.SetActive(false); ///Needs removal probably
         locket.gameObject.SetActive(false);
         IntractablesCollScript.gameObject.GetComponent<TurnOffCollidersScript>().TurnOnColls();
-        //fridge.gameObject.SetActive(true); ///Needs removal probably
         cheese.gameObject.GetComponent<Animator>().SetTrigger("cheese");
         fridge.gameObject.GetComponent<Animator>().SetTrigger("openSesame");
         frigglock.gameObject.GetComponent<Animator>().SetTrigger("babyfelldown");
-        //yield return new WaitForSeconds(1f); ///Needs removal probably
-        ///konfetti.gameObject.SetActive(true); ///[Needs to be uncommented when in use]
+        konfetti.gameObject.SetActive(true); 
         GameObject.Find("kitchenlock").GetComponent<BoxCollider2D>().enabled = false;
         GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>().enabled = true;
         soundManager.Treasure();
-        //fridge.gameObject.SetActive(false); ///Needs removal probably
-        //rat.gameObject.GetComponent<Animator>().SetTrigger("RatRunnin"); ///Needs removal probably
-        //Camera.main.GetComponent<CameraFollow>().TemporaryFollow(transform, 3); ///Needs removal probably
-        //rat.gameObject.GetComponent<BoxCollider2D>().enabled= false; ///Needs removal probably
-        //rat.gameObject.GetComponent<CapsuleCollider2D>().enabled = false; ///Needs removal probably
         inputField.gameObject.SetActive(false);
 
     }
