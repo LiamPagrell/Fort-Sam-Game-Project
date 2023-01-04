@@ -8,12 +8,14 @@ public class ToFoyer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene("Hallen");
+        transform.parent.GetComponent<Animator>().enabled = false;
+        Invoke(nameof(Load), 1f);
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Load()
     {
+        SceneManager.LoadScene("Hallen");
 
     }
 }

@@ -9,7 +9,7 @@ public class ToLivingRoom : MonoBehaviour
     void Start()
     {
         transform.parent.GetComponent<Animator>().enabled = false;
-        Invoke(nameof(Load), 0.1f);
+        Invoke(nameof(Load), 1f);
     }
 
     private void Load()
