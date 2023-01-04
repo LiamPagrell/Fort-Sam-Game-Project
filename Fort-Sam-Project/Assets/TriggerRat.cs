@@ -13,15 +13,16 @@ public class TriggerRat : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D coleslaw)
     {
-        if(coleslaw.CompareTag("Pkayer"))
+        if(coleslaw.CompareTag("Player"))
         {
-
+            rat.gameObject.GetComponent<Animator>().SetTrigger("Consume");
+            rat.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        rat.gameObject.GetComponent<Animator>().SetTrigger("Consume");
+        
     }
 }
