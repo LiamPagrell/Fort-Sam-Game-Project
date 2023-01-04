@@ -13848,7 +13848,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.116107106, y: -0.23078585}
+  m_Offset: {x: 0.44415376, y: -0.23078585}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13859,7 +13859,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.197315, y: 3.371574}
+  m_Size: {x: 2.2290325, y: 3.371574}
   m_EdgeRadius: 0
 --- !u!70 &462491913
 CapsuleCollider2D:
@@ -13890,7 +13890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rat: {fileID: 462491907}
-  pockpick: {fileID: 0}
+  player: {fileID: 966151514}
+  pockpick: {fileID: 65872427}
 --- !u!1 &479626584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 451171022986764790, guid: 17a428b0227c4bb4fa40eaffa5c0bbda, type: 3}

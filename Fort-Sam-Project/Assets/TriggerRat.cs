@@ -5,31 +5,37 @@ using UnityEngine;
 public class TriggerRat : MonoBehaviour
 {
     public GameObject rat;
-    PickupBehaviour pockpick;
+    public GameObject player;
+    public PickupBehaviour pockpick;
     // Start is called before the first frame update
-    void Start()
-    {
-        pockpick = FindObjectOfType<PickupBehaviour>();
-    }
 
     public void OnTriggerEnter2D(Collider2D coleslaw)
     {
-        if (pockpick.GotCheese == true)
+        if (coleslaw.CompareTag("Player"))
         {
-            if (coleslaw.CompareTag("Player"))
+            if (pockpick.GotCheese == true)
             {
                 rat.gameObject.GetComponent<Animator>().SetTrigger("Consume");
                 rat.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+                rat.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                player.gameObject.GetComponent<Animator>().SetBool("ShooActive", false);
+                player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
+                Invoke(nameof(BoxOn), 3f);
             }
-
+            
+            else
+            {
+                return;
+            }
         }
 
-        else
-        {
-            return;
-        }
+       
     }
 
+    public void BoxOn()
+    {
+        rat.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+    }
     // Update is called once per frame
     void Update()
     {
