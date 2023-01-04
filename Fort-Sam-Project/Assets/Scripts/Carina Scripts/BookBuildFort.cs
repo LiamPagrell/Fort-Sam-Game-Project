@@ -48,17 +48,17 @@ public class BookBuildFort : MonoBehaviour
 
     IEnumerator FortFinished()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSecondsRealtime(0.4f);
         transitionImage.SetActive(true);
         animator.SetTrigger("TriggerTransition");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSecondsRealtime(1f);
         pillowFort.SetActive(true);
         poofSmoke.GetComponent<Animator>().Play("PoofSmoke");
         fortBook.SetActive(false);
         player.gameObject.GetComponent<Animator>().SetTrigger("Happy");
         konfetti.gameObject.SetActive(true);
         buildFortIconActivate.SetActive(false);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSecondsRealtime(2f);
         SceneManager.LoadScene("Outro");
      
 

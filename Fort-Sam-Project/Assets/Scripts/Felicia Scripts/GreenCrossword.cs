@@ -30,11 +30,11 @@ public class GreenCrossword : MonoBehaviour
     {
         InputEgg.onValueChanged.AddListener(delegate { CheckCodeEgg(); });
         InputPig.onValueChanged.AddListener(delegate { CheckCodePig(); });
-        InputPig.onValueChanged.AddListener(delegate { CheckCodeLamb(); });
-        InputPig.onValueChanged.AddListener(delegate { CheckCodeGlobe(); });
-        InputPig.onValueChanged.AddListener(delegate { CheckCodeBeet(); });
-        InputPig.onValueChanged.AddListener(delegate { CheckCodePrice(); });
-        InputPig.onValueChanged.AddListener(delegate { CheckCodeLatte(); });
+        InputLamb.onValueChanged.AddListener(delegate { CheckCodeLamb(); });
+        InputGlobe.onValueChanged.AddListener(delegate { CheckCodeGlobe(); });
+        InputBeet.onValueChanged.AddListener(delegate { CheckCodeBeet(); });
+        InputPrice.onValueChanged.AddListener(delegate { CheckCodePrice(); });
+        InputLatte.onValueChanged.AddListener(delegate { CheckCodeLatte(); });
     }
 
     public void CheckCodeEgg()
@@ -94,7 +94,7 @@ public class GreenCrossword : MonoBehaviour
     }
     IEnumerator WinCLosePanel(TMP_InputField inputField, TextMeshProUGUI greenText)
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSecondsRealtime(0.5f);
         greenText.color = new Color(37, 73, 59);
         inputField.DeactivateInputField();
         inputField.enabled = false;

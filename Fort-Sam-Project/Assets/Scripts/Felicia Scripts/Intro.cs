@@ -57,21 +57,21 @@ public class Intro : MonoBehaviour
         }
         IEnumerator Case1()
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSecondsRealtime(0.2f);
             calm.gameObject.SetActive(false);
             cicadas.gameObject.SetActive(true);
         }
 
         IEnumerator Case2()
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSecondsRealtime(0.2f);
             cicadas.gameObject.SetActive(false);
            lightsOn.gameObject.SetActive(true);
         }
 
         IEnumerator Case3()
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSecondsRealtime(0.2f);
             lightsOn.gameObject.SetActive(false);
             house.gameObject.SetActive(false);
             hearingVoices.gameObject.SetActive(true);
@@ -80,21 +80,21 @@ public class Intro : MonoBehaviour
         }
         IEnumerator Case4()
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSecondsRealtime(0.2f);
             hearingVoices.gameObject.SetActive(false);
             mom.gameObject.SetActive(true);
 
         }
         IEnumerator Case5()
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSecondsRealtime(0.2f);
             dad.gameObject.SetActive(true);
             mom.gameObject.SetActive(false);
 
         }
         IEnumerator Case6()
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSecondsRealtime(0.2f);
             dad.gameObject.SetActive(false);
             passed.gameObject.SetActive(true);
 
