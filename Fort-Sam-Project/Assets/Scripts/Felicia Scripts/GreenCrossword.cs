@@ -25,6 +25,7 @@ public class GreenCrossword : MonoBehaviour
     [SerializeField] TMP_InputField InputLatte;
     [SerializeField] TextMeshProUGUI GreenLatteText;
     public SoundManager soundManager;
+    public ParticleSystem konfetti;
 
     void Start()
     {
@@ -90,6 +91,16 @@ public class GreenCrossword : MonoBehaviour
         if (InputLatte.text == "latte")
         {
             StartCoroutine(WinCLosePanel(InputLatte, GreenLatteText));
+        }
+    }
+
+    public void EverythingRight()
+    {
+        if(InputLatte.text == "latte"& InputPrice.text == "price" & InputBeet.text == "beet" & InputGlobe.text == "globe"& InputLamb.text == "lamb"& InputPig.text == "pig"& InputEgg.text == "egg")
+        {
+            soundManager.Treasure();
+            konfetti.gameObject.SetActive(true);
+
         }
     }
     IEnumerator WinCLosePanel(TMP_InputField inputField, TextMeshProUGUI greenText)
