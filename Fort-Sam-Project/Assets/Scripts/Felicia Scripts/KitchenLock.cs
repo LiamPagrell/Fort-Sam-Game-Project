@@ -28,7 +28,6 @@ public class KitchenLock : MonoBehaviour
     {
         if (inputField.text == "gilbert")
         {
-            Debug.Log("rightCode");
             StartCoroutine(WinCLosePanel());
         }
     }

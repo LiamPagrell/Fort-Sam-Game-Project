@@ -18,13 +18,11 @@ public class EventManager : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick (PointerEventData data)
     {
-        Debug.Log("hejsan");
         ClickOnThings(data.pointerCurrentRaycast.gameObject.GetComponent<ItemWorld>().itemType, data.pointerCurrentRaycast.gameObject);
     }
 
     private void ClickOnThings(ItemType itemType, GameObject clickedObject)
     {
-        Debug.Log("hejsan");
 
 
         switch (itemType)
@@ -42,7 +40,6 @@ public class EventManager : MonoBehaviour, IPointerClickHandler
 
     private void Ball(GameObject clickedObject)
     {
-        Debug.Log("hejsan");
         clickedObject.GetComponent<Animator>().SetTrigger("PickUp");
     }
 
