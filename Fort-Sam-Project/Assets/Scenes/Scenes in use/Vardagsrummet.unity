@@ -18915,6 +18915,7 @@ MonoBehaviour:
   GreenLatteText: {fileID: 2061998736}
   soundManager: {fileID: 383045881}
   konfetti: {fileID: 1594407570}
+  korsord: {fileID: 1077768015}
 --- !u!1 &1107807743
 GameObject:
   m_ObjectHideFlags: 0
