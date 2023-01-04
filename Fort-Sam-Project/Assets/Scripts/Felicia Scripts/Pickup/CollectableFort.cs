@@ -13,6 +13,7 @@ public class CollectableFort : MonoBehaviour
         if (PlayerPrefs.GetInt(saveKey) == 1)
         {
             gameObject.SetActive(false);
+           
         }
     }
 
@@ -21,5 +22,6 @@ public class CollectableFort : MonoBehaviour
         gameObject.SetActive(false);
 
         PlayerPrefs.SetInt(saveKey, 1);
+       
     }
 }
