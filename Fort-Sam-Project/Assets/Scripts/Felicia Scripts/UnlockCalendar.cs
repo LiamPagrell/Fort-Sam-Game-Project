@@ -10,6 +10,7 @@ public class UnlockCalendar : MonoBehaviour
     public GameObject zoomObject;
     public GameObject buttons;
     public GameObject closeZO1, closeZO2, closeZO3, closeZO4, closeZO5, closeZO6;
+    public GameObject IntractablesCollScript;
     Movement player;
     public SoundManager soundManager;
 
@@ -32,22 +33,22 @@ public class UnlockCalendar : MonoBehaviour
         if (lockPanel != null)
         {
             //if (!calender.activeSelf && !photo.activeSelf && !drawing.activeSelf)
-            if (!zoomObject.activeSelf)
-            {
-                bool isActive = lockPanel.activeSelf;
-                lockPanel.SetActive(!isActive);
-                buttons.SetActive(false);
-                closeZO1.SetActive(false);
-                closeZO2.SetActive(false);
-                closeZO3.SetActive(false);
-                closeZO4.SetActive(false);
-                closeZO5.SetActive(false);
-                closeZO6.SetActive(false);
-                soundManager.TurningPages();
+            //if (!zoomObject.activeSelf)
+            //{
+            //    bool isActive = lockPanel.activeSelf;
+            //    lockPanel.SetActive(!isActive);
+            //    buttons.SetActive(false);
+            //    closeZO1.SetActive(false);
+            //    closeZO2.SetActive(false);
+            //    closeZO3.SetActive(false);
+            //    closeZO4.SetActive(false);
+            //    closeZO5.SetActive(false);
+            //    closeZO6.SetActive(false);
+            //    soundManager.TurningPages();
 
-                Invoke(nameof(wait), 0.1f);
+            Invoke(nameof(wait), 0.1f);
 
-            }
+            //}
 
         }
         /*if (checkDistance < pickUpDistance)
@@ -59,7 +60,26 @@ public class UnlockCalendar : MonoBehaviour
 
     public void wait()
     {
-        buttons.SetActive(true);
+        //if (!calender.activeSelf && !photo.activeSelf && !drawing.activeSelf)
+        if (!zoomObject.activeSelf)
+        {
+            bool isActive = lockPanel.activeSelf;
+            lockPanel.SetActive(!isActive);
+            buttons.SetActive(false);
+            closeZO1.SetActive(false);
+            closeZO2.SetActive(false);
+            closeZO3.SetActive(false);
+            closeZO4.SetActive(false);
+            closeZO5.SetActive(false);
+            closeZO6.SetActive(false);
+            soundManager.TurningPages();
+            buttons.SetActive(true);
+            player.gameObject.GetComponent<Movement>().enabled = false;
+            //IntractablesCollScript.gameObject.GetComponent<TurnOffCollidersScript>().turnOffColls;
+
+
+
+        }
 
     }
 }

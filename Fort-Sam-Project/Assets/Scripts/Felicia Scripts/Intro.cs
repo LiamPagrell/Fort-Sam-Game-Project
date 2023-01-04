@@ -27,6 +27,9 @@ public class Intro : MonoBehaviour
     void Update()
     {
 
+        //Invoke(nameof(Case7), 1f);
+        //Invoke(nameof(Case8), 1f);
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             counter++;
@@ -96,5 +99,16 @@ public class Intro : MonoBehaviour
             passed.gameObject.SetActive(true);
 
         }
+
     }
+    //public void Case7()
+    //{
+    //    name1.gameObject.SetActive(false);
+    //    name2.gameObject.SetActive(true);
+    //}
+    //public void Case8()
+    //{
+    //    name1.gameObject.SetActive(false);
+    //    name2.gameObject.SetActive(true);
+    //}
 }
