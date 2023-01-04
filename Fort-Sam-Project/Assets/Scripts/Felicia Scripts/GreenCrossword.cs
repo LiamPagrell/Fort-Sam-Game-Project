@@ -26,6 +26,7 @@ public class GreenCrossword : MonoBehaviour
     [SerializeField] TextMeshProUGUI GreenLatteText;
     public SoundManager soundManager;
     public ParticleSystem konfetti;
+    public GameObject korsord;
 
     void Start()
     {
@@ -101,7 +102,7 @@ public class GreenCrossword : MonoBehaviour
         {
             soundManager.Treasure();
             konfetti.gameObject.SetActive(true);    
-            //GameObject.Find("korsord").SetActive(false);
+            korsord.SetActive(false);
         }
     }
     IEnumerator WinCLosePanel(TMP_InputField inputField, TextMeshProUGUI greenText)
@@ -111,7 +112,7 @@ public class GreenCrossword : MonoBehaviour
         inputField.DeactivateInputField();
         inputField.enabled = false;
         soundManager.Treasure();
-        //EverythingRight();
+        EverythingRight();
     }
 
 }
