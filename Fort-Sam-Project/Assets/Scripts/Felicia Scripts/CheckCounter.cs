@@ -7,7 +7,8 @@ public class CheckCounter : MonoBehaviour
 {
     public GameObject blanketCheckMark;
     public GameObject pillowCheckMark;
-    
+    public GameObject LightsCheckMark;
+
 
     void Start()
     {
@@ -21,6 +22,12 @@ public class CheckCounter : MonoBehaviour
         {
             pillowCheckMark.SetActive(true);
             Debug.Log("Key2");
+        }
+
+        if (PlayerPrefs.GetInt("FortLights") == 1)
+        {
+            LightsCheckMark.SetActive(true);
+            Debug.Log("Key3");
         }
     }
 }
