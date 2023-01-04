@@ -11,7 +11,7 @@ public class UnlockChest : MonoBehaviour
     public GameObject buttons;
     public GameObject closeZO1, closeZO2, closeZO3;
     Movement playerMovement;
-    //public GameObject player;
+    TurnOffCollidersScript IntractablesCollScript;
     public ParticleSystem konfetti;
 
     float checkDistance;
@@ -22,6 +22,7 @@ public class UnlockChest : MonoBehaviour
     private void Start()
     {
         playerMovement = FindObjectOfType<Movement>();
+        IntractablesCollScript = FindObjectOfType<TurnOffCollidersScript>();
     }
 
     private void OnMouseDown()
@@ -51,6 +52,7 @@ public class UnlockChest : MonoBehaviour
                 playerMovement.StopMovement();
                 playerMovement.enabled = false;
                 playerMovement.gameObject.GetComponent<Animator>().SetBool("moving", false);
+                IntractablesCollScript.gameObject.GetComponent<TurnOffCollidersScript>().TurnOffColls();
 
                 Invoke(nameof(waiter), 0.1f);
 

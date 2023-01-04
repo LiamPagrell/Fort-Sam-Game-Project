@@ -10,7 +10,7 @@ public class UnlockCalendar : MonoBehaviour
     public GameObject zoomObject;
     public GameObject buttons;
     public GameObject closeZO1, closeZO2, closeZO3, closeZO4, closeZO5, closeZO6;
-    public GameObject IntractablesCollScript;
+    TurnOffCollidersScript IntractablesCollScript;
     Movement player;
     public SoundManager soundManager;
 
@@ -24,6 +24,7 @@ public class UnlockCalendar : MonoBehaviour
     {
         //player = FindObjectOfType<Movement>();
         player = FindObjectOfType<Movement>();
+        IntractablesCollScript = FindObjectOfType<TurnOffCollidersScript>();
     }
 
     private void OnMouseDown()
@@ -74,8 +75,9 @@ public class UnlockCalendar : MonoBehaviour
             closeZO6.SetActive(false);
             soundManager.TurningPages();
             buttons.SetActive(true);
+            player.gameObject.GetComponent<Movement>().StopMovement();
             player.gameObject.GetComponent<Movement>().enabled = false;
-            //IntractablesCollScript.gameObject.GetComponent<TurnOffCollidersScript>().turnOffColls;
+            IntractablesCollScript.gameObject.GetComponent<TurnOffCollidersScript>().TurnOffColls();
 
 
 

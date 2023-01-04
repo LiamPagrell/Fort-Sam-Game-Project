@@ -8,11 +8,11 @@ public class TurnOffCollidersScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var allColliders = GameObject.Find("Interactibles").GetComponentsInChildren<Collider2D>();
+        allColliders = GameObject.Find("Interactibles").GetComponentsInChildren<Collider2D>();
     }
 
     // Update is called once per frame
-    public void turnOffColls()
+    public void TurnOffColls()
     {
         //function to trun off alla colliders
         foreach (var collider in allColliders)
@@ -21,7 +21,7 @@ public class TurnOffCollidersScript : MonoBehaviour
         }
 
     }
-    public void turnOnColls()
+    public void TurnOnColls()
     {
         //function to trun on alla colliders
         foreach (var collider in allColliders)
