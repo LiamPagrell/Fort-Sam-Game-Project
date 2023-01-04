@@ -12,6 +12,7 @@ public class BookBuildFort : MonoBehaviour
     [SerializeField] GameObject transitionImage;
     [SerializeField] GameObject fortBook;
     [SerializeField] GameObject buildFortIconActivate;
+    [SerializeField] GameObject poofSmoke;
     public ParticleSystem konfetti;
     public GameObject player;
 
@@ -52,6 +53,7 @@ public class BookBuildFort : MonoBehaviour
         animator.SetTrigger("TriggerTransition");
         yield return new WaitForSeconds(1f);
         pillowFort.SetActive(true);
+        poofSmoke.GetComponent<Animator>().Play("PoofSmoke");
         fortBook.SetActive(false);
         player.gameObject.GetComponent<Animator>().SetTrigger("Happy");
         konfetti.gameObject.SetActive(true);
