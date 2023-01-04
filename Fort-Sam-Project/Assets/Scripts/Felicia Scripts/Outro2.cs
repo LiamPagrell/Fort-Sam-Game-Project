@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Outro2 : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    [SerializeField] Animator animator;
+    [SerializeField] GameObject transitionImage;
+    [SerializeField] GameObject transitionText;
     void Start()
     {
+        animator.SetTrigger("TriggerTransition");
         LoadEndScene();
     }
     public void LoadEndScene()
@@ -18,6 +22,12 @@ public class Outro2 : MonoBehaviour
     IEnumerator FortFinished()
     {
         yield return new WaitForSecondsRealtime(1f);
+
+        transitionText.SetActive(true);
+        //transitionImage.SetActive(false);
+        yield return new WaitForSecondsRealtime(3f);
+        animator.SetTrigger("FadeIn");
+        yield return new WaitForSecondsRealtime(3f);
         SceneManager.LoadScene("Credits");
 
 
