@@ -116,6 +116,8 @@ public class UI_Inventory : MonoBehaviour
 
         IEnumerator ToyWobble()
         {
+            yield return new WaitForSeconds(0.35f);
+            FindObjectOfType<SoundManager>().WaterSplash();
             yield return new WaitForSeconds(1f);
             GameObject.Find("LoveinterestFish (1)").GetComponent<Animator>().SetTrigger("ToyFishWobble");
 
@@ -124,8 +126,10 @@ public class UI_Inventory : MonoBehaviour
 
     public void Key(RectTransform itemSlotRectTransform)
     {
+        FindObjectOfType<SoundManager>().DoorOpening();
         //Destroy(itemSlotRectTransform.gameObject);
         FindObjectOfType<DoorAtticTransition>().DoorOpen(true);
+
     }
 
     //private void RefreshInventoryItemsSAMUEL()
