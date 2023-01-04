@@ -27,6 +27,5 @@ public class CollectableSocks : MonoBehaviour
 
         PlayerPrefs.SetInt(saveKey, 1);
 
-        Debug.Log("PickedUpSocks");
     }
 }
