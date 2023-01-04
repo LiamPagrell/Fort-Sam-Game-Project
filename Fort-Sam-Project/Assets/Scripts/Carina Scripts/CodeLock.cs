@@ -21,12 +21,13 @@ public class CodeLock : MonoBehaviour
     int counter2 = 1;
     int counter3 = 1;
     int counter4 = 1;
-    
+    TurnOffCollidersScript IntractablesCollScript;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        IntractablesCollScript = FindObjectOfType<TurnOffCollidersScript>();
     }
 
     public int GetRealNumber(int counter)
@@ -86,6 +87,7 @@ public class CodeLock : MonoBehaviour
         var chest = FindObjectOfType<UnlockChest>();
         //yield return new WaitForSeconds(0.5f);
         UnlockChest.FindObjectOfType<UnlockChest>().CloseLockWindow();
+        IntractablesCollScript.gameObject.GetComponent<TurnOffCollidersScript>().TurnOnColls();
         UnlockChest.FindObjectOfType<UnlockChest>().GetComponent<Animator>().Play("ChestOpen");
         soundManager.Treasure();
         GameObject.Find("Remote").GetComponent<Animator>().SetTrigger("RemoteAppear");

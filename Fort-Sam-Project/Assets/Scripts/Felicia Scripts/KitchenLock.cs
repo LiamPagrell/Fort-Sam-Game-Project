@@ -14,11 +14,13 @@ public class KitchenLock : MonoBehaviour
     public GameObject frigglock;
     public ParticleSystem konfetti;
     public SoundManager soundManager;
-  
+    TurnOffCollidersScript IntractablesCollScript;
+
 
     void Start()
     {
         inputField.onValueChanged.AddListener(delegate { CheckCode(); });
+        IntractablesCollScript = FindObjectOfType<TurnOffCollidersScript>();
     }
 
    
@@ -37,6 +39,7 @@ public class KitchenLock : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         //this.gameObject.SetActive(false); ///Needs removal probably
         locket.gameObject.SetActive(false);
+        IntractablesCollScript.gameObject.GetComponent<TurnOffCollidersScript>().TurnOffColls();
         //fridge.gameObject.SetActive(true); ///Needs removal probably
         cheese.gameObject.GetComponent<Animator>().SetTrigger("cheese");
         fridge.gameObject.GetComponent<Animator>().SetTrigger("openSesame");
