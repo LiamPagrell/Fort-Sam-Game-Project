@@ -8,6 +8,7 @@ public class DoorAtticTransition : MonoBehaviour
     [SerializeField] GameObject doorOpen;
     [SerializeField] GameObject doorClosed;
     [SerializeField] GameObject blurryImage;
+    [SerializeField] GameObject descendArrows;
 
 
     public void DoorOpen(bool keyPressed)
@@ -18,6 +19,7 @@ public class DoorAtticTransition : MonoBehaviour
             doorOpen.SetActive(true);
             doorClosed.SetActive(false);
             blurryImage.SetActive(true);
+            descendArrows.SetActive(true);
         }
     }
 
@@ -25,6 +27,7 @@ public class DoorAtticTransition : MonoBehaviour
     {
         doorClosed.SetActive(true);
         blurryImage.SetActive(true);
+        descendArrows.SetActive(true);
     }
 
     public void MoveToAttic()
@@ -35,6 +38,7 @@ public class DoorAtticTransition : MonoBehaviour
     public void MoveFromDoor()
     {
         blurryImage.SetActive(false);
+        descendArrows.SetActive(false);
 
         if (doorClosed.activeSelf)
         {
