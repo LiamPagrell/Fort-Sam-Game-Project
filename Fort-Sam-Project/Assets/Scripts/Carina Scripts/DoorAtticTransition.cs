@@ -19,8 +19,14 @@ public class DoorAtticTransition : MonoBehaviour
             doorOpen.SetActive(true);
             doorClosed.SetActive(false);
             blurryImage.SetActive(true);
-            descendArrows.SetActive(true);
+            descendArrows.SetActive(false);
+            Invoke(nameof(MoveToAttic), 0.2f);
         }
+    }
+
+    public void MoveToAttic()
+    {
+        SceneManager.LoadScene("Vinden");
     }
 
     public void DoorClosed()
@@ -28,11 +34,6 @@ public class DoorAtticTransition : MonoBehaviour
         doorClosed.SetActive(true);
         blurryImage.SetActive(true);
         descendArrows.SetActive(true);
-    }
-
-    public void MoveToAttic()
-    {
-        SceneManager.LoadScene("Vinden");
     }
 
     public void MoveFromDoor()
@@ -43,10 +44,6 @@ public class DoorAtticTransition : MonoBehaviour
         if (doorClosed.activeSelf)
         {
             doorClosed.SetActive(false);
-        }
-        else if (doorOpen.activeSelf)
-        {
-            doorOpen.SetActive(false);
         }
     }
 }
