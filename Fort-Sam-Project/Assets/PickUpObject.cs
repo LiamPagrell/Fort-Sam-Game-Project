@@ -5,7 +5,6 @@ using UnityEngine;
 public class PickUpObject : MonoBehaviour
 {
     public GameObject CharAnimator;
-    public GameObject player;
     public Movement playerMovementScript;
     public string charAnimText;
    
@@ -28,14 +27,14 @@ public class PickUpObject : MonoBehaviour
 
     public void OnMouseDown()
     {
-        checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
+        checkDistance = Vector2.Distance(this.transform.position, playerMovementScript.transform.position);
 
         if (Input.GetMouseButtonDown(0) && checkDistance < pickUpDistance && CompareTag("Interactable"))
         {
-            player.gameObject.GetComponent<Movement>().enabled = false;
-            playerMovementScript.StopMovement();           
+            playerMovementScript.enabled = false;
             CharAnimator.gameObject.GetComponent<Animator>().Play(charAnimText);
-            StartCoroutine(Items());
+            Invoke(nameof(Items), enumTime);
+            //StartCoroutine(Items());
             StartCoroutine(AnimTime());
 
         }
@@ -48,11 +47,10 @@ public class PickUpObject : MonoBehaviour
         
     }
 
-    IEnumerator Items()
+    void Items()
     {
-        yield return new WaitForSeconds(enumTime);
-        player.gameObject.GetComponent<Movement>().enabled = true;
-        playerMovementScript.StartMovement();
+        Debug.Log("move on");
+        playerMovementScript.enabled = true;
         itemAppear.SetActive(true);
         itemDisappear.SetActive(false);
     }

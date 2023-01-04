@@ -248,7 +248,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Slumbering away with no troubles
+  m_text: Slumbering away without any care in the world..
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
   m_sharedMaterial: {fileID: 8710850067379508459, guid: 9348ca931552e2047bf7ad9f44e9d1c6, type: 2}
