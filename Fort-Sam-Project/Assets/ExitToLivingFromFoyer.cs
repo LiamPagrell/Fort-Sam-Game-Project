@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class ExitToLivingFromFoyer : MonoBehaviour
 {
     public GameObject TransitionSam;
@@ -15,15 +16,16 @@ public class ExitToLivingFromFoyer : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Characters.GetComponent<Animator>().Play("LevelTransitToFoyerFromLiving");
-            TransitionSam.GetComponent<Animator>().SetTrigger("LevelTransitToLivingFromFoyer");
-            Characters.GetComponent<Animator>().SetTrigger("TransitLiving");
-            TransitionSam.GetComponent<Animator>().SetTrigger("TransitionAlive");
+            Invoke(nameof(Load), 0.5f);
         }
+        //Characters.GetComponent<Animator>().SetTrigger("TransitLiving");
+        //TransitionSam.GetComponent<Animator>().SetTrigger("TransitionAlive");
     }
-    // Update is called once per frame
-    void Update()
+    
+    
+private void Load()
     {
+        SceneManager.LoadScene("Vardagsrummet");
 
     }
 }
