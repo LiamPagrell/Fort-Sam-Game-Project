@@ -25,6 +25,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip ToastedSound;
     public AudioClip DoorOpeningSound;
     public AudioClip WaterSplashSound;
+    public AudioClip CelebrationSound;
 
 
     public enum Sound
@@ -46,6 +47,7 @@ public class SoundManager : MonoBehaviour
         Toasted,
         DoorOpening,
         WaterSplash,
+        Celebration,
     }
    
     public void RatSqueak()
@@ -140,5 +142,11 @@ public class SoundManager : MonoBehaviour
     public void DoorOpening()
     {
         audioSource.PlayOneShot(DoorOpeningSound);
+    }
+
+    public void Celebration()
+    {
+
+        audioSource.PlayOneShot(CelebrationSound);
     }
 }

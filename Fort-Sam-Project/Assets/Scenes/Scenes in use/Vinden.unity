@@ -22032,6 +22032,7 @@ MonoBehaviour:
   ToastedSound: {fileID: 0}
   DoorOpeningSound: {fileID: 0}
   WaterSplashSound: {fileID: 0}
+  CelebrationSound: {fileID: 8300000, guid: 11498d0ebd893e04882aca924aa1e8bc, type: 3}
 --- !u!82 &964592344
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23646,6 +23647,7 @@ MonoBehaviour:
   transitionText: {fileID: 1169114695}
   konfetti: {fileID: 598498943}
   player: {fileID: 1132286667}
+  soundManager: {fileID: 964592343}
   hasFortItems: 0
 --- !u!1 &1335888657
 GameObject:
