@@ -18,6 +18,13 @@ public class SockCounter : MonoBehaviour
     void Start()
     {
         UpdateSockUI();
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        if (sceneName == "Menu")
+        {
+            Debug.Log("Resetting ALL player prefs");
+            PlayerPrefs.DeleteAll();
+        }
     }
 
     private void UpdateSockUI()
@@ -36,14 +43,4 @@ public class SockCounter : MonoBehaviour
     {
         UpdateSockUI();
     }
-
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.R) && Input.GetKeyDown(KeyCode.O))
-        {
-            Debug.Log("Resetting ALL player prefs");
-            PlayerPrefs.DeleteAll();
-        }
-    }
-
 }

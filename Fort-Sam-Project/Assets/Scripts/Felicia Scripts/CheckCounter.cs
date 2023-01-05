@@ -8,7 +8,7 @@ public class CheckCounter : MonoBehaviour
     public GameObject blanketCheckMark;
     public GameObject pillowCheckMark;
     public GameObject LightsCheckMark;
-    public GameObject toyFishInShelf;
+    //public GameObject toyFishInShelf;
 
     void Start()
     {
