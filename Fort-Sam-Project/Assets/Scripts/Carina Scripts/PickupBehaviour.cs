@@ -141,6 +141,10 @@ public class PickupBehaviour : MonoBehaviour
     private void Cheese()
     {
         GotCheese = true;
+        //toyFish.transform.gameObject.tag = "Interactable";
+        //toyFish.gameObject.GetComponent<ShineScripts>().enabled = true;
+        //toyFish.gameObject.GetComponent<CursorInteractable>().enabled = true;
+        //toyFish.gameObject.GetComponent<Animator>().enabled = true;
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
         player.gameObject.GetComponent<Movement>().StopMovement();
         player.gameObject.GetComponent<Movement>().enabled = false;

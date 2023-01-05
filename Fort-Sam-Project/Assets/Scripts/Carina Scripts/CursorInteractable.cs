@@ -18,6 +18,7 @@ public class CursorInteractable : MonoBehaviour
 
     public void OnMouseOver()
     {
+        
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
 
 
