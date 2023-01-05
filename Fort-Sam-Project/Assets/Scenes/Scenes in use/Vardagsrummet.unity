@@ -8310,7 +8310,7 @@ MonoBehaviour:
   TurningPagesSound: {fileID: 8300000, guid: 135715815ef800048b14d6620b780376, type: 3}
   HelikopterSound: {fileID: 8300000, guid: f4e50651b4f70c643a0dd8daf98fed5d, type: 3}
   SnowSound: {fileID: 8300000, guid: 32de4e2c88deb2d4cb20b2c80a578670, type: 3}
-  TreasureSound: {fileID: 8300000, guid: 1e8c9d0020c82c04cb540aef7860c388, type: 3}
+  TreasureSound: {fileID: 8300000, guid: a53bb98547d31574aa2dbd57b205de32, type: 3}
   CoziesSound: {fileID: 8300000, guid: de229ee21f3361641a2bfad69d9209e8, type: 3}
   RoboSound: {fileID: 8300000, guid: 35ca3e3cfbf624e4591e1534c1cbf7e2, type: 3}
   LampSound: {fileID: 8300000, guid: 88ba1a0ce2b9e994c8c4092340438f57, type: 3}
