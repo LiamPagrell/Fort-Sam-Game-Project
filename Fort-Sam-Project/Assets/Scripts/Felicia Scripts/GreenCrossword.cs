@@ -36,10 +36,12 @@ public class GreenCrossword : MonoBehaviour
     string locked4;
     string locked5;
     string locked6;
+    TurnOffCollidersScript IntractablesCollScript;
 
     void Start()
     {
         player = FindObjectOfType<Movement>();
+        IntractablesCollScript = FindObjectOfType<TurnOffCollidersScript>();
         InputEgg.onValueChanged.AddListener(delegate { CheckCodeEgg(); });
         InputPig.onValueChanged.AddListener(delegate { CheckCodePig(); });
         InputLamb.onValueChanged.AddListener(delegate { CheckCodeLamb(); });
@@ -157,6 +159,7 @@ public class GreenCrossword : MonoBehaviour
             soundManager.Treasure();
             konfetti.gameObject.SetActive(true);    
             korsord.SetActive(false);
+            IntractablesCollScript.gameObject.GetComponent<TurnOffCollidersScript>().TurnOnColls();
         }
     }
     IEnumerator WinCLosePanel(TMP_InputField inputField, TextMeshProUGUI greenText)
