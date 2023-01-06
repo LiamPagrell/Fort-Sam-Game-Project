@@ -52,6 +52,7 @@ public class BookBuildFort : MonoBehaviour
         transitionImage.SetActive(true);
         animator.SetTrigger("TriggerTransition");
         fortBook.SetActive(false);
+        FindObjectOfType<Movement>().enabled = false;
         yield return new WaitForSecondsRealtime(2f);
         soundManager.Celebration();
         pillowFort.SetActive(true);

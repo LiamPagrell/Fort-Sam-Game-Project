@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class FishBowlInteract : MonoBehaviour
 {
-    float checkDistance;
-    float pickUpDistance = 4f;
     float zoomSize;
     Vector3 camPos;
     //float smoothSpeed = 2.0f;
@@ -29,18 +27,13 @@ public class FishBowlInteract : MonoBehaviour
 
     private void OnMouseDown()
     {
-        checkDistance = Vector2.Distance(this.transform.position, player.transform.position);
-
-        if (checkDistance < pickUpDistance)
+        if (!isZoomed)
         {
-            if (!isZoomed)
-            {
-                FishBowlZoom();
-            }
-            else
-            {
-                ZoomOutFishBowl();
-            }
+            FishBowlZoom();
+        }
+        else
+        {
+            ZoomOutFishBowl();
         }
     }
 
