@@ -27,6 +27,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip WaterSplashSound;
     public AudioClip CelebrationSound;
     public AudioClip samYawnSound;
+    public AudioClip catPetSound;
 
 
     public enum Sound
@@ -50,6 +51,7 @@ public class SoundManager : MonoBehaviour
         WaterSplash,
         Celebration,
         Yawn,
+        CatPet,
     }
    
     public void RatSqueak()
@@ -155,5 +157,10 @@ public class SoundManager : MonoBehaviour
     public void Yawn()
     {
         audioSource.PlayOneShot(samYawnSound);
+    }
+
+    public void CatPetPurr()
+    {
+        audioSource.PlayOneShot(catPetSound);
     }
 }

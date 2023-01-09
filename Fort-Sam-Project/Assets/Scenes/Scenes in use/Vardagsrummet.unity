@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 15676524}
   - component: {fileID: 15676523}
   - component: {fileID: 15676522}
+  - component: {fileID: 15676525}
   m_Layer: 0
   m_Name: Couch
   m_TagString: Untagged
@@ -418,6 +419,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Shiny: {fileID: 15676517}
+--- !u!114 &15676525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15676517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc5bf6399ab3134d82b3c23dbc765f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookMark: {fileID: 2111446303}
 --- !u!1 &47809549
 GameObject:
   m_ObjectHideFlags: 0
@@ -8325,6 +8339,8 @@ MonoBehaviour:
   DoorOpeningSound: {fileID: 0}
   WaterSplashSound: {fileID: 0}
   CelebrationSound: {fileID: 0}
+  samYawnSound: {fileID: 0}
+  catPetSound: {fileID: 0}
 --- !u!82 &383045882
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9229,8 +9245,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.19713704, y: -1.1798192}
-  m_Size: {x: 5.694985, y: 2.5309563}
+  m_Offset: {x: 0.7593825, y: -1.6206282}
+  m_Size: {x: 6.819538, y: 3.4125948}
   m_Direction: 1
 --- !u!114 &462491914
 MonoBehaviour:
@@ -12343,7 +12359,7 @@ MonoBehaviour:
   closeZO3: {fileID: 1175660929}
   konfetti: {fileID: 0}
   soundManager: {fileID: 0}
-  pickUpDistance: 3.4
+  pickUpDistance: 4.2
   open: 0
 --- !u!114 &856978493
 MonoBehaviour:
@@ -16786,6 +16802,7 @@ GameObject:
   - component: {fileID: 1223487992}
   - component: {fileID: 1223487998}
   - component: {fileID: 1223487999}
+  - component: {fileID: 1223488000}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -16996,6 +17013,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.889254, y: 1.9215133}
   m_EdgeRadius: 0
+--- !u!114 &1223488000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223487990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6531dce541696494c9812646e093b37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 94f2773fa0e7d8c489b0ca7e0f66f01e, type: 3}
+  cursorMode: 0
 --- !u!1 &1244052070
 GameObject:
   m_ObjectHideFlags: 0
