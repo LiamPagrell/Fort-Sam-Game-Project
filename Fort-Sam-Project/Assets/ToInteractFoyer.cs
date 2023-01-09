@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ToFoyer : MonoBehaviour
+public class ToInteractFoyer : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     void Start()
     {
         transform.parent.GetComponent<Animator>().enabled = false;
@@ -15,7 +15,7 @@ public class ToFoyer : MonoBehaviour
 
     private void Load()
     {
-        SceneManager.LoadScene("HallenTransition");
+        SceneManager.LoadScene("Hallen");
 
     }
 }

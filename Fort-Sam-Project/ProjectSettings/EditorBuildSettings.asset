@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Scenes in use/SamRoom.unity
     guid: 854e10afc19bb1d45aabd9d12b5ff9c6
   - enabled: 1
+    path: Assets/Scenes/Scenes in use/HallenTransition.unity
+    guid: 3cfcaa782e56f824b9802baeb6158163
+  - enabled: 1
     path: Assets/Scenes/Scenes in use/Hallen.unity
     guid: 4bc13d22db930414da008766c7d593fb
   - enabled: 1

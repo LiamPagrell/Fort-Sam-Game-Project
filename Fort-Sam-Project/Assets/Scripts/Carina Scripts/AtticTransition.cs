@@ -15,7 +15,7 @@ public class AtticTransition : MonoBehaviour
             GoUpStairs();
         }
 
-        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             FindObjectOfType<DoorAtticTransition>().MoveFromDoor();
         }

@@ -16,7 +16,6 @@ public class FishBowlInteract : MonoBehaviour
     [SerializeField] GameObject backGroundFish;
     [SerializeField] GameObject keyCheck;
     [SerializeField] GameObject toyFish;
-    public GameObject toyFishInShelf;
 
     void Start()
     {
@@ -60,8 +59,6 @@ public class FishBowlInteract : MonoBehaviour
         fishBowl.SetActive(false);
         fishyFish.SetActive(false);
         backGroundFish.SetActive(true);
-        toyFishInShelf.transform.gameObject.tag = "Interactable";
-        toyFishInShelf.gameObject.GetComponent<BoxCollider2D>().enabled = true;
         if (keyCheck == null)
         {
             toyFish.SetActive(false);

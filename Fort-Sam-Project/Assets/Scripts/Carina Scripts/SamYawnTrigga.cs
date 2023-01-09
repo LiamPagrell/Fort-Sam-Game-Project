@@ -11,7 +11,7 @@ public class SamYawnTrigga : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<Movement>();
-
+        Invoke(nameof(SamYawn), 2.2f);
         GameObject.Find("Sam_placeholder").GetComponent<Animator>().Play("Yawn");
         player.gameObject.GetComponent<Movement>().enabled = false;
         Invoke("ResumeControl", 4.8f);
@@ -23,5 +23,10 @@ public class SamYawnTrigga : MonoBehaviour
     {
         player.gameObject.GetComponent<Movement>().enabled = true;
         bed.gameObject.GetComponent<PolygonCollider2D>().enabled = true;
+    }
+
+    private void SamYawn()
+    {
+        FindObjectOfType<SoundManager>().Yawn();
     }
 }
