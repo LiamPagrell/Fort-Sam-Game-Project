@@ -90,6 +90,7 @@ public class PickupBehaviour : MonoBehaviour
            // case ItemType.BedCoverAndPillow: BedCoverAndPillow(); break;
             case ItemType.Book: Book(); break;
             case ItemType.Cheese: Cheese(); break;
+            case ItemType.ToyFish: ToyFish(); break;
             default:
                 break;
 
@@ -130,9 +131,13 @@ public class PickupBehaviour : MonoBehaviour
         //cat.gameObject.GetComponent<Animator>().SetTrigger("CatAnim");
         //rat.gameObject.GetComponent<Animator>().SetTrigger("RatAnim");
         //StartCoroutine(Wait());
-
-
     }
+
+    private void ToyFish()
+    {
+        player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpMedium");
+    }
+
     private void Book()
     {
         player.gameObject.GetComponent<Animator>().SetTrigger("PickingUpLow");
